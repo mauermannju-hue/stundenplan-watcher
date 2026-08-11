@@ -1,0 +1,126 @@
+{
+ "plaene": {
+  "20260703": {
+   "datum": "Freitag, 03. Juli 2026",
+   "stunden": [
+    {
+     "fach": "---",
+     "geaendert": [
+      "Fach",
+      "Lehrer",
+      "Raum"
+     ],
+     "info": "KU Herr Natusch fällt aus",
+     "lehrer": "",
+     "nr": "621",
+     "raum": "",
+     "regel": [
+      "KU",
+      "NAT"
+     ],
+     "st": "2"
+    },
+    {
+     "fach": "---",
+     "geaendert": [
+      "Fach",
+      "Lehrer",
+      "Raum"
+     ],
+     "info": "KU Herr Natusch fällt aus",
+     "lehrer": "",
+     "nr": "621",
+     "raum": "",
+     "regel": [
+      "KU",
+      "NAT"
+     ],
+     "st": "3"
+    },
+    {
+     "fach": "---",
+     "geaendert": [
+      "Fach",
+      "Lehrer",
+      "Raum"
+     ],
+     "info": "MA Herr Engemann fällt aus",
+     "lehrer": "",
+     "nr": "622",
+     "raum": "",
+     "regel": [
+      "MA",
+      "ENG"
+     ],
+     "st": "4"
+    },
+    {
+     "fach": "---",
+     "geaendert": [
+      "Fach",
+      "Lehrer",
+      "Raum"
+     ],
+     "info": "MA Herr Engemann fällt aus",
+     "lehrer": "",
+     "nr": "622",
+     "raum": "",
+     "regel": [
+      "MA",
+      "ENG"
+     ],
+     "st": "5"
+    },
+    {
+     "fach": "---",
+     "geaendert": [
+      "Fach",
+      "Lehrer",
+      "Raum"
+     ],
+     "info": "VBR Frau Pfeiffer-Krause fällt aus",
+     "lehrer": "",
+     "nr": "616",
+     "raum": "",
+     "regel": [
+      "VBR",
+      "PKR"
+     ],
+     "st": "6"
+    },
+    {
+     "fach": "---",
+     "geaendert": [
+      "Fach",
+      "Lehrer",
+      "Raum"
+     ],
+     "info": "VBR Frau Pfeiffer-Krause fällt aus",
+     "lehrer": "",
+     "nr": "616",
+     "raum": "",
+     "regel": [
+      "VBR",
+      "PKR"
+     ],
+     "st": "7"
+    }
+   ],
+   "zeitstempel": "02.07.2026, 17:33",
+   "zusatz": [
+    "FB Pflege:",
+    "Zeugnisausgaben:",
+    "PFF24: BOD, 3.Stunde",
+    "KPH25: MAIW, 4.Stunde",
+    "",
+    "FB FOS/PT:",
+    "FOS25S: Zeugnisausgabe: 2.Stunde, CRS, A163",
+    "PT24: Zeugnisausgabe, 2. Stunde, BRA, A307",
+    "",
+    "FB SOZ:",
+    "SOZ25R1/SOZ25R2: 2./3.Stunde  Klassenleiterstunden, A048, FEL, EB",
+    "HEP23/SPE23: Zeugnisausgabe: 10:00 Uhr, Aula"
+   ]
+  }
+ }
+}

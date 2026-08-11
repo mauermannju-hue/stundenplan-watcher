@@ -1,0 +1,42 @@
+name: Vertretungsplan-Watcher
+
+on:
+  schedule:
+    # alle 20 Minuten, 04:00-16:59 UTC = 06:00-18:59 MESZ bzw. 05:00-17:59 MEZ, Mo-Fr
+    - cron: "7,27,47 4-16 * * 1-5"
+  workflow_dispatch:        # Knopf "Run workflow" fuer manuelle Tests
+
+permissions:
+  contents: write           # noetig, um den Planstand zurueckzuschreiben
+
+concurrency:
+  group: vertretungsplan-watcher
+  cancel-in-progress: false
+
+jobs:
+  pruefen:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Plan pruefen und ggf. melden
+        env:
+          PLAN_USER: ${{ secrets.PLAN_USER }}
+          PLAN_PASS: ${{ secrets.PLAN_PASS }}
+          PLAN_KLASSE: ${{ vars.PLAN_KLASSE || 'FOS25W' }}
+          TG_TOKEN: ${{ secrets.TG_TOKEN }}
+          TG_CHAT: ${{ secrets.TG_CHAT }}
+        run: python3 watcher.py
+
+      - name: Neuen Planstand sichern
+        run: |
+          if [ -n "$(git status --porcelain state/)" ]; then
+            git config user.name  "stundenplan-watcher"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add state/
+            git commit -m "Planstand $(date -u +'%Y-%m-%d %H:%M UTC') [skip ci]"
+            git pull --rebase --autostash
+            git push
+          else
+            echo "Kein neuer Planstand."
+          fi
