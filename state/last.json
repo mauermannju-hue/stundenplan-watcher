@@ -245,6 +245,126 @@
     "8:15 Uhr: Aula, FEL, EICH, GRL",
     "3. bis 6. Stunde Klassenleiterstunde, GRL, A043"
    ]
+  },
+  "20260818": {
+   "datum": "Dienstag, 18. August 2026",
+   "stunden": [
+    {
+     "fach": "MA",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "WEN",
+     "nr": "636",
+     "raum": "N230",
+     "regel": [
+      "MA",
+      "WEN"
+     ],
+     "st": "2"
+    },
+    {
+     "fach": "MA",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "WEN",
+     "nr": "636",
+     "raum": "N230",
+     "regel": [
+      "MA",
+      "WEN"
+     ],
+     "st": "3"
+    },
+    {
+     "fach": "VBR",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "PKR",
+     "nr": "631",
+     "raum": "A233",
+     "regel": [
+      "VBR",
+      "PKR"
+     ],
+     "st": "4"
+    },
+    {
+     "fach": "VBR",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "PKR",
+     "nr": "631",
+     "raum": "A233",
+     "regel": [
+      "VBR",
+      "PKR"
+     ],
+     "st": "5"
+    },
+    {
+     "fach": "ETH",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "GIE",
+     "nr": "628",
+     "raum": "A003",
+     "regel": [
+      "ETH",
+      "GIE"
+     ],
+     "st": "6"
+    },
+    {
+     "fach": "REL",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "SDR",
+     "nr": "629",
+     "raum": "A141",
+     "regel": [
+      "REL",
+      "SDR"
+     ],
+     "st": "6"
+    },
+    {
+     "fach": "RK",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "BOD",
+     "nr": "638",
+     "raum": "A250",
+     "regel": [
+      "RK",
+      "BOD"
+     ],
+     "st": "7"
+    },
+    {
+     "fach": "RK",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "BOD",
+     "nr": "638",
+     "raum": "A250",
+     "regel": [
+      "RK",
+      "BOD"
+     ],
+     "st": "8"
+    }
+   ],
+   "zeitstempel": "17.08.2026, 12:49",
+   "zusatz": [
+    "FB BSI:",
+    "BGJE26: 2. bis 8. Stunde Einführungstag mit SCS/HAH im Raum A224",
+    "BVJ: Sonderplan",
+    "BSPE26: ab 7:55 Uhr Klassenleiterstunde, DAM, N218",
+    "",
+    "",
+    "FB FOS:",
+    "FOS26S: 2. bis 5.Stunde FPU, FEL, A046"
+   ]
   }
  }
 }
