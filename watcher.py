@@ -63,15 +63,62 @@ def clean(text):
     return text.replace("&nbsp;", "").replace("\xa0", " ").strip()
 
 
+def normiere_zeit(text):
+    """'7:30', '07.30' oder '0730' -> '07:30'. Unbrauchbares -> ''."""
+    roh = clean(text).replace(".", ":")
+    if not roh:
+        return ""
+    if ":" not in roh and roh.isdigit() and len(roh) == 4:
+        roh = roh[:2] + ":" + roh[2:]
+    stunde, _, rest = roh.partition(":")
+    minute = rest[:2]
+    if not (stunde.isdigit() and minute.isdigit()):
+        return ""
+    return f"{int(stunde):02d}:{int(minute):02d}"
+
+
+def raster_aus_env():
+    """Notnagel PLAN_ZEITEN='1=07:30-08:15,2=08:20-09:05', falls das XML keine Zeiten liefert."""
+    raster = {}
+    for eintrag in os.environ.get("PLAN_ZEITEN", "").replace(";", ",").split(","):
+        stunde, _, spanne = eintrag.partition("=")
+        von, _, bis = spanne.partition("-")
+        von, bis = normiere_zeit(von), normiere_zeit(bis)
+        if clean(stunde) and von and bis:
+            raster[clean(stunde)] = (von, bis)
+    return raster
+
+
+def klassen_raster(kl):
+    """Zeitraster der Klasse aus <KlStunden>: {'1': ('07:30', '08:15'), ...}."""
+    raster = {}
+    for kst in kl.iter("KlSt"):
+        von = bis = ""
+        for name, wert in kst.attrib.items():
+            key = name.lower()
+            if "von" in key or key.startswith(("beg", "start")):
+                von = normiere_zeit(wert)
+            elif "bis" in key or key.startswith("end"):
+                bis = normiere_zeit(wert)
+        stunde = clean(kst.text)
+        if stunde and von and bis:
+            raster[stunde] = (von, bis)
+    return raster
+
+
 def parse_plan(raw, klasse):
     """Extrahiert Kopfdaten, die Stunden der Klasse und die Zusatzinfos."""
     root = ET.fromstring(raw)
     kopf = root.find("Kopf")
+    ersatzraster = raster_aus_env()
 
     stunden = []
     for kl in root.iter("Kl"):
         if clean(kl.findtext("Kurz")) != klasse:
             continue
+        raster = klassen_raster(kl)
+        for stunde, spanne in ersatzraster.items():
+            raster.setdefault(stunde, spanne)
         # Unterrichtsnummer -> (Fach, Lehrer) laut Regelstundenplan
         regel = {}
         for ue in kl.iter("UeNr"):
@@ -81,9 +128,17 @@ def parse_plan(raw, klasse):
             le = std.find("Le")
             ra = std.find("Ra")
             nr = clean(std.findtext("Nr"))
+            st = clean(std.findtext("St"))
+            # Zeiten stehen entweder an der Stunde selbst oder nur im Klassenraster
+            von = normiere_zeit(std.findtext("Beg")) or normiere_zeit(std.findtext("Beginn"))
+            bis = normiere_zeit(std.findtext("End")) or normiere_zeit(std.findtext("Ende"))
+            if not (von and bis):
+                von, bis = raster.get(st, (von, bis))
             stunden.append({
-                "st": clean(std.findtext("St")),
+                "st": st,
                 "nr": nr,
+                "von": von,
+                "bis": bis,
                 "fach": clean(fa.text if fa is not None else ""),
                 "lehrer": clean(le.text if le is not None else ""),
                 "raum": clean(ra.text if ra is not None else ""),
@@ -157,10 +212,60 @@ def stunden_index(plan):
     return {(s["st"], s["nr"]): s for s in plan["stunden"]}
 
 
+def faellt_aus(s):
+    return s["fach"] in ("---", "", "?")
+
+
+def zeitfenster(s):
+    """'07:30–08:15', oder '' wenn der Plan keine Zeiten mitliefert."""
+    von, bis = s.get("von", ""), s.get("bis", "")
+    return f"{von}–{bis}" if von and bis else ""
+
+
+def zeitspanne(plan):
+    """Von wann bis wann tatsaechlich Unterricht ist - Ausfaelle zaehlen nicht mit."""
+    if not plan:
+        return ""
+    aktiv = [s for s in plan["stunden"] if not faellt_aus(s)]
+    beginn = sorted(s["von"] for s in aktiv if s.get("von"))
+    ende = sorted(s["bis"] for s in aktiv if s.get("bis"))
+    return f"{beginn[0]}–{ende[-1]}" if beginn and ende else ""
+
+
+def stundenspanne(plan):
+    """'2.-7. Std' fuer die Stunden, die stattfinden."""
+    nummern = sorted(
+        (int(s["st"]) for s in plan["stunden"] if not faellt_aus(s) and s["st"].isdigit()),
+    )
+    if not nummern:
+        return ""
+    if nummern[0] == nummern[-1]:
+        return f"{nummern[0]}. Std"
+    return f"{nummern[0]}.-{nummern[-1]}. Std"
+
+
+def tagesueberblick(neu, alt=None):
+    """Die Zeile 'von wann bis wann habe ich an dem Tag' - steht in jeder Meldung."""
+    if not neu["stunden"]:
+        return ""
+    spanne = zeitspanne(neu)
+    stunden = stundenspanne(neu)
+    if not spanne and not stunden:
+        return "\U0001f550 kein Unterricht"
+    zeile = "\U0001f550 " + (f"{spanne} ({stunden})" if spanne and stunden else spanne or stunden)
+    vorher = zeitspanne(alt) if alt else ""
+    if vorher and vorher != spanne:
+        zeile += f"   (vorher {vorher})"
+    return zeile
+
+
 def beschreibe(s):
     """Eine Stunde als lesbare Zeile."""
     stunde = f"{s['st']}. Std"
-    if s["fach"] in ("---", "", "?"):
+    fenster = zeitfenster(s)
+    if fenster:
+        stunde += f" ({fenster})"
+    if faellt_aus(s):
         text = s["info"] or f"{s['regel'][0]} faellt aus"
         return f"\U0001f534 {stunde}: {text}"
     teile = [s["fach"]]
@@ -195,7 +300,9 @@ def diff_plan(alt, neu):
             zeilen.append(beschreibe(b[key]) + "   (vorher: " + kurz(a[key]) + ")")
     for key in sorted(a, key=lambda k: (len(k[0]), k[0])):
         if key not in b:
-            zeilen.append(f"✅ {a[key]['st']}. Std: Aenderung aufgehoben ({kurz(a[key])})")
+            fenster = zeitfenster(a[key])
+            stunde = f"{a[key]['st']}. Std" + (f" ({fenster})" if fenster else "")
+            zeilen.append(f"✅ {stunde}: Aenderung aufgehoben ({kurz(a[key])})")
 
     alt_z, neu_z = [z for z in alt["zusatz"] if z], [z for z in neu["zusatz"] if z]
     for z in neu_z:
@@ -209,7 +316,7 @@ def diff_plan(alt, neu):
 
 
 def kurz(s):
-    if s["fach"] in ("---", "", "?"):
+    if faellt_aus(s):
         return s["info"] or "Ausfall"
     return " ".join(filter(None, [s["fach"], s["lehrer"], s["raum"]]))
 
@@ -291,11 +398,13 @@ def main():
             zeilen = diff_plan(vorher, neu)
         if not zeilen:
             continue
-        kopf = html.escape(neu["datum"] or key)
+        titel = html.escape(neu["datum"] or key)
         if vorher is None and not args.force:
-            kopf = f"\U0001f4c5 <b>NEU: {kopf}</b>"
-        else:
-            kopf = f"\U0001f4c5 <b>{kopf}</b>"
+            titel = f"NEU: {titel}"
+        kopf = f"\U0001f4c5 <b>{titel}</b>"
+        ueberblick = tagesueberblick(neu, None if args.force else vorher)
+        if ueberblick:
+            kopf += "\n" + html.escape(ueberblick)
         bloecke.append(kopf + "\n" + "\n".join(html.escape(z) for z in zeilen))
 
     # Tage, die aus dem Plan verschwunden sind, still verwerfen (vergangene Tage)

@@ -24,15 +24,35 @@ verglichen und nur echte Unterschiede gemeldet.
 Der Zeitstempel des Exports ist bewusst **nicht** Teil des Vergleichs — sonst
 würde jedes erneute Hochladen ohne inhaltliche Änderung eine Nachricht auslösen.
 
+## Unterrichtszeiten
+
+Die Zeiten stehen im selben XML und kommen damit direkt von der Schule statt aus
+einer abgetippten Tabelle:
+
+| Quelle | Bedeutung |
+|---|---|
+| `<Std><Beg>` / `<End>` | Zeit der einzelnen Stunde, falls Indiware sie mitschickt |
+| `<KlStunden><KlSt ZeitVon= ZeitBis=>` | Zeitraster der Klasse, als Rückfallebene je Stundennummer |
+
+Jeder Tagesblock bekommt dadurch eine Kopfzeile „von wann bis wann habe ich
+heute“, und jede Stundenzeile ihr eigenes Zeitfenster. Ausgefallene Stunden am
+Rand zählen nicht mit — fällt die erste Stunde aus, verschiebt sich der Beginn
+und die Meldung nennt den alten Wert in Klammern.
+
+Liefert der Export ausnahmsweise gar keine Zeiten, bleiben die Meldungen wie
+bisher ohne Uhrzeiten. Als Notnagel lässt sich das Raster dann über die Variable
+`PLAN_ZEITEN` fest hinterlegen (siehe unten).
+
 ## Nachrichtenformat
 
 ```
 Vertretungsplan FOS25W
 
 📅 Freitag, 03. Juli 2026
-🔴 2. Std: KU Herr Natusch fällt aus
-🟡 4. Std: MA bei ENG in A163   (vorher: KU NAT A211)
-✅ 6. Std: Änderung aufgehoben (VBR fällt aus)
+🕐 09:25–13:50 (3.-8. Std)   (vorher 07:30–13:50)
+🔴 2. Std (08:20–09:05): KU Herr Natusch fällt aus
+🟡 4. Std (10:15–11:00): MA bei ENG in A163   (vorher: KU NAT A211)
+✅ 6. Std (12:10–12:55): Änderung aufgehoben (VBR fällt aus)
 ℹ️ neu: FOS25S: Zeugnisausgabe: 2.Stunde, CRS, A163
 ```
 
@@ -49,11 +69,12 @@ Unter *Settings → Secrets and variables → Actions*:
 | `TG_TOKEN` | Bot-Token von @BotFather |
 | `TG_CHAT` | eigene Telegram-Chat-ID |
 
-**Variable** (optional)
+**Variablen** (optional)
 
 | Name | Wert |
 |---|---|
 | `PLAN_KLASSE` | Klassenkürzel, Standard `FOS25W` |
+| `PLAN_ZEITEN` | festes Zeitraster als Rückfallebene, z. B. `1=07:30-08:15,2=08:20-09:05,…`. Leer lassen, solange die Zeiten aus dem XML kommen. |
 
 ## Lokal testen
 

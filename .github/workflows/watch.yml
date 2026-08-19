@@ -24,6 +24,7 @@ jobs:
           PLAN_USER: ${{ secrets.PLAN_USER }}
           PLAN_PASS: ${{ secrets.PLAN_PASS }}
           PLAN_KLASSE: ${{ vars.PLAN_KLASSE || 'FOS25W' }}
+          PLAN_ZEITEN: ${{ vars.PLAN_ZEITEN }}    # nur noetig, wenn das XML keine Zeiten liefert
           TG_TOKEN: ${{ secrets.TG_TOKEN }}
           TG_CHAT: ${{ secrets.TG_CHAT }}
         run: python3 watcher.py
