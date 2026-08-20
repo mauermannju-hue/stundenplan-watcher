@@ -1,0 +1,32 @@
+name: Tagesplan zweite Klasse
+
+on:
+  schedule:
+    # Cron ist UTC. 04:12 trifft im Sommer 06:12 Berliner Zeit, 05:12 im Winter.
+    # Das Skript selbst prueft die Berliner Stunde und bricht ausserhalb ab,
+    # damit die Nachricht ganzjaehrig gegen 06:12 Uhr kommt - nicht zweimal.
+    - cron: "12 4,5 * * 1-5"
+  workflow_dispatch:
+
+permissions:
+  contents: read              # dieser Lauf schreibt keinen Zustand zurueck
+
+concurrency:
+  group: tagesplan-zweite-klasse
+  cancel-in-progress: false
+
+jobs:
+  tagesplan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Tagesplan schicken
+        env:
+          PLAN_USER: ${{ secrets.PLAN_USER }}
+          PLAN_PASS: ${{ secrets.PLAN_PASS }}
+          PLAN_KLASSE2: ${{ vars.PLAN_KLASSE2 || 'SOZ25R1' }}
+          TG_TOKEN: ${{ secrets.TG_TOKEN }}
+          TG_CHAT: ${{ secrets.TG_CHAT }}
+          DAILY_HOUR: ${{ vars.DAILY_HOUR || '6' }}
+        run: python3 watcher.py --daily

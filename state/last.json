@@ -1,125 +1,203 @@
 {
  "plaene": {
-  "20260703": {
-   "datum": "Freitag, 03. Juli 2026",
+  "20260820": {
+   "datum": "Donnerstag, 20. August 2026",
+   "gefunden": true,
    "stunden": [
     {
-     "fach": "---",
-     "geaendert": [
-      "Fach",
-      "Lehrer",
-      "Raum"
-     ],
-     "info": "KU Herr Natusch fällt aus",
-     "lehrer": "",
-     "nr": "621",
-     "raum": "",
+     "fach": "FA",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "HER",
+     "nr": "630",
+     "raum": "N311",
      "regel": [
-      "KU",
-      "NAT"
+      "FA",
+      "HER"
      ],
      "st": "2"
     },
     {
-     "fach": "---",
-     "geaendert": [
-      "Fach",
-      "Lehrer",
-      "Raum"
-     ],
-     "info": "KU Herr Natusch fällt aus",
-     "lehrer": "",
-     "nr": "621",
-     "raum": "",
+     "fach": "BIO",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "SDR",
+     "nr": "625",
+     "raum": "A141",
      "regel": [
-      "KU",
-      "NAT"
+      "BIO",
+      "SDR"
      ],
      "st": "3"
     },
     {
-     "fach": "---",
-     "geaendert": [
-      "Fach",
-      "Lehrer",
-      "Raum"
-     ],
-     "info": "MA Herr Engemann fällt aus",
-     "lehrer": "",
-     "nr": "622",
-     "raum": "",
+     "fach": "BIO",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "SDR",
+     "nr": "625",
+     "raum": "A141",
      "regel": [
-      "MA",
-      "ENG"
+      "BIO",
+      "SDR"
      ],
      "st": "4"
     },
     {
-     "fach": "---",
-     "geaendert": [
-      "Fach",
-      "Lehrer",
-      "Raum"
-     ],
-     "info": "MA Herr Engemann fällt aus",
-     "lehrer": "",
-     "nr": "622",
-     "raum": "",
+     "fach": "MA",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "MIS",
+     "nr": "637",
+     "raum": "N325",
      "regel": [
       "MA",
-      "ENG"
+      "MIS"
      ],
      "st": "5"
     },
     {
-     "fach": "---",
-     "geaendert": [
-      "Fach",
-      "Lehrer",
-      "Raum"
-     ],
-     "info": "VBR Frau Pfeiffer-Krause fällt aus",
-     "lehrer": "",
-     "nr": "616",
-     "raum": "",
+     "fach": "S",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "SCÄ",
+     "nr": "639",
+     "raum": "AHR",
      "regel": [
-      "VBR",
-      "PKR"
+      "S",
+      "SCÄ"
      ],
      "st": "6"
     },
     {
-     "fach": "---",
-     "geaendert": [
-      "Fach",
-      "Lehrer",
-      "Raum"
+     "fach": "S",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "SCÄ",
+     "nr": "639",
+     "raum": "AHR",
+     "regel": [
+      "S",
+      "SCÄ"
      ],
-     "info": "VBR Frau Pfeiffer-Krause fällt aus",
-     "lehrer": "",
-     "nr": "616",
-     "raum": "",
+     "st": "7"
+    },
+    {
+     "fach": "DE",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "SCÄ",
+     "nr": "626",
+     "raum": "A247",
+     "regel": [
+      "DE",
+      "SCÄ"
+     ],
+     "st": "8"
+    }
+   ],
+   "zeitstempel": "20.08.2026, 07:38",
+   "zusatz": [
+    "FB BSI:",
+    "BVJ: Sonderplan",
+    "",
+    "FB BGy:",
+    "BGY25: Projekttage Belegarbeit: 19.08. bis 21:08. nach Sonderplan",
+    "",
+    "FB PT:",
+    "PT23: 15:30 Uhr Zeugnisausabe mit BRA, WRO, WAG, MES, LEH, GRY, GIE, N024"
+   ]
+  },
+  "20260821": {
+   "datum": "Freitag, 21. August 2026",
+   "gefunden": true,
+   "stunden": [
+    {
+     "fach": "VBR",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "KRAU",
+     "nr": "632",
+     "raum": "N223",
      "regel": [
       "VBR",
-      "PKR"
+      "KRAU"
+     ],
+     "st": "2"
+    },
+    {
+     "fach": "VBR",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "KRAU",
+     "nr": "632",
+     "raum": "N223",
+     "regel": [
+      "VBR",
+      "KRAU"
+     ],
+     "st": "3"
+    },
+    {
+     "fach": "VBR",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "KRAU",
+     "nr": "632",
+     "raum": "N223",
+     "regel": [
+      "VBR",
+      "KRAU"
+     ],
+     "st": "4"
+    },
+    {
+     "fach": "KU",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "NAT",
+     "nr": "640",
+     "raum": "A336",
+     "regel": [
+      "KU",
+      "NAT"
+     ],
+     "st": "5"
+    },
+    {
+     "fach": "DE",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "SCÄ",
+     "nr": "626",
+     "raum": "A247",
+     "regel": [
+      "DE",
+      "SCÄ"
+     ],
+     "st": "6"
+    },
+    {
+     "fach": "DE",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "SCÄ",
+     "nr": "626",
+     "raum": "A247",
+     "regel": [
+      "DE",
+      "SCÄ"
      ],
      "st": "7"
     }
    ],
-   "zeitstempel": "02.07.2026, 17:33",
+   "zeitstempel": "20.08.2026, 13:58",
    "zusatz": [
-    "FB Pflege:",
-    "Zeugnisausgaben:",
-    "PFF24: BOD, 3.Stunde",
-    "KPH25: MAIW, 4.Stunde",
+    "FB BSI:",
+    "BVJ: Sonderplan",
     "",
-    "FB FOS/PT:",
-    "FOS25S: Zeugnisausgabe: 2.Stunde, CRS, A163",
-    "PT24: Zeugnisausgabe, 2. Stunde, BRA, A307",
-    "",
-    "FB SOZ:",
-    "SOZ25R1/SOZ25R2: 2./3.Stunde  Klassenleiterstunden, A048, FEL, EB",
-    "HEP23/SPE23: Zeugnisausgabe: 10:00 Uhr, Aula"
+    "FB BGy:",
+    "BGY25: Projekttage Belegarbeit: 19.08. bis 21:08. nach Sonderplan"
    ]
   }
  }
