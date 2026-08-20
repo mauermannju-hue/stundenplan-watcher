@@ -21,6 +21,9 @@ jobs:
     steps:
       - uses: actions/checkout@v5
 
+      - name: Pillow fuer die Bildkarte
+        run: pip install --quiet pillow
+
       - name: Tagesplan schicken
         env:
           PLAN_USER: ${{ secrets.PLAN_USER }}

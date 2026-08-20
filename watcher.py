@@ -10,6 +10,7 @@ Nur Standardbibliothek - keine Abhaengigkeiten.
 
 import argparse
 import base64
+import re
 import html
 import json
 import os
@@ -135,6 +136,79 @@ def klingelplan():
     return "\n".join(zeilen)
 
 
+def zusammenfassen(stunden, hinweis=""):
+    """Fasst aufeinanderfolgende, inhaltlich gleiche Stunden zu einem Block zusammen.
+
+    Eine Doppelstunde steht im XML als zwei identische <Std>-Eintraege. Untereinander
+    gedruckt liest sich das wie zwei verschiedene Termine - zusammengefasst wie ein
+    Stundenplan.
+    """
+    bloecke = []
+    for s in sorted(stunden, key=lambda x: sortier(x["st"])):
+        sig = (s["fach"], s["lehrer"], s["raum"], s["info"])
+        try:
+            nr = int(s["st"])
+        except (TypeError, ValueError):
+            nr = None
+        if bloecke and bloecke[-1]["_sig"] == sig and nr is not None and nr == bloecke[-1]["_bis"] + 1:
+            bloecke[-1]["_bis"] = nr
+            continue
+        bloecke.append({"_sig": sig, "_von": nr, "_bis": nr, "_roh": s})
+
+    fertig = []
+    for b in bloecke:
+        s = b["_roh"]
+        von, bis = b["_von"], b["_bis"]
+        z1 = zeit_fuer(str(von), s["raum"], hinweis)
+        z2 = zeit_fuer(str(bis), s["raum"], hinweis)
+        if z1 and z2 and "/" not in z1 and "/" not in z2:
+            zeit = z1.split("–")[0] + "–" + z2.split("–")[1]
+        else:
+            zeit = z1 or ""
+        if s["fach"] in ("---", "", "?"):
+            art = "ausfall"
+        elif s.get("geaendert"):
+            art = "geaendert"
+        else:
+            art = "normal"
+        fertig.append({
+            "von": von, "bis": bis,
+            "stunden": f"{von}. Std" if von == bis else f"{von}.–{bis}. Std",
+            "zeit": zeit,
+            "fach": s["fach"] if art != "ausfall" else (s["regel"][0] or "entfällt"),
+            "lehrer": s["lehrer"], "raum": s["raum"], "info": s["info"],
+            "art": art,
+        })
+    return fertig
+
+
+def klassen_praefix(klasse):
+    treffer = re.match(r"^[A-Za-zÄÖÜäöü]+", klasse or "")
+    return treffer.group(0).upper() if treffer else (klasse or "").upper()
+
+
+def hinweise_filtern(zusatz, klasse):
+    """Nur den eigenen Fachbereich und Zeilen, in denen die Klasse vorkommt.
+
+    Die ZusatzInfo enthaelt die Ansagen aller Fachbereiche der Schule - ungefiltert
+    sind das schnell 15 Zeilen, von denen eine einzige einen betrifft.
+    """
+    praefix = klassen_praefix(klasse)
+    raus, relevant = [], False
+    for z in zusatz:
+        z = (z or "").strip()
+        if not z:
+            continue
+        if z.upper().startswith("FB"):
+            relevant = praefix in z.upper()
+            if relevant:
+                raus.append(z)
+            continue
+        if relevant or klasse.upper() in z.upper():
+            raus.append(z)
+    return raus
+
+
 # --------------------------------------------------------------------------- Parsing
 
 def clean(text):
@@ -249,6 +323,9 @@ def sammle_plaene(user, password, klasse, log=lambda *_: None):
 
 # --------------------------------------------------------------------------- Diff
 
+klasse_kontext = [""]
+
+
 def stunden_index(plan):
     return {(s["st"], s["nr"]): s for s in plan["stunden"]}
 
@@ -259,6 +336,20 @@ def sortier(st):
         return (0, int(st))
     except (TypeError, ValueError):
         return (1, 0)
+
+
+def beschreibe_block(b):
+    """Eine zusammengefasste Stunde als Textzeile."""
+    zeit = f"{b['zeit']}  " if b["zeit"] else ""
+    if b["art"] == "ausfall":
+        text = b["info"] or f"{b['fach']} fällt aus"
+        return f"\U0001f534 {zeit}{b['stunden']} — {text}"
+    symbol = "\U0001f7e1" if b["art"] == "geaendert" else "\u25ab\ufe0f"
+    teile = [x for x in (b["fach"], b["lehrer"], b["raum"]) if x]
+    zeile = f"{symbol} {zeit}" + " · ".join(teile)
+    if b["info"]:
+        zeile += f" – {b['info']}"
+    return zeile
 
 
 def beschreibe(s, hinweis=""):
@@ -286,11 +377,10 @@ def diff_plan(alt, neu):
     zeilen = []
 
     if alt is None:
-        for s in sorted(neu["stunden"], key=lambda x: sortier(x["st"])):
-            zeilen.append(beschreibe(s, hinweis))
-        for z in neu["zusatz"]:
-            if z:
-                zeilen.append(f"ℹ️ {z}")
+        for b in zusammenfassen(neu["stunden"], hinweis):
+            zeilen.append(beschreibe_block(b))
+        for z in hinweise_filtern(neu["zusatz"], klasse_kontext[0]):
+            zeilen.append(f"ℹ️ {z}")
         return zeilen
 
     a, b = stunden_index(alt), stunden_index(neu)
@@ -304,7 +394,8 @@ def diff_plan(alt, neu):
         if key not in b:
             zeilen.append(f"✅ {a[key]['st']}. Std: Aenderung aufgehoben ({kurz(a[key])})")
 
-    alt_z, neu_z = [z for z in alt["zusatz"] if z], [z for z in neu["zusatz"] if z]
+    alt_z = hinweise_filtern(alt["zusatz"], klasse_kontext[0])
+    neu_z = hinweise_filtern(neu["zusatz"], klasse_kontext[0])
     for z in neu_z:
         if z not in alt_z:
             zeilen.append(f"ℹ️ neu: {z}")
@@ -341,6 +432,38 @@ def sende(token, chat_id, text):
                 json.loads(resp.read())
         except urllib.error.HTTPError as exc:
             raise RuntimeError(f"Telegram lehnte ab ({exc.code}): {exc.read().decode()[:300]}")
+
+
+def sende_foto(token, chat_id, pfad, caption=""):
+    grenze = f"----stundenplan{os.getpid()}"
+    teile = []
+
+    def feld(name, wert):
+        teile.append(f'--{grenze}\r\nContent-Disposition: form-data; name="{name}"\r\n\r\n'
+                     .encode() + str(wert).encode() + b"\r\n")
+
+    feld("chat_id", chat_id)
+    feld("parse_mode", "HTML")
+    if caption:
+        feld("caption", caption[:1024])
+    with open(pfad, "rb") as fh:
+        daten = fh.read()
+    teile.append(f'--{grenze}\r\nContent-Disposition: form-data; name="photo"; '
+                 f'filename="plan.png"\r\nContent-Type: image/png\r\n\r\n'.encode())
+    teile.append(daten)
+    teile.append(b"\r\n" + f"--{grenze}--\r\n".encode())
+
+    req = urllib.request.Request(
+        f"https://api.telegram.org/bot{token}/sendPhoto",
+        data=b"".join(teile),
+        headers={"Content-Type": f"multipart/form-data; boundary={grenze}",
+                 "User-Agent": USER_AGENT},
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=TIMEOUT) as resp:
+            json.loads(resp.read())
+    except urllib.error.HTTPError as exc:
+        raise RuntimeError(f"Telegram lehnte das Bild ab ({exc.code}): {exc.read().decode()[:300]}")
 
 
 def teile_nachricht(text, limit=3900):
@@ -429,37 +552,41 @@ def lauf_taeglich(args, zugang, klasse, log):
     plan = datiert[key]
     hinweis = gebaeude_hinweis(plan["stunden"])
 
-    zeilen = []
-    for s in sorted(plan["stunden"], key=lambda x: sortier(x["st"])):
-        zeilen.append(beschreibe(s, hinweis))
-    if not zeilen:
-        zeilen.append("\u2014 kein Unterricht im Plan (Klasse steht an diesem Tag nicht drin)"
-                      if not plan.get("gefunden")
-                      else "\u2014 keine Stunden eingetragen")
-    for z in plan["zusatz"]:
-        if z:
-            zeilen.append(f"ℹ️ {z}")
+    bloecke = zusammenfassen(plan["stunden"], hinweis)
+    hinweise = hinweise_filtern(plan["zusatz"], klasse)
+    titel = plan["datum"] or key
 
-    nachricht = (
-        f"<b>Tagesplan {html.escape(klasse)}</b>\n"
-        f"\U0001f4c5 <b>{html.escape(plan['datum'] or key)}</b>\n"
-        + "\n".join(html.escape(z) for z in zeilen)
-        + (("\n\u26a0\ufe0f Die Klasse " + html.escape(klasse)
-            + " steht in keiner Klassenliste mehr."
-            + (" Vorhanden: " + html.escape(", ".join(unbekannt)) if unbekannt else ""))
-           if unbekannt is not None else "")
-        + "\n\n\U0001f550 <b>Unterrichtszeiten</b>\n<pre>"
-        + html.escape(klingelplan())
-        + "</pre>"
-    )
+    caption_teile = [f"<b>{html.escape(klasse)}</b> · {html.escape(titel)}"]
+    if not plan.get("gefunden"):
+        caption_teile.append("— kein Unterricht im Plan (Klasse steht an diesem Tag nicht drin)")
+    for z in hinweise:
+        caption_teile.append(f"ℹ️ {html.escape(z)}")
+    if unbekannt is not None:
+        caption_teile.append("⚠️ Die Klasse " + html.escape(klasse)
+                             + " steht in keiner Klassenliste mehr."
+                             + (" Vorhanden: " + html.escape(", ".join(unbekannt)) if unbekannt else ""))
+    caption = "\n".join(caption_teile)
 
     if args.dry_run:
         print("\n--- Tagesplan (dry-run) ---\n")
-        print(nachricht)
+        print(caption)
+        for b in bloecke:
+            print("   " + beschreibe_block(b))
         return
 
-    sende(args.tg_token, args.tg_chat, nachricht)
-    print(f"Tagesplan {klasse} fuer {key} verschickt.")
+    import bild
+    if bild.verfuegbar():
+        ziel = os.path.join(os.path.dirname(os.path.abspath(__file__)), "plan.png")
+        bild.rendere(klasse, titel, bloecke, ziel)
+        sende_foto(args.tg_token, args.tg_chat, ziel, caption)
+        os.remove(ziel)
+        print(f"Tagesplan {klasse} fuer {key} als Bild verschickt.")
+        return
+
+    log("Pillow/Schrift nicht verfuegbar - schicke Textfassung.")
+    zeilen = [beschreibe_block(b) for b in bloecke] or ["— kein Unterricht im Plan"]
+    sende(args.tg_token, args.tg_chat, caption + "\n" + "\n".join(zeilen))
+    print(f"Tagesplan {klasse} fuer {key} als Text verschickt.")
 
 
 def berliner_stunde():
@@ -494,12 +621,14 @@ def main():
         raise SystemExit("FEHLER: TG_TOKEN und TG_CHAT muessen gesetzt sein.")
 
     log = print if (args.dry_run or os.environ.get("VERBOSE")) else (lambda *_: None)
+    klasse_kontext[0] = klasse
 
     if args.daily:
         stunde = berliner_stunde()
         if not (args.force or args.dry_run) and stunde != daily_hour:
             print(f"Nicht im Zeitfenster (Berlin {stunde}:xx, gewuenscht {daily_hour}:xx) - uebersprungen.")
             return
+        klasse_kontext[0] = klasse2
         log(f"Tagesplan {klasse2}, Abruf laeuft ...")
         lauf_taeglich(args, (user, password), klasse2, log)
         return

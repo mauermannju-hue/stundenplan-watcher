@@ -6,7 +6,11 @@ vom eigenen Rechner:
 1. **Änderungsmeldung** — prüft den Plan der Klasse **FOS25W** alle 20 Minuten und
    meldet sich, sobald sich etwas ändert (`watch.yml`).
 2. **Tagesplan** — schickt jeden Schultag gegen 06:12 Uhr den kompletten Plan der
-   Klasse **SOZ25** samt Klingelplan (`daily.yml`).
+   Klasse **SOZ25** als gerenderte Bildkarte (`daily.yml`).
+
+Warum unterschiedlich: Änderungsmeldungen müssen in der Telegram-Vorschau auf dem
+Sperrbildschirm lesbar sein — bei einem Bild stünde dort nur „Foto". Der Tagesplan
+dagegen ist eine Tabelle und gewinnt durch die Bilddarstellung.
 
 ## Wie es funktioniert
 
@@ -46,6 +50,24 @@ unklar, nennt die Nachricht beide Zeiten.
 
 Der komplette Klingelplan hängt einmal täglich unter dem Tagesplan, nicht unter jeder
 Änderungsmeldung.
+
+## Darstellung
+
+**Folgestunden werden zusammengefasst.** Eine Doppelstunde steht im XML als zwei
+identische `<Std>`-Einträge; untereinander gedruckt liest sich das wie zwei Termine.
+Zusammengefasst wird daraus `08:50–10:40  LF1 · ULL · A344`.
+
+**Die Hinweise sind auf die eigene Klasse gefiltert.** Die `ZusatzInfo` enthält die
+Ansagen aller Fachbereiche — ungefiltert schnell 15 Zeilen, von denen eine einzige
+einen betrifft. Gezeigt wird der eigene Fachbereich (Abgleich über das Buchstaben-
+präfix der Klasse gegen die `FB …:`-Überschriften) plus jede Zeile, in der die Klasse
+namentlich vorkommt. Preis dieser Schärfe: schulweite Ansagen, die unter einem fremden
+Fachbereich stehen, fallen weg.
+
+**Die Bildkarte** rendert `bild.py` mit Pillow — dunkle Karte, Zeit links, Fach fett,
+farbiger Balken je Zeile (rot Ausfall, gelb geändert). Fehlt Pillow oder eine
+brauchbare Schrift, meldet `bild.verfuegbar()` das und der Tagesplan geht als Text
+raus; der Watcher fällt also nicht aus, er wird nur schlichter.
 
 ## Nachrichtenformat
 
@@ -101,6 +123,10 @@ Nur Python-Standardbibliothek, keine Installation nötig.
 - **Tagesplan zu früh/spät?** `DAILY_HOUR` setzen. Der Cron in `daily.yml` feuert
   bewusst zweimal (04:12 und 05:12 UTC); das Skript prüft die Berliner Stunde und
   bricht beim falschen Lauf ab — so stimmt die Uhrzeit ganzjährig trotz Sommerzeit.
+- **Klasse umbenannt?** Zum Schuljahreswechsel benennt die Schule Klassen um — aus
+  `SOZ25R1` wurde `SOZ25`. Taucht die eingestellte Klasse in keiner Klassenliste mehr
+  auf, schreibt der Bot das ausdrücklich in die Nachricht und nennt die ähnlichen
+  vorhandenen Klassen. Ohne diesen Hinweis liefe er stumm ins Leere.
 - **Klasse steht nicht im Plan?** Dann meldet der Tagesplan das ausdrücklich. Nicht
   jede Klasse hat jeden Tag Unterricht (Blockunterricht, Praxisphasen).
 - **Zu viele/zu wenige Prüfungen?** `cron` in `.github/workflows/watch.yml`
