@@ -9,7 +9,7 @@ import os
 
 BREITE = 720
 RAND = 32
-KOPF_HOEHE = 132
+KOPF_HOEHE = 168
 ZEILE_HOEHE = 68
 FUSS_HOEHE = 58
 SKALA = 2                      # doppelt rendern, damit es auf Retina scharf ist
@@ -20,6 +20,7 @@ KARTE_ALT = (33, 37, 45)
 TEXT = (232, 234, 237)
 MUTED = (150, 157, 167)
 TRENNER = (48, 53, 62)
+SPANNE = (104, 186, 232)      # eigener Ton, damit es nicht mit "geaendert" (gelb) verwechselt wird
 
 FARBE = {
     "normal": (70, 78, 90),
@@ -54,7 +55,7 @@ def verfuegbar():
     return bool(_erste(SCHRIFTEN) and _erste(SCHRIFTEN_FETT))
 
 
-def rendere(klasse, datum, bloecke, ziel):
+def rendere(klasse, datum, bloecke, ziel, spanne=""):
     """bloecke: Liste von dicts aus watcher.zusammenfassen(). Gibt den Pfad zurueck."""
     from PIL import Image, ImageDraw, ImageFont
 
@@ -65,6 +66,7 @@ def rendere(klasse, datum, bloecke, ziel):
     f_fach = ImageFont.truetype(fett, 25 * SKALA)
     f_detail = ImageFont.truetype(regular, 21 * SKALA)
     f_fuss = ImageFont.truetype(regular, 18 * SKALA)
+    f_spanne = ImageFont.truetype(fett, 23 * SKALA)
 
     zeilen = bloecke or [None]
     hoehe = KOPF_HOEHE + len(zeilen) * ZEILE_HOEHE + FUSS_HOEHE
@@ -84,6 +86,8 @@ def rendere(klasse, datum, bloecke, ziel):
     # Kopf
     schrift(RAND, 34, klasse, f_titel, TEXT)
     schrift(RAND, 80, datum, f_datum, MUTED)
+    if spanne:
+        schrift(RAND, 116, spanne, f_spanne, SPANNE)
     d.line([(RAND * SKALA, (KOPF_HOEHE - 14) * SKALA),
             ((BREITE - RAND) * SKALA, (KOPF_HOEHE - 14) * SKALA)], fill=TRENNER, width=SKALA)
 

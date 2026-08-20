@@ -108,6 +108,16 @@ def zeit_fuer(st, raum="", hinweis=""):
     return f"{beginn}–{ende} / Neubau {n_beginn}–{n_ende}"
 
 
+def zeit_paar(st, raum="", hinweis=""):
+    """(Beginn, Ende) einer Stunde. Bei unklarem Gebaeude gilt der Altbau."""
+    st = (st or "").strip()
+    if st not in ZEITEN:
+        return ("", "")
+    if st in ZEITEN_NEUBAU and (gebaeude(raum) or hinweis) == "N":
+        return ZEITEN_NEUBAU[st]
+    return ZEITEN[st]
+
+
 def gebaeude_hinweis(stunden):
     """Mehrheitliches Gebaeude des Tages - hilft bei Stunden ohne Raumangabe."""
     zaehler = {"A": 0, "N": 0}
@@ -171,7 +181,10 @@ def zusammenfassen(stunden, hinweis=""):
             art = "geaendert"
         else:
             art = "normal"
+        p_von = zeit_paar(str(von), s["raum"], hinweis)
+        p_bis = zeit_paar(str(bis), s["raum"], hinweis)
         fertig.append({
+            "beginn": p_von[0], "ende": p_bis[1],
             "von": von, "bis": bis,
             "stunden": f"{von}. Std" if von == bis else f"{von}.–{bis}. Std",
             "zeit": zeit,
@@ -180,6 +193,34 @@ def zusammenfassen(stunden, hinweis=""):
             "art": art,
         })
     return fertig
+
+
+def tagesspanne(bloecke, key=""):
+    """'heute 07:55 bis 14:40' - Ausfallstunden an den Raendern zaehlen nicht mit."""
+    wann = "heute"
+    if key.isdigit() and len(key) == 8:
+        try:
+            tag = date(int(key[:4]), int(key[4:6]), int(key[6:]))
+            delta = (tag - date.today()).days
+            wann = {0: "heute", 1: "morgen"}.get(delta)
+            if wann is None:
+                wann = ("Montag", "Dienstag", "Mittwoch", "Donnerstag",
+                        "Freitag", "Samstag", "Sonntag")[tag.weekday()]
+        except ValueError:
+            pass
+
+    if not bloecke:
+        return f"{wann} kein Unterricht im Plan"
+    aktiv = [b for b in bloecke if b["art"] != "ausfall" and b["beginn"] and b["ende"]]
+    if not aktiv:
+        return f"{wann} fällt alles aus"
+
+    text = f"{wann} {aktiv[0]['beginn']} bis {aktiv[-1]['ende']}"
+    rand = [b for b in bloecke if b["art"] == "ausfall"
+            and (b["bis"] < aktiv[0]["von"] or b["von"] > aktiv[-1]["bis"])]
+    if rand:
+        text += " (" + ", ".join(b["stunden"] for b in rand) + " fällt aus)"
+    return text
 
 
 def klassen_praefix(klasse):
@@ -274,28 +315,24 @@ def freie_tage(raw):
         return set()
 
 
-def sammle_plaene(user, password, klasse, log=lambda *_: None):
-    """Holt Klassen.xml (= aktuellster Tag) plus alle kuenftigen Tagesdateien.
+def sammle_roh(user, password, log=lambda *_: None):
+    """Holt die XML-Dateien einmal. Gibt (rohdaten, bekannte_klassen) zurueck.
 
-    Gibt (plaene, bekannte_klassen) zurueck. Die Klassenliste dient nur der
-    Diagnose - die Schule benennt Klassen zum Schuljahreswechsel um, und ohne
-    diesen Abgleich liefe der Watcher stumm ins Leere.
+    Getrennt vom Parsen, damit mehrere Klassen aus denselben Abrufen bedient
+    werden koennen statt jede Klasse die Dateien erneut zu ziehen.
     """
-    plaene = {}
-    bekannt = []
+    roh, bekannt = {}, []
 
     aktuell = fetch(BASE + "Klassen.xml", user, password)
     frei = set()
     if aktuell:
         frei = freie_tage(aktuell)
         bekannt = sorted({clean(k.text) for k in ET.fromstring(aktuell).iter("Kurz") if clean(k.text)})
-        datei = ""
         kopf = ET.fromstring(aktuell).find("Kopf")
-        if kopf is not None:
-            datei = clean(kopf.findtext("datei"))
+        datei = clean(kopf.findtext("datei")) if kopf is not None else ""
         key = datei.replace("PlanKl", "").replace(".xml", "") or "aktuell"
-        plaene[key] = parse_plan(aktuell, klasse)
-        log(f"  Klassen.xml -> {key} ({plaene[key]['datum']})")
+        roh[key] = aktuell
+        log(f"  Klassen.xml -> {key}")
 
     heute = date.today()
     for offset in range(LOOKAHEAD_DAYS + 1):
@@ -305,12 +342,23 @@ def sammle_plaene(user, password, klasse, log=lambda *_: None):
         if tag.strftime("%y%m%d") in frei:           # Ferien / Feiertag
             continue
         key = tag.strftime("%Y%m%d")
-        if key in plaene:
+        if key in roh:
             continue
-        raw = fetch(f"{BASE}PlanKl{key}.xml", user, password)
-        if raw:
-            plaene[key] = parse_plan(raw, klasse)
-            log(f"  PlanKl{key}.xml -> {plaene[key]['datum']}")
+        daten = fetch(f"{BASE}PlanKl{key}.xml", user, password)
+        if daten:
+            roh[key] = daten
+            log(f"  PlanKl{key}.xml")
+
+    return roh, bekannt
+
+
+def sammle_plaene(user, password, klasse, log=lambda *_: None, roh=None):
+    """Tagesplaene einer Klasse. `roh` erlaubt es, bereits geholte Dateien wiederzuverwenden."""
+    if roh is None:
+        roh = sammle_roh(user, password, log)
+    rohdaten, bekannt = roh
+
+    plaene = {k: parse_plan(v, klasse) for k, v in rohdaten.items()}
 
     if bekannt and klasse not in bekannt:
         aehnlich = [k for k in bekannt if k[:3].upper() == klasse[:3].upper()]
@@ -503,7 +551,9 @@ def lauf_aenderungen(args, zugang, klasse, log):
         titel = html.escape(neu["datum"] or key)
         if vorher is None and not args.force:
             titel = f"NEU: {titel}"
-        bloecke.append(f"\U0001f4c5 <b>{titel}</b>\n" + "\n".join(html.escape(z) for z in zeilen))
+        spanne = tagesspanne(zusammenfassen(neu["stunden"], gebaeude_hinweis(neu["stunden"])), key)
+        bloecke.append(f"\U0001f4c5 <b>{titel}</b>\n\U0001f552 {html.escape(spanne)}\n"
+                       + "\n".join(html.escape(z) for z in zeilen))
 
     if args.init:
         schreibe_state(plaene)
@@ -533,60 +583,64 @@ def lauf_aenderungen(args, zugang, klasse, log):
 
 # --------------------------------------------------------------------------- Betriebsart: Tagesplan
 
-def lauf_taeglich(args, zugang, klasse, log):
-    """Kompletter Tagesplan einer zweiten Klasse, einmal pro Schultag."""
-    plaene = sammle_plaene(zugang[0], zugang[1], klasse, log)
-    unbekannt = plaene.pop("__unbekannt__", None)
-    datiert = {k: v for k, v in plaene.items() if k.isdigit()}
-    if not datiert:
-        log("Kein datierter Tagesplan verfuegbar - nichts zu senden.")
-        return
+def lauf_taeglich(args, zugang, klassen, log):
+    """Kompletter Tagesplan je Klasse - eine Karte pro Klasse, eine Abrufrunde."""
+    roh = sammle_roh(zugang[0], zugang[1], log)
 
-    heute = date.today().strftime("%Y%m%d")
-    kuenftig = sorted(k for k in datiert if k >= heute)
-    if not kuenftig:
-        log(f"Nur vergangene Plaene vorhanden (neuester {max(datiert)}) - nichts zu senden.")
-        return
+    for klasse in klassen:
+        klasse_kontext[0] = klasse
+        plaene = sammle_plaene(zugang[0], zugang[1], klasse, log, roh=roh)
+        unbekannt = plaene.pop("__unbekannt__", None)
+        datiert = {k: v for k, v in plaene.items() if k.isdigit()}
+        if not datiert:
+            log(f"{klasse}: kein datierter Tagesplan verfuegbar.")
+            continue
 
-    key = kuenftig[0]
-    plan = datiert[key]
-    hinweis = gebaeude_hinweis(plan["stunden"])
+        heute = date.today().strftime("%Y%m%d")
+        kuenftig = sorted(k for k in datiert if k >= heute)
+        if not kuenftig:
+            log(f"{klasse}: nur vergangene Plaene (neuester {max(datiert)}).")
+            continue
 
-    bloecke = zusammenfassen(plan["stunden"], hinweis)
-    hinweise = hinweise_filtern(plan["zusatz"], klasse)
-    titel = plan["datum"] or key
+        key = kuenftig[0]
+        plan = datiert[key]
+        hinweis = gebaeude_hinweis(plan["stunden"])
+        bloecke = zusammenfassen(plan["stunden"], hinweis)
+        spanne = tagesspanne(bloecke, key)
+        titel = plan["datum"] or key
 
-    caption_teile = [f"<b>{html.escape(klasse)}</b> · {html.escape(titel)}"]
-    if not plan.get("gefunden"):
-        caption_teile.append("— kein Unterricht im Plan (Klasse steht an diesem Tag nicht drin)")
-    for z in hinweise:
-        caption_teile.append(f"ℹ️ {html.escape(z)}")
-    if unbekannt is not None:
-        caption_teile.append("⚠️ Die Klasse " + html.escape(klasse)
-                             + " steht in keiner Klassenliste mehr."
-                             + (" Vorhanden: " + html.escape(", ".join(unbekannt)) if unbekannt else ""))
-    caption = "\n".join(caption_teile)
+        caption = [f"<b>{html.escape(klasse)}</b> · {html.escape(titel)}",
+                   f"\U0001f552 {html.escape(spanne)}"]
+        if not plan.get("gefunden"):
+            caption.append("— Klasse steht an diesem Tag nicht im Plan")
+        for z in hinweise_filtern(plan["zusatz"], klasse):
+            caption.append(f"ℹ️ {html.escape(z)}")
+        if unbekannt is not None:
+            caption.append("⚠️ Die Klasse " + html.escape(klasse)
+                           + " steht in keiner Klassenliste mehr."
+                           + (" Vorhanden: " + html.escape(", ".join(unbekannt)) if unbekannt else ""))
+        caption = "\n".join(caption)
 
-    if args.dry_run:
-        print("\n--- Tagesplan (dry-run) ---\n")
-        print(caption)
-        for b in bloecke:
-            print("   " + beschreibe_block(b))
-        return
+        if args.dry_run:
+            print(f"\n--- Tagesplan {klasse} (dry-run) ---\n")
+            print(caption)
+            for b in bloecke:
+                print("   " + beschreibe_block(b))
+            continue
 
-    import bild
-    if bild.verfuegbar():
-        ziel = os.path.join(os.path.dirname(os.path.abspath(__file__)), "plan.png")
-        bild.rendere(klasse, titel, bloecke, ziel)
-        sende_foto(args.tg_token, args.tg_chat, ziel, caption)
-        os.remove(ziel)
-        print(f"Tagesplan {klasse} fuer {key} als Bild verschickt.")
-        return
+        import bild
+        if bild.verfuegbar():
+            ziel = os.path.join(os.path.dirname(os.path.abspath(__file__)), f"plan_{klasse}.png")
+            bild.rendere(klasse, titel, bloecke, ziel, spanne)
+            sende_foto(args.tg_token, args.tg_chat, ziel, caption)
+            os.remove(ziel)
+            print(f"Tagesplan {klasse} fuer {key} als Bild verschickt.")
+            continue
 
-    log("Pillow/Schrift nicht verfuegbar - schicke Textfassung.")
-    zeilen = [beschreibe_block(b) for b in bloecke] or ["— kein Unterricht im Plan"]
-    sende(args.tg_token, args.tg_chat, caption + "\n" + "\n".join(zeilen))
-    print(f"Tagesplan {klasse} fuer {key} als Text verschickt.")
+        log("Pillow/Schrift nicht verfuegbar - schicke Textfassung.")
+        zeilen = [beschreibe_block(b) for b in bloecke] or ["— kein Unterricht im Plan"]
+        sende(args.tg_token, args.tg_chat, caption + "\n" + "\n".join(zeilen))
+        print(f"Tagesplan {klasse} fuer {key} als Text verschickt.")
 
 
 def berliner_stunde():
@@ -628,9 +682,9 @@ def main():
         if not (args.force or args.dry_run) and stunde != daily_hour:
             print(f"Nicht im Zeitfenster (Berlin {stunde}:xx, gewuenscht {daily_hour}:xx) - uebersprungen.")
             return
-        klasse_kontext[0] = klasse2
-        log(f"Tagesplan {klasse2}, Abruf laeuft ...")
-        lauf_taeglich(args, (user, password), klasse2, log)
+        klassen = [k.strip() for k in (klasse, klasse2) if k.strip()]
+        log(f"Tagesplan fuer {', '.join(klassen)}, Abruf laeuft ...")
+        lauf_taeglich(args, (user, password), klassen, log)
         return
 
     log(f"Klasse {klasse}, Abruf laeuft ...")

@@ -5,8 +5,10 @@ vom eigenen Rechner:
 
 1. **Änderungsmeldung** — prüft den Plan der Klasse **FOS25W** alle 20 Minuten und
    meldet sich, sobald sich etwas ändert (`watch.yml`).
-2. **Tagesplan** — schickt jeden Schultag gegen 06:12 Uhr den kompletten Plan der
-   Klasse **SOZ25** als gerenderte Bildkarte (`daily.yml`).
+2. **Tagesplan** — schickt jeden Schultag gegen 06:12 Uhr je eine gerenderte Bildkarte
+   für **FOS25W** und **SOZ25** (`daily.yml`). Beide Karten entstehen aus einer
+   einzigen Abrufrunde: `sammle_roh()` holt die XML-Dateien, `parse_plan()` wertet sie
+   je Klasse aus.
 
 Warum unterschiedlich: Änderungsmeldungen müssen in der Telegram-Vorschau auf dem
 Sperrbildschirm lesbar sein — bei einem Bild stünde dort nur „Foto". Der Tagesplan
@@ -52,6 +54,11 @@ Der komplette Klingelplan hängt einmal täglich unter dem Tagesplan, nicht unte
 Änderungsmeldung.
 
 ## Darstellung
+
+**Jede Karte nennt oben die Tagesspanne** — „heute 07:55 bis 13:45 (8.–9. Std fällt
+aus)". Gerechnet wird über die Stunden, die tatsächlich stattfinden: Fällt der
+Nachmittag aus, endet der Tag früher, und die weggefallenen Randstunden werden
+dahinter genannt. Je nach Datum steht dort „heute", „morgen" oder der Wochentag.
 
 **Folgestunden werden zusammengefasst.** Eine Doppelstunde steht im XML als zwei
 identische `<Std>`-Einträge; untereinander gedruckt liest sich das wie zwei Termine.
