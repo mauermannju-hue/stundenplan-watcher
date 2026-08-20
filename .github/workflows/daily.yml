@@ -25,7 +25,7 @@ jobs:
         env:
           PLAN_USER: ${{ secrets.PLAN_USER }}
           PLAN_PASS: ${{ secrets.PLAN_PASS }}
-          PLAN_KLASSE2: ${{ vars.PLAN_KLASSE2 || 'SOZ25R1' }}
+          PLAN_KLASSE2: ${{ vars.PLAN_KLASSE2 || 'SOZ25' }}
           TG_TOKEN: ${{ secrets.TG_TOKEN }}
           TG_CHAT: ${{ secrets.TG_CHAT }}
           DAILY_HOUR: ${{ vars.DAILY_HOUR || '6' }}

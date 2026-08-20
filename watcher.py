@@ -201,13 +201,20 @@ def freie_tage(raw):
 
 
 def sammle_plaene(user, password, klasse, log=lambda *_: None):
-    """Holt Klassen.xml (= aktuellster Tag) plus alle kuenftigen Tagesdateien."""
+    """Holt Klassen.xml (= aktuellster Tag) plus alle kuenftigen Tagesdateien.
+
+    Gibt (plaene, bekannte_klassen) zurueck. Die Klassenliste dient nur der
+    Diagnose - die Schule benennt Klassen zum Schuljahreswechsel um, und ohne
+    diesen Abgleich liefe der Watcher stumm ins Leere.
+    """
     plaene = {}
+    bekannt = []
 
     aktuell = fetch(BASE + "Klassen.xml", user, password)
     frei = set()
     if aktuell:
         frei = freie_tage(aktuell)
+        bekannt = sorted({clean(k.text) for k in ET.fromstring(aktuell).iter("Kurz") if clean(k.text)})
         datei = ""
         kopf = ET.fromstring(aktuell).find("Kopf")
         if kopf is not None:
@@ -230,6 +237,12 @@ def sammle_plaene(user, password, klasse, log=lambda *_: None):
         if raw:
             plaene[key] = parse_plan(raw, klasse)
             log(f"  PlanKl{key}.xml -> {plaene[key]['datum']}")
+
+    if bekannt and klasse not in bekannt:
+        aehnlich = [k for k in bekannt if k[:3].upper() == klasse[:3].upper()]
+        log(f"  WARNUNG: Klasse {klasse} steht in keiner Klassenliste."
+            + (f" Vielleicht gemeint: {', '.join(aehnlich)}" if aehnlich else ""))
+        plaene["__unbekannt__"] = aehnlich
 
     return plaene
 
@@ -349,6 +362,7 @@ def teile_nachricht(text, limit=3900):
 
 def lauf_aenderungen(args, zugang, klasse, log):
     plaene = sammle_plaene(zugang[0], zugang[1], klasse, log)
+    unbekannt = plaene.pop("__unbekannt__", None)
     log(f"{len(plaene)} Tagesplan/-plaene gefunden.")
 
     alt = {}
@@ -379,6 +393,10 @@ def lauf_aenderungen(args, zugang, klasse, log):
         return
 
     nachricht = f"<b>Vertretungsplan {html.escape(klasse)}</b>\n\n" + "\n\n".join(bloecke)
+    if unbekannt is not None:
+        nachricht += ("\n\n\u26a0\ufe0f Die Klasse " + html.escape(klasse)
+                      + " steht in keiner Klassenliste mehr."
+                      + (" Vorhanden: " + html.escape(", ".join(unbekannt)) if unbekannt else ""))
 
     if args.dry_run:
         print("\n--- Nachricht (dry-run) ---\n")
@@ -395,6 +413,7 @@ def lauf_aenderungen(args, zugang, klasse, log):
 def lauf_taeglich(args, zugang, klasse, log):
     """Kompletter Tagesplan einer zweiten Klasse, einmal pro Schultag."""
     plaene = sammle_plaene(zugang[0], zugang[1], klasse, log)
+    unbekannt = plaene.pop("__unbekannt__", None)
     datiert = {k: v for k, v in plaene.items() if k.isdigit()}
     if not datiert:
         log("Kein datierter Tagesplan verfuegbar - nichts zu senden.")
@@ -425,6 +444,10 @@ def lauf_taeglich(args, zugang, klasse, log):
         f"<b>Tagesplan {html.escape(klasse)}</b>\n"
         f"\U0001f4c5 <b>{html.escape(plan['datum'] or key)}</b>\n"
         + "\n".join(html.escape(z) for z in zeilen)
+        + (("\n\u26a0\ufe0f Die Klasse " + html.escape(klasse)
+            + " steht in keiner Klassenliste mehr."
+            + (" Vorhanden: " + html.escape(", ".join(unbekannt)) if unbekannt else ""))
+           if unbekannt is not None else "")
         + "\n\n\U0001f550 <b>Unterrichtszeiten</b>\n<pre>"
         + html.escape(klingelplan())
         + "</pre>"
@@ -460,7 +483,7 @@ def main():
     user = os.environ.get("PLAN_USER")
     password = os.environ.get("PLAN_PASS")
     klasse = os.environ.get("PLAN_KLASSE", "FOS25W")
-    klasse2 = os.environ.get("PLAN_KLASSE2", "SOZ25R1")
+    klasse2 = os.environ.get("PLAN_KLASSE2", "SOZ25")
     args.tg_token = os.environ.get("TG_TOKEN")
     args.tg_chat = os.environ.get("TG_CHAT")
     daily_hour = int(os.environ.get("DAILY_HOUR", "6"))

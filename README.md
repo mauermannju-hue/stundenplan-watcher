@@ -6,7 +6,7 @@ vom eigenen Rechner:
 1. **Änderungsmeldung** — prüft den Plan der Klasse **FOS25W** alle 20 Minuten und
    meldet sich, sobald sich etwas ändert (`watch.yml`).
 2. **Tagesplan** — schickt jeden Schultag gegen 06:12 Uhr den kompletten Plan der
-   Klasse **SOZ25R1** samt Klingelplan (`daily.yml`).
+   Klasse **SOZ25** samt Klingelplan (`daily.yml`).
 
 ## Wie es funktioniert
 
@@ -78,7 +78,7 @@ Unter *Settings → Secrets and variables → Actions*:
 | Name | Wert |
 |---|---|
 | `PLAN_KLASSE` | Klasse der Änderungsmeldung, Standard `FOS25W` |
-| `PLAN_KLASSE2` | Klasse des Tagesplans, Standard `SOZ25R1` |
+| `PLAN_KLASSE2` | Klasse des Tagesplans, Standard `SOZ25` |
 | `DAILY_HOUR` | Stunde des Tagesplans in Berliner Zeit, Standard `6` |
 
 ## Lokal testen
