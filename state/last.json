@@ -2,6 +2,7 @@
  "plaene": {
   "20260820": {
    "datum": "Donnerstag, 20. August 2026",
+   "gefunden": true,
    "stunden": [
     {
      "fach": "FA",
@@ -109,6 +110,7 @@
   },
   "20260821": {
    "datum": "Freitag, 21. August 2026",
+   "gefunden": true,
    "stunden": [
     {
      "fach": "VBR",
