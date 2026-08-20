@@ -1,109 +1,5 @@
 {
  "plaene": {
-  "20260819": {
-   "datum": "Mittwoch, 19. August 2026",
-   "stunden": [
-    {
-     "fach": "DE",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "SCÄ",
-     "nr": "626",
-     "raum": "A247",
-     "regel": [
-      "DE",
-      "SCÄ"
-     ],
-     "st": "2"
-    },
-    {
-     "fach": "MA",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "WEN",
-     "nr": "636",
-     "raum": "N230",
-     "regel": [
-      "MA",
-      "WEN"
-     ],
-     "st": "3"
-    },
-    {
-     "fach": "MA",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "WEN",
-     "nr": "636",
-     "raum": "N230",
-     "regel": [
-      "MA",
-      "WEN"
-     ],
-     "st": "4"
-    },
-    {
-     "fach": "EN",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "WAL",
-     "nr": "627",
-     "raum": "N330",
-     "regel": [
-      "EN",
-      "WAL"
-     ],
-     "st": "5"
-    },
-    {
-     "fach": "EN",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "WAL",
-     "nr": "627",
-     "raum": "N330",
-     "regel": [
-      "EN",
-      "WAL"
-     ],
-     "st": "6"
-    },
-    {
-     "fach": "MA",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "MIS",
-     "nr": "637",
-     "raum": "N325",
-     "regel": [
-      "MA",
-      "MIS"
-     ],
-     "st": "7"
-    },
-    {
-     "fach": "MA",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "MIS",
-     "nr": "637",
-     "raum": "N325",
-     "regel": [
-      "MA",
-      "MIS"
-     ],
-     "st": "8"
-    }
-   ],
-   "zeitstempel": "19.08.2026, 08:22",
-   "zusatz": [
-    "FB BSI:",
-    "BVJ: Sonderplan",
-    "",
-    "FB BGy:",
-    "BGY25: Projekttage Belegarbeit: 19.08. bis 21:08. nach Sonderplan"
-   ]
-  },
   "20260820": {
    "datum": "Donnerstag, 20. August 2026",
    "stunden": [
@@ -199,7 +95,7 @@
      "st": "8"
     }
    ],
-   "zeitstempel": "19.08.2026, 16:07",
+   "zeitstempel": "20.08.2026, 07:38",
    "zusatz": [
     "FB BSI:",
     "BVJ: Sonderplan",
