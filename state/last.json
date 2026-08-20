@@ -106,6 +106,97 @@
     "FB PT:",
     "PT23: 15:30 Uhr Zeugnisausabe mit BRA, WRO, WAG, MES, LEH, GRY, GIE, N024"
    ]
+  },
+  "20260821": {
+   "datum": "Freitag, 21. August 2026",
+   "stunden": [
+    {
+     "fach": "VBR",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "KRAU",
+     "nr": "632",
+     "raum": "N223",
+     "regel": [
+      "VBR",
+      "KRAU"
+     ],
+     "st": "2"
+    },
+    {
+     "fach": "VBR",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "KRAU",
+     "nr": "632",
+     "raum": "N223",
+     "regel": [
+      "VBR",
+      "KRAU"
+     ],
+     "st": "3"
+    },
+    {
+     "fach": "VBR",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "KRAU",
+     "nr": "632",
+     "raum": "N223",
+     "regel": [
+      "VBR",
+      "KRAU"
+     ],
+     "st": "4"
+    },
+    {
+     "fach": "KU",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "NAT",
+     "nr": "640",
+     "raum": "A336",
+     "regel": [
+      "KU",
+      "NAT"
+     ],
+     "st": "5"
+    },
+    {
+     "fach": "DE",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "SCÄ",
+     "nr": "626",
+     "raum": "A247",
+     "regel": [
+      "DE",
+      "SCÄ"
+     ],
+     "st": "6"
+    },
+    {
+     "fach": "DE",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "SCÄ",
+     "nr": "626",
+     "raum": "A247",
+     "regel": [
+      "DE",
+      "SCÄ"
+     ],
+     "st": "7"
+    }
+   ],
+   "zeitstempel": "20.08.2026, 12:58",
+   "zusatz": [
+    "FB BSI:",
+    "BVJ: Sonderplan",
+    "",
+    "FB BGy:",
+    "BGY25: Projekttage Belegarbeit: 19.08. bis 21:08. nach Sonderplan"
+   ]
   }
  }
 }
