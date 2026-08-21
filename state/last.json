@@ -91,6 +91,148 @@
     "FB BGy:",
     "BGY25: Projekttage Belegarbeit: 19.08. bis 21:08. nach Sonderplan"
    ]
+  },
+  "20260824": {
+   "datum": "Montag, 24. August 2026",
+   "gefunden": true,
+   "stunden": [
+    {
+     "fach": "VBR",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "PKR",
+     "nr": "631",
+     "raum": "A233",
+     "regel": [
+      "VBR",
+      "PKR"
+     ],
+     "st": "2"
+    },
+    {
+     "fach": "VBR",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "PKR",
+     "nr": "631",
+     "raum": "A233",
+     "regel": [
+      "VBR",
+      "PKR"
+     ],
+     "st": "3"
+    },
+    {
+     "fach": "GGK",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "SDR",
+     "nr": "633",
+     "raum": "A141",
+     "regel": [
+      "GGK",
+      "SDR"
+     ],
+     "st": "4"
+    },
+    {
+     "fach": "GGK",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "SDR",
+     "nr": "633",
+     "raum": "A141",
+     "regel": [
+      "GGK",
+      "SDR"
+     ],
+     "st": "5"
+    },
+    {
+     "fach": "EN",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "WAL",
+     "nr": "627",
+     "raum": "N330",
+     "regel": [
+      "EN",
+      "WAL"
+     ],
+     "st": "6"
+    },
+    {
+     "fach": "EN",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "WAL",
+     "nr": "627",
+     "raum": "N330",
+     "regel": [
+      "EN",
+      "WAL"
+     ],
+     "st": "7"
+    },
+    {
+     "fach": "GR.1",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "HOL",
+     "nr": "634",
+     "raum": "A242",
+     "regel": [
+      "INF",
+      "HOL"
+     ],
+     "st": "8"
+    },
+    {
+     "fach": "GR.2",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "HER",
+     "nr": "635",
+     "raum": "A109",
+     "regel": [
+      "INF",
+      "HER"
+     ],
+     "st": "8"
+    },
+    {
+     "fach": "GR.1",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "HOL",
+     "nr": "634",
+     "raum": "A242",
+     "regel": [
+      "INF",
+      "HOL"
+     ],
+     "st": "9"
+    },
+    {
+     "fach": "GR.2",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "HER",
+     "nr": "635",
+     "raum": "A109",
+     "regel": [
+      "INF",
+      "HER"
+     ],
+     "st": "9"
+    }
+   ],
+   "zeitstempel": "21.08.2026, 11:34",
+   "zusatz": [
+    "FB SOZ:",
+    "Vorabinfo:",
+    "28.08.:HEP24: Wandertag; ARN, WIE"
+   ]
   }
  }
 }
