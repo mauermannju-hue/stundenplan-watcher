@@ -118,6 +118,113 @@
     "Vorabinfo:",
     "28.08.:HEP24: Wandertag; ARN, WIE"
    ]
+  },
+  "20260826": {
+   "datum": "Mittwoch, 26. August 2026",
+   "gefunden": true,
+   "stunden": [
+    {
+     "fach": "DE",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "SCÄ",
+     "nr": "626",
+     "raum": "A247",
+     "regel": [
+      "DE",
+      "SCÄ"
+     ],
+     "st": "2"
+    },
+    {
+     "fach": "MA",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "WEN",
+     "nr": "636",
+     "raum": "N230",
+     "regel": [
+      "MA",
+      "WEN"
+     ],
+     "st": "3"
+    },
+    {
+     "fach": "MA",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "WEN",
+     "nr": "636",
+     "raum": "N230",
+     "regel": [
+      "MA",
+      "WEN"
+     ],
+     "st": "4"
+    },
+    {
+     "fach": "EN",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "WAL",
+     "nr": "627",
+     "raum": "N330",
+     "regel": [
+      "EN",
+      "WAL"
+     ],
+     "st": "5"
+    },
+    {
+     "fach": "EN",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "WAL",
+     "nr": "627",
+     "raum": "N330",
+     "regel": [
+      "EN",
+      "WAL"
+     ],
+     "st": "6"
+    },
+    {
+     "fach": "MA",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "MIS",
+     "nr": "637",
+     "raum": "N325",
+     "regel": [
+      "MA",
+      "MIS"
+     ],
+     "st": "7"
+    },
+    {
+     "fach": "MA",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "MIS",
+     "nr": "637",
+     "raum": "N325",
+     "regel": [
+      "MA",
+      "MIS"
+     ],
+     "st": "8"
+    }
+   ],
+   "zeitstempel": "25.08.2026, 11:42",
+   "zusatz": [
+    "FB Pflege:",
+    "Vorabinfo:",
+    "28.08.: PFF23: Zeugnisausgabe, 14:00 Uhr, A208, MSG, GRY, GRH, MAIW, POH, REIN, BOD",
+    "",
+    "FB SOZ:",
+    "Vorabinfo:",
+    "28.08.:HEP24: Wandertag; ARN, WIE"
+   ]
   }
  }
 }
