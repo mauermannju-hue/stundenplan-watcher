@@ -1,193 +1,60 @@
 {
  "plaene": {
-  "20260826": {
-   "datum": "Mittwoch, 26. August 2026",
+  "20260828": {
+   "datum": "Freitag, 28. August 2026",
    "gefunden": true,
    "stunden": [
     {
-     "fach": "DE",
+     "fach": "VBR",
      "geaendert": [],
      "info": "",
-     "lehrer": "SCÄ",
-     "nr": "626",
-     "raum": "A247",
+     "lehrer": "KRAU",
+     "nr": "632",
+     "raum": "N223",
      "regel": [
-      "DE",
-      "SCÄ"
+      "VBR",
+      "KRAU"
      ],
      "st": "2"
     },
     {
-     "fach": "MA",
+     "fach": "VBR",
      "geaendert": [],
      "info": "",
-     "lehrer": "WEN",
-     "nr": "636",
-     "raum": "N230",
+     "lehrer": "KRAU",
+     "nr": "632",
+     "raum": "N223",
      "regel": [
-      "MA",
-      "WEN"
+      "VBR",
+      "KRAU"
      ],
      "st": "3"
     },
     {
-     "fach": "MA",
+     "fach": "VBR",
      "geaendert": [],
      "info": "",
-     "lehrer": "WEN",
-     "nr": "636",
-     "raum": "N230",
+     "lehrer": "KRAU",
+     "nr": "632",
+     "raum": "N223",
      "regel": [
-      "MA",
-      "WEN"
+      "VBR",
+      "KRAU"
      ],
      "st": "4"
     },
     {
-     "fach": "EN",
+     "fach": "KU",
      "geaendert": [],
      "info": "",
-     "lehrer": "WAL",
-     "nr": "627",
-     "raum": "N330",
+     "lehrer": "NAT",
+     "nr": "640",
+     "raum": "A336",
      "regel": [
-      "EN",
-      "WAL"
+      "KU",
+      "NAT"
      ],
      "st": "5"
-    },
-    {
-     "fach": "EN",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "WAL",
-     "nr": "627",
-     "raum": "N330",
-     "regel": [
-      "EN",
-      "WAL"
-     ],
-     "st": "6"
-    },
-    {
-     "fach": "MA",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "MIS",
-     "nr": "637",
-     "raum": "N325",
-     "regel": [
-      "MA",
-      "MIS"
-     ],
-     "st": "7"
-    },
-    {
-     "fach": "MA",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "MIS",
-     "nr": "637",
-     "raum": "N325",
-     "regel": [
-      "MA",
-      "MIS"
-     ],
-     "st": "8"
-    }
-   ],
-   "zeitstempel": "26.08.2026, 07:30",
-   "zusatz": [
-    "FB Pflege:",
-    "Vorabinfo:",
-    "28.08.: PFF23: Zeugnisausgabe, 14:00 Uhr, A208, MSG, GRY, GRH, MAIW, POH, REIN, BOD",
-    "",
-    "FB SOZ:",
-    "Vorabinfo:",
-    "28.08.:HEP24: Wandertag; ARN, WIE"
-   ]
-  },
-  "20260827": {
-   "datum": "Donnerstag, 27. August 2026",
-   "gefunden": true,
-   "stunden": [
-    {
-     "fach": "FA",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "HER",
-     "nr": "630",
-     "raum": "N311",
-     "regel": [
-      "FA",
-      "HER"
-     ],
-     "st": "2"
-    },
-    {
-     "fach": "BIO",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "SDR",
-     "nr": "625",
-     "raum": "A141",
-     "regel": [
-      "BIO",
-      "SDR"
-     ],
-     "st": "3"
-    },
-    {
-     "fach": "BIO",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "SDR",
-     "nr": "625",
-     "raum": "A141",
-     "regel": [
-      "BIO",
-      "SDR"
-     ],
-     "st": "4"
-    },
-    {
-     "fach": "MA",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "MIS",
-     "nr": "637",
-     "raum": "N325",
-     "regel": [
-      "MA",
-      "MIS"
-     ],
-     "st": "5"
-    },
-    {
-     "fach": "S",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "SCÄ",
-     "nr": "639",
-     "raum": "AHR",
-     "regel": [
-      "S",
-      "SCÄ"
-     ],
-     "st": "6"
-    },
-    {
-     "fach": "S",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "SCÄ",
-     "nr": "639",
-     "raum": "AHR",
-     "regel": [
-      "S",
-      "SCÄ"
-     ],
-     "st": "7"
     },
     {
      "fach": "DE",
@@ -200,18 +67,29 @@
       "DE",
       "SCÄ"
      ],
-     "st": "8"
+     "st": "6"
+    },
+    {
+     "fach": "DE",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "SCÄ",
+     "nr": "626",
+     "raum": "A247",
+     "regel": [
+      "DE",
+      "SCÄ"
+     ],
+     "st": "7"
     }
    ],
-   "zeitstempel": "26.08.2026, 12:24",
+   "zeitstempel": "27.08.2026, 12:50",
    "zusatz": [
     "FB Pflege:",
-    "Vorabinfo:",
-    "28.08.: PFF23: Zeugnisausgabe, 14:00 Uhr, A208, MSG, GRY, GRH, MAIW, POH, REIN, BOD",
+    "PFF23: Zeugnisausgabe, 14:00 Uhr, A208, MSG, GRY, GRH, MAIW, POH, REIN, BOD",
     "",
     "FB SOZ:",
-    "Vorabinfo:",
-    "28.08.:HEP24: Wandertag; ARN, WIE"
+    "HEP24: Wandertag; ARN, WIE"
    ]
   }
  }
