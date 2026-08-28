@@ -91,6 +91,151 @@
     "FB SOZ:",
     "HEP24: Wandertag; ARN, WIE"
    ]
+  },
+  "20260831": {
+   "datum": "Montag, 31. August 2026",
+   "gefunden": true,
+   "stunden": [
+    {
+     "fach": "VBR",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "PKR",
+     "nr": "631",
+     "raum": "A233",
+     "regel": [
+      "VBR",
+      "PKR"
+     ],
+     "st": "2"
+    },
+    {
+     "fach": "VBR",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "PKR",
+     "nr": "631",
+     "raum": "A233",
+     "regel": [
+      "VBR",
+      "PKR"
+     ],
+     "st": "3"
+    },
+    {
+     "fach": "GGK",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "SDR",
+     "nr": "633",
+     "raum": "A141",
+     "regel": [
+      "GGK",
+      "SDR"
+     ],
+     "st": "4"
+    },
+    {
+     "fach": "GGK",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "SDR",
+     "nr": "633",
+     "raum": "A141",
+     "regel": [
+      "GGK",
+      "SDR"
+     ],
+     "st": "5"
+    },
+    {
+     "fach": "EN",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "WAL",
+     "nr": "627",
+     "raum": "N330",
+     "regel": [
+      "EN",
+      "WAL"
+     ],
+     "st": "6"
+    },
+    {
+     "fach": "EN",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "WAL",
+     "nr": "627",
+     "raum": "N330",
+     "regel": [
+      "EN",
+      "WAL"
+     ],
+     "st": "7"
+    },
+    {
+     "fach": "GR.1",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "HOL",
+     "nr": "634",
+     "raum": "A242",
+     "regel": [
+      "INF",
+      "HOL"
+     ],
+     "st": "8"
+    },
+    {
+     "fach": "GR.2",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "HER",
+     "nr": "635",
+     "raum": "A109",
+     "regel": [
+      "INF",
+      "HER"
+     ],
+     "st": "8"
+    },
+    {
+     "fach": "GR.1",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "HOL",
+     "nr": "634",
+     "raum": "A242",
+     "regel": [
+      "INF",
+      "HOL"
+     ],
+     "st": "9"
+    },
+    {
+     "fach": "GR.2",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "HER",
+     "nr": "635",
+     "raum": "A109",
+     "regel": [
+      "INF",
+      "HER"
+     ],
+     "st": "9"
+    }
+   ],
+   "zeitstempel": "28.08.2026, 12:22",
+   "zusatz": [
+    "FB BSII:",
+    "ME26b: 2. bis 6. Stunde Klassenleiterstunde KRY, N313",
+    "",
+    "FB Pflege:",
+    "Vorabinfo:",
+    "01.09.: PFF26: Einführungstag nach Sonderplan (2. bis 7.Stunde), MSG, GRH (2./3. Stunde)"
+   ]
   }
  }
 }
