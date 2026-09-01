@@ -114,6 +114,105 @@
     "FB Pflege:",
     "PFF26: Einführungstag nach Sonderplan (2. bis 7.Stunde), MSG, GRH (2./3. Stunde)"
    ]
+  },
+  "20260902": {
+   "datum": "Mittwoch, 02. September 2026",
+   "gefunden": true,
+   "stunden": [
+    {
+     "fach": "DE",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "SCÄ",
+     "nr": "626",
+     "raum": "A247",
+     "regel": [
+      "DE",
+      "SCÄ"
+     ],
+     "st": "2"
+    },
+    {
+     "fach": "MA",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "WEN",
+     "nr": "636",
+     "raum": "N230",
+     "regel": [
+      "MA",
+      "WEN"
+     ],
+     "st": "3"
+    },
+    {
+     "fach": "MA",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "WEN",
+     "nr": "636",
+     "raum": "N230",
+     "regel": [
+      "MA",
+      "WEN"
+     ],
+     "st": "4"
+    },
+    {
+     "fach": "EN",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "WAL",
+     "nr": "627",
+     "raum": "N330",
+     "regel": [
+      "EN",
+      "WAL"
+     ],
+     "st": "5"
+    },
+    {
+     "fach": "EN",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "WAL",
+     "nr": "627",
+     "raum": "N330",
+     "regel": [
+      "EN",
+      "WAL"
+     ],
+     "st": "6"
+    },
+    {
+     "fach": "MA",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "MIS",
+     "nr": "637",
+     "raum": "N325",
+     "regel": [
+      "MA",
+      "MIS"
+     ],
+     "st": "7"
+    },
+    {
+     "fach": "MA",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "MIS",
+     "nr": "637",
+     "raum": "N325",
+     "regel": [
+      "MA",
+      "MIS"
+     ],
+     "st": "8"
+    }
+   ],
+   "zeitstempel": "01.09.2026, 11:57",
+   "zusatz": []
   }
  }
 }
