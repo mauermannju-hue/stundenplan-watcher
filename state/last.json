@@ -183,11 +183,13 @@
     },
     {
      "fach": "GR.2",
-     "geaendert": [],
+     "geaendert": [
+      "Raum"
+     ],
      "info": "",
      "lehrer": "HER",
      "nr": "635",
-     "raum": "A109",
+     "raum": "N408",
      "regel": [
       "INF",
       "HER"
@@ -209,11 +211,13 @@
     },
     {
      "fach": "GR.2",
-     "geaendert": [],
+     "geaendert": [
+      "Raum"
+     ],
      "info": "",
      "lehrer": "HER",
      "nr": "635",
-     "raum": "A109",
+     "raum": "N408",
      "regel": [
       "INF",
       "HER"
@@ -221,7 +225,7 @@
      "st": "9"
     }
    ],
-   "zeitstempel": "04.09.2026, 09:10",
+   "zeitstempel": "04.09.2026, 13:17",
    "zusatz": []
   }
  }
