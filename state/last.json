@@ -83,12 +83,31 @@
      "st": "7"
     },
     {
-     "fach": "GR.1",
-     "geaendert": [],
+     "fach": "GR.2",
+     "geaendert": [
+      "Raum"
+     ],
      "info": "",
-     "lehrer": "HOL",
+     "lehrer": "HER",
+     "nr": "635",
+     "raum": "N311",
+     "regel": [
+      "INF",
+      "HER"
+     ],
+     "st": "8"
+    },
+    {
+     "fach": "---",
+     "geaendert": [
+      "Fach",
+      "Lehrer",
+      "Raum"
+     ],
+     "info": "GR.1 Herr Holubek fällt aus",
+     "lehrer": "",
      "nr": "634",
-     "raum": "A242",
+     "raum": "",
      "regel": [
       "INF",
       "HOL"
@@ -107,39 +126,28 @@
      "regel": [
       "INF",
       "HER"
-     ],
-     "st": "8"
-    },
-    {
-     "fach": "GR.1",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "HOL",
-     "nr": "634",
-     "raum": "A242",
-     "regel": [
-      "INF",
-      "HOL"
      ],
      "st": "9"
     },
     {
-     "fach": "GR.2",
+     "fach": "---",
      "geaendert": [
+      "Fach",
+      "Lehrer",
       "Raum"
      ],
-     "info": "",
-     "lehrer": "HER",
-     "nr": "635",
-     "raum": "N311",
+     "info": "GR.1 Herr Holubek fällt aus",
+     "lehrer": "",
+     "nr": "634",
+     "raum": "",
      "regel": [
       "INF",
-      "HER"
+      "HOL"
      ],
      "st": "9"
     }
    ],
-   "zeitstempel": "04.09.2026, 14:37",
+   "zeitstempel": "07.09.2026, 07:32",
    "zusatz": []
   }
  }
