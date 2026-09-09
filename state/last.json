@@ -101,6 +101,108 @@
     "FB BSII:",
     "EQb: 2. bis 6. Stunde Klassenleiterstunde, FUH, A251 (A027)"
    ]
+  },
+  "20260910": {
+   "datum": "Donnerstag, 10. September 2026",
+   "gefunden": true,
+   "stunden": [
+    {
+     "fach": "FA",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "HER",
+     "nr": "630",
+     "raum": "N311",
+     "regel": [
+      "FA",
+      "HER"
+     ],
+     "st": "2"
+    },
+    {
+     "fach": "BIO",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "SDR",
+     "nr": "625",
+     "raum": "A141",
+     "regel": [
+      "BIO",
+      "SDR"
+     ],
+     "st": "3"
+    },
+    {
+     "fach": "BIO",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "SDR",
+     "nr": "625",
+     "raum": "A141",
+     "regel": [
+      "BIO",
+      "SDR"
+     ],
+     "st": "4"
+    },
+    {
+     "fach": "MA",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "MIS",
+     "nr": "637",
+     "raum": "N325",
+     "regel": [
+      "MA",
+      "MIS"
+     ],
+     "st": "5"
+    },
+    {
+     "fach": "S",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "SCÄ",
+     "nr": "639",
+     "raum": "AHR",
+     "regel": [
+      "S",
+      "SCÄ"
+     ],
+     "st": "6"
+    },
+    {
+     "fach": "S",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "SCÄ",
+     "nr": "639",
+     "raum": "AHR",
+     "regel": [
+      "S",
+      "SCÄ"
+     ],
+     "st": "7"
+    },
+    {
+     "fach": "DE",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "SCÄ",
+     "nr": "626",
+     "raum": "A247",
+     "regel": [
+      "DE",
+      "SCÄ"
+     ],
+     "st": "8"
+    }
+   ],
+   "zeitstempel": "09.09.2026, 11:58",
+   "zusatz": [
+    "FB Pflege:",
+    "PFF26: Studientag, MSG"
+   ]
   }
  }
 }
