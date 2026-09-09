@@ -144,3 +144,15 @@ Nur Python-Standardbibliothek, keine Installation nötig.
   automatischen `state/`-Commits zählen als Aktivität, der Watcher hält sich also
   selbst am Leben — außer in langen Ferien ohne jede Planänderung. Nach den
   Sommerferien also einmal kurz prüfen, ob der Workflow noch aktiv ist.
+
+---
+
+## Nebenprojekt: Börsen-Simulator
+
+Im selben Repo liegt unter `boerse/` ein zweites, unabhängiges Projekt: ein
+Depot aus fiktivem Geld, das mit echten Kursen nach festen Regeln handelt und
+werktags einen Bericht nach Telegram schickt (`boerse.yml`). Es nutzt dieselbe
+Mechanik — Actions als Uhr, Python ohne Abhängigkeiten, Zustand als JSON —
+teilt sich mit dem Watcher aber nur die Telegram-Secrets.
+
+Aufbau, Strategien und die Grenzen des Ganzen stehen in **[BOERSE.md](BOERSE.md)**.

@@ -1,0 +1,67 @@
+name: Boersen-Simulator
+
+on:
+  schedule:
+    # Cron ist UTC. 19:00 UTC ist 21:00 Berliner Zeit im Sommer, 20:00 im Winter -
+    # in beiden Faellen sicher nach Xetra-Schluss (17:30) und nach dem
+    # Tagesabschluss der Kursquelle.
+    - cron: "0 19 * * 1-5"
+  workflow_dispatch:
+    inputs:
+      strategie:
+        description: "sma, rsi oder ausbruch"
+        type: choice
+        options: [sma, rsi, ausbruch]
+        default: sma
+      ab:
+        description: "Nur beim ersten Lauf: rueckwirkend ab JJJJ-MM-TT buchen"
+        type: string
+        default: ""
+      trockenlauf:
+        description: "Rechnen, aber Zustand nicht speichern"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write             # noetig, um den Depotstand zurueckzuschreiben
+
+concurrency:
+  group: boersen-simulator    # zwei Laeufe wuerden denselben Zustand ueberschreiben
+  cancel-in-progress: false
+
+jobs:
+  handelstag:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Tests
+        # Der Simulator bucht echtes Depotgeschehen fort. Ein kaputter Motor
+        # soll den Zustand gar nicht erst anfassen.
+        run: python3 -m unittest boerse.test_boerse
+
+      - name: Handelstag buchen
+        env:
+          TG_TOKEN: ${{ secrets.TG_TOKEN }}
+          TG_CHAT: ${{ secrets.TG_CHAT }}
+          BOERSE_STRATEGIE: ${{ inputs.strategie || vars.BOERSE_STRATEGIE || 'sma' }}
+          BOERSE_STARTKAPITAL: ${{ vars.BOERSE_STARTKAPITAL || '1000' }}
+          BOERSE_GEBUEHR: ${{ vars.BOERSE_GEBUEHR || '1.0' }}
+        run: |
+          python3 -m boerse.simulator \
+            ${{ inputs.ab && format('--ab {0}', inputs.ab) || '' }} \
+            ${{ inputs.trockenlauf && '--trockenlauf' || '' }}
+
+      - name: Depotstand sichern
+        if: ${{ !inputs.trockenlauf }}
+        run: |
+          if [ -n "$(git status --porcelain state/boerse.json)" ]; then
+            git config user.name  "boersen-simulator"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add state/boerse.json
+            git commit -m "Depotstand $(date -u +'%Y-%m-%d') [skip ci]"
+            git pull --rebase --autostash
+            git push
+          else
+            echo "Kein neuer Depotstand."
+          fi
