@@ -85,6 +85,164 @@
    ],
    "zeitstempel": "10.09.2026, 12:45",
    "zusatz": []
+  },
+  "20260914": {
+   "datum": "Montag, 14. September 2026",
+   "gefunden": true,
+   "stunden": [
+    {
+     "fach": "VBR",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "PKR",
+     "nr": "631",
+     "raum": "A233",
+     "regel": [
+      "VBR",
+      "PKR"
+     ],
+     "st": "2"
+    },
+    {
+     "fach": "VBR",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "PKR",
+     "nr": "631",
+     "raum": "A233",
+     "regel": [
+      "VBR",
+      "PKR"
+     ],
+     "st": "3"
+    },
+    {
+     "fach": "GGK",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "SDR",
+     "nr": "633",
+     "raum": "A141",
+     "regel": [
+      "GGK",
+      "SDR"
+     ],
+     "st": "4"
+    },
+    {
+     "fach": "GGK",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "SDR",
+     "nr": "633",
+     "raum": "A141",
+     "regel": [
+      "GGK",
+      "SDR"
+     ],
+     "st": "5"
+    },
+    {
+     "fach": "EN",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "WAL",
+     "nr": "627",
+     "raum": "N330",
+     "regel": [
+      "EN",
+      "WAL"
+     ],
+     "st": "6"
+    },
+    {
+     "fach": "EN",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "WAL",
+     "nr": "627",
+     "raum": "N330",
+     "regel": [
+      "EN",
+      "WAL"
+     ],
+     "st": "7"
+    },
+    {
+     "fach": "GR.1",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "HOL",
+     "nr": "634",
+     "raum": "A242",
+     "regel": [
+      "INF",
+      "HOL"
+     ],
+     "st": "8"
+    },
+    {
+     "fach": "GR.2",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "HER",
+     "nr": "635",
+     "raum": "A109",
+     "regel": [
+      "INF",
+      "HER"
+     ],
+     "st": "8"
+    },
+    {
+     "fach": "GR.1",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "HOL",
+     "nr": "634",
+     "raum": "A242",
+     "regel": [
+      "INF",
+      "HOL"
+     ],
+     "st": "9"
+    },
+    {
+     "fach": "GR.2",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "HER",
+     "nr": "635",
+     "raum": "A109",
+     "regel": [
+      "INF",
+      "HER"
+     ],
+     "st": "9"
+    }
+   ],
+   "zeitstempel": "11.09.2026, 13:25",
+   "zusatz": [
+    "FB BSIII:",
+    "ZFA26: 2. bis 8. Stunde Klassenleiterstunde, DIT, A160",
+    "MFA26: 2. bis 8. Stunde Klassenleiterstunde, KAI, A301",
+    "GK26: 2. bis 8. Stunde Klassenleiterstunde, ZÖL, N232",
+    "",
+    "FB BSII:",
+    "KM26a: 2. bis 6. Stunde Klassenleiterstunde, LEO, N019",
+    "KM26b: 2. bis 6. Stunde Klassenleiterstunde, FUH, A027",
+    "",
+    "FB BSI:",
+    "KO26a: 2. bis 7. Stunde Klassenleiterstunde, DNF, N220",
+    "KO26b: 2. bis 7. Stunde Klassenleiterstunde, MAN, N210",
+    "BÄ26:  2. bis 7. Stunde Klassenleiterstunde, SCS, N224",
+    "FVL26:  2. bis 7. Stunde Klassenleiterstunde, JAR, N120",
+    "FRI26: 2. bis 7. Stunde Klassenleiterstunde, MER, A029",
+    "",
+    "FB Pflege:",
+    "Vorabinfo:",
+    "KPH25/KPH26: 15.09., 10. Stunde Nachschreiben, MAIW, N405"
+   ]
   }
  }
 }
