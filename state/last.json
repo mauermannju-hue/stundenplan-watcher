@@ -1,91 +1,5 @@
 {
  "plaene": {
-  "20260911": {
-   "datum": "Freitag, 11. September 2026",
-   "gefunden": true,
-   "stunden": [
-    {
-     "fach": "VBR",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "KRAU",
-     "nr": "632",
-     "raum": "N223",
-     "regel": [
-      "VBR",
-      "KRAU"
-     ],
-     "st": "2"
-    },
-    {
-     "fach": "VBR",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "KRAU",
-     "nr": "632",
-     "raum": "N223",
-     "regel": [
-      "VBR",
-      "KRAU"
-     ],
-     "st": "3"
-    },
-    {
-     "fach": "VBR",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "KRAU",
-     "nr": "632",
-     "raum": "N223",
-     "regel": [
-      "VBR",
-      "KRAU"
-     ],
-     "st": "4"
-    },
-    {
-     "fach": "KU",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "NAT",
-     "nr": "640",
-     "raum": "A336",
-     "regel": [
-      "KU",
-      "NAT"
-     ],
-     "st": "5"
-    },
-    {
-     "fach": "DE",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "SCÄ",
-     "nr": "626",
-     "raum": "A247",
-     "regel": [
-      "DE",
-      "SCÄ"
-     ],
-     "st": "6"
-    },
-    {
-     "fach": "DE",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "SCÄ",
-     "nr": "626",
-     "raum": "A247",
-     "regel": [
-      "DE",
-      "SCÄ"
-     ],
-     "st": "7"
-    }
-   ],
-   "zeitstempel": "10.09.2026, 12:45",
-   "zusatz": []
-  },
   "20260914": {
    "datum": "Montag, 14. September 2026",
    "gefunden": true,
@@ -221,12 +135,12 @@
      "st": "9"
     }
    ],
-   "zeitstempel": "11.09.2026, 13:25",
+   "zeitstempel": "14.09.2026, 08:49",
    "zusatz": [
     "FB BSIII:",
-    "ZFA26: 2. bis 8. Stunde Klassenleiterstunde, DIT, A160",
-    "MFA26: 2. bis 8. Stunde Klassenleiterstunde, KAI, A301",
-    "GK26: 2. bis 8. Stunde Klassenleiterstunde, ZÖL, N232",
+    "ZFA26: 2. bis 7. Stunde Klassenleiterstunde, DIT, A160",
+    "MFA26: 2. bis 7. Stunde Klassenleiterstunde, KAI, A301",
+    "GK26: 2. bis 7. Stunde Klassenleiterstunde, ZÖL, N232",
     "",
     "FB BSII:",
     "KM26a: 2. bis 6. Stunde Klassenleiterstunde, LEO, N019",
@@ -242,6 +156,123 @@
     "FB Pflege:",
     "Vorabinfo:",
     "KPH25/KPH26: 15.09., 10. Stunde Nachschreiben, MAIW, N405"
+   ]
+  },
+  "20260915": {
+   "datum": "Dienstag, 15. September 2026",
+   "gefunden": true,
+   "stunden": [
+    {
+     "fach": "MA",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "WEN",
+     "nr": "636",
+     "raum": "N230",
+     "regel": [
+      "MA",
+      "WEN"
+     ],
+     "st": "2"
+    },
+    {
+     "fach": "MA",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "WEN",
+     "nr": "636",
+     "raum": "N230",
+     "regel": [
+      "MA",
+      "WEN"
+     ],
+     "st": "3"
+    },
+    {
+     "fach": "VBR",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "PKR",
+     "nr": "631",
+     "raum": "A233",
+     "regel": [
+      "VBR",
+      "PKR"
+     ],
+     "st": "4"
+    },
+    {
+     "fach": "VBR",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "PKR",
+     "nr": "631",
+     "raum": "A233",
+     "regel": [
+      "VBR",
+      "PKR"
+     ],
+     "st": "5"
+    },
+    {
+     "fach": "ETH",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "GIE",
+     "nr": "628",
+     "raum": "A003",
+     "regel": [
+      "ETH",
+      "GIE"
+     ],
+     "st": "6"
+    },
+    {
+     "fach": "REL",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "SDR",
+     "nr": "629",
+     "raum": "A141",
+     "regel": [
+      "REL",
+      "SDR"
+     ],
+     "st": "6"
+    },
+    {
+     "fach": "RK",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "BOD",
+     "nr": "638",
+     "raum": "A250",
+     "regel": [
+      "RK",
+      "BOD"
+     ],
+     "st": "7"
+    },
+    {
+     "fach": "RK",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "BOD",
+     "nr": "638",
+     "raum": "A250",
+     "regel": [
+      "RK",
+      "BOD"
+     ],
+     "st": "8"
+    }
+   ],
+   "zeitstempel": "14.09.2026, 11:47",
+   "zusatz": [
+    "FB Pflege:",
+    "KPH25/KPH26: 10. Stunde Nachschreiben, MAIW, N405",
+    "Vorabinfo:",
+    "KPH25/KPH26: 16.09. 9. Stunde Nachschreiben, MSG, A208"
    ]
   }
  }
