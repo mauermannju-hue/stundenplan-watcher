@@ -112,6 +112,119 @@
     "FB SOZ:",
     "HEP24: Studientag, Aufgaben ARN"
    ]
+  },
+  "20260917": {
+   "datum": "Donnerstag, 17. September 2026",
+   "gefunden": true,
+   "stunden": [
+    {
+     "fach": "FA",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "HER",
+     "nr": "630",
+     "raum": "N311",
+     "regel": [
+      "FA",
+      "HER"
+     ],
+     "st": "2"
+    },
+    {
+     "fach": "BIO",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "SDR",
+     "nr": "625",
+     "raum": "A141",
+     "regel": [
+      "BIO",
+      "SDR"
+     ],
+     "st": "3"
+    },
+    {
+     "fach": "BIO",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "SDR",
+     "nr": "625",
+     "raum": "A141",
+     "regel": [
+      "BIO",
+      "SDR"
+     ],
+     "st": "4"
+    },
+    {
+     "fach": "MA",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "MIS",
+     "nr": "637",
+     "raum": "N325",
+     "regel": [
+      "MA",
+      "MIS"
+     ],
+     "st": "5"
+    },
+    {
+     "fach": "S",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "SCÄ",
+     "nr": "639",
+     "raum": "AHR",
+     "regel": [
+      "S",
+      "SCÄ"
+     ],
+     "st": "6"
+    },
+    {
+     "fach": "S",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "SCÄ",
+     "nr": "639",
+     "raum": "AHR",
+     "regel": [
+      "S",
+      "SCÄ"
+     ],
+     "st": "7"
+    },
+    {
+     "fach": "DE",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "SCÄ",
+     "nr": "626",
+     "raum": "A247",
+     "regel": [
+      "DE",
+      "SCÄ"
+     ],
+     "st": "8"
+    }
+   ],
+   "zeitstempel": "16.09.2026, 12:24",
+   "zusatz": [
+    "allgemeine Info:",
+    "heute Studien- und Berufsberatung ab 8:30 Uhr, A006",
+    "",
+    "FB BSII:",
+    "BVB26: 2. bis 6. Stunde Klassenleiterstunde, DOM, N229",
+    "",
+    "FB BSIII:",
+    "ZFA26:4:/5. Stunde Infoveranstaltung durch die Kammer mit DIT, Frau Heinzelmann",
+    "VKE25a: Praxistag, zwei Stunden Aufgaben PKR",
+    "",
+    "FB SOZ:",
+    "HEP24: Studientag, Aufgaben ARN",
+    "HEP25: Studientag, Aufgaben ARN"
+   ]
   }
  }
 }
