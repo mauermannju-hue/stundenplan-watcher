@@ -1,122 +1,5 @@
 {
  "plaene": {
-  "20260915": {
-   "datum": "Dienstag, 15. September 2026",
-   "gefunden": true,
-   "stunden": [
-    {
-     "fach": "MA",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "WEN",
-     "nr": "636",
-     "raum": "N230",
-     "regel": [
-      "MA",
-      "WEN"
-     ],
-     "st": "2"
-    },
-    {
-     "fach": "MA",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "WEN",
-     "nr": "636",
-     "raum": "N230",
-     "regel": [
-      "MA",
-      "WEN"
-     ],
-     "st": "3"
-    },
-    {
-     "fach": "VBR",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "PKR",
-     "nr": "631",
-     "raum": "A233",
-     "regel": [
-      "VBR",
-      "PKR"
-     ],
-     "st": "4"
-    },
-    {
-     "fach": "VBR",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "PKR",
-     "nr": "631",
-     "raum": "A233",
-     "regel": [
-      "VBR",
-      "PKR"
-     ],
-     "st": "5"
-    },
-    {
-     "fach": "ETH",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "GIE",
-     "nr": "628",
-     "raum": "A003",
-     "regel": [
-      "ETH",
-      "GIE"
-     ],
-     "st": "6"
-    },
-    {
-     "fach": "REL",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "SDR",
-     "nr": "629",
-     "raum": "A141",
-     "regel": [
-      "REL",
-      "SDR"
-     ],
-     "st": "6"
-    },
-    {
-     "fach": "RK",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "BOD",
-     "nr": "638",
-     "raum": "A250",
-     "regel": [
-      "RK",
-      "BOD"
-     ],
-     "st": "7"
-    },
-    {
-     "fach": "RK",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "BOD",
-     "nr": "638",
-     "raum": "A250",
-     "regel": [
-      "RK",
-      "BOD"
-     ],
-     "st": "8"
-    }
-   ],
-   "zeitstempel": "15.09.2026, 08:47",
-   "zusatz": [
-    "FB Pflege:",
-    "KPH25/KPH26: 10. Stunde Nachschreiben, MAIW, N405",
-    "Vorabinfo:",
-    "KPH25/KPH26: 16.09. 9. Stunde Nachschreiben, MSG, A208"
-   ]
-  },
   "20260916": {
    "datum": "Mittwoch, 16. September 2026",
    "gefunden": true,
@@ -213,7 +96,7 @@
      "st": "8"
     }
    ],
-   "zeitstempel": "15.09.2026, 12:49",
+   "zeitstempel": "16.09.2026, 08:40",
    "zusatz": [
     "FB BSII:",
     "KM23: Hausaufgabentag, Prüfungsvorbereitung, SCY",
