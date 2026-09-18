@@ -1,118 +1,5 @@
 {
  "plaene": {
-  "20260917": {
-   "datum": "Donnerstag, 17. September 2026",
-   "gefunden": true,
-   "stunden": [
-    {
-     "fach": "FA",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "HER",
-     "nr": "630",
-     "raum": "N311",
-     "regel": [
-      "FA",
-      "HER"
-     ],
-     "st": "2"
-    },
-    {
-     "fach": "BIO",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "SDR",
-     "nr": "625",
-     "raum": "A141",
-     "regel": [
-      "BIO",
-      "SDR"
-     ],
-     "st": "3"
-    },
-    {
-     "fach": "BIO",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "SDR",
-     "nr": "625",
-     "raum": "A141",
-     "regel": [
-      "BIO",
-      "SDR"
-     ],
-     "st": "4"
-    },
-    {
-     "fach": "MA",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "MIS",
-     "nr": "637",
-     "raum": "N325",
-     "regel": [
-      "MA",
-      "MIS"
-     ],
-     "st": "5"
-    },
-    {
-     "fach": "S",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "SCÄ",
-     "nr": "639",
-     "raum": "AHR",
-     "regel": [
-      "S",
-      "SCÄ"
-     ],
-     "st": "6"
-    },
-    {
-     "fach": "S",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "SCÄ",
-     "nr": "639",
-     "raum": "AHR",
-     "regel": [
-      "S",
-      "SCÄ"
-     ],
-     "st": "7"
-    },
-    {
-     "fach": "DE",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "SCÄ",
-     "nr": "626",
-     "raum": "A247",
-     "regel": [
-      "DE",
-      "SCÄ"
-     ],
-     "st": "8"
-    }
-   ],
-   "zeitstempel": "16.09.2026, 12:24",
-   "zusatz": [
-    "allgemeine Info:",
-    "heute Studien- und Berufsberatung ab 8:30 Uhr, A006",
-    "",
-    "FB BSII:",
-    "BVB26: 2. bis 6. Stunde Klassenleiterstunde, DOM, N229",
-    "",
-    "FB BSIII:",
-    "ZFA26:4:/5. Stunde Infoveranstaltung durch die Kammer mit DIT, Frau Heinzelmann",
-    "VKE25a: Praxistag, zwei Stunden Aufgaben PKR",
-    "",
-    "FB SOZ:",
-    "HEP24: Studientag, Aufgaben ARN",
-    "HEP25: Studientag, Aufgaben ARN"
-   ]
-  },
   "20260918": {
    "datum": "Freitag, 18. September 2026",
    "gefunden": true,
@@ -196,8 +83,149 @@
      "st": "7"
     }
    ],
-   "zeitstempel": "17.09.2026, 12:27",
+   "zeitstempel": "18.09.2026, 08:35",
    "zusatz": []
+  },
+  "20260921": {
+   "datum": "Montag, 21. September 2026",
+   "gefunden": true,
+   "stunden": [
+    {
+     "fach": "VBR",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "PKR",
+     "nr": "631",
+     "raum": "A233",
+     "regel": [
+      "VBR",
+      "PKR"
+     ],
+     "st": "2"
+    },
+    {
+     "fach": "VBR",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "PKR",
+     "nr": "631",
+     "raum": "A233",
+     "regel": [
+      "VBR",
+      "PKR"
+     ],
+     "st": "3"
+    },
+    {
+     "fach": "GGK",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "SDR",
+     "nr": "633",
+     "raum": "A141",
+     "regel": [
+      "GGK",
+      "SDR"
+     ],
+     "st": "4"
+    },
+    {
+     "fach": "GGK",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "SDR",
+     "nr": "633",
+     "raum": "A141",
+     "regel": [
+      "GGK",
+      "SDR"
+     ],
+     "st": "5"
+    },
+    {
+     "fach": "EN",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "WAL",
+     "nr": "627",
+     "raum": "N330",
+     "regel": [
+      "EN",
+      "WAL"
+     ],
+     "st": "6"
+    },
+    {
+     "fach": "EN",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "WAL",
+     "nr": "627",
+     "raum": "N330",
+     "regel": [
+      "EN",
+      "WAL"
+     ],
+     "st": "7"
+    },
+    {
+     "fach": "GR.1",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "HOL",
+     "nr": "634",
+     "raum": "A242",
+     "regel": [
+      "INF",
+      "HOL"
+     ],
+     "st": "8"
+    },
+    {
+     "fach": "GR.2",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "HER",
+     "nr": "635",
+     "raum": "A109",
+     "regel": [
+      "INF",
+      "HER"
+     ],
+     "st": "8"
+    },
+    {
+     "fach": "GR.1",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "HOL",
+     "nr": "634",
+     "raum": "A242",
+     "regel": [
+      "INF",
+      "HOL"
+     ],
+     "st": "9"
+    },
+    {
+     "fach": "GR.2",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "HER",
+     "nr": "635",
+     "raum": "A109",
+     "regel": [
+      "INF",
+      "HER"
+     ],
+     "st": "9"
+    }
+   ],
+   "zeitstempel": "18.09.2026, 10:36",
+   "zusatz": [
+    "FB SOZ:",
+    "SPE25: 3. bis 5. Stunde Bibliothek, KOC"
+   ]
   }
  }
 }
