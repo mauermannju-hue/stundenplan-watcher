@@ -140,6 +140,131 @@
     "FB SOZ:",
     "SPE25: 3. bis 5. Stunde Bibliothek, KOC"
    ]
+  },
+  "20260922": {
+   "datum": "Dienstag, 22. September 2026",
+   "gefunden": true,
+   "stunden": [
+    {
+     "fach": "MA",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "WEN",
+     "nr": "636",
+     "raum": "N230",
+     "regel": [
+      "MA",
+      "WEN"
+     ],
+     "st": "2"
+    },
+    {
+     "fach": "MA",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "WEN",
+     "nr": "636",
+     "raum": "N230",
+     "regel": [
+      "MA",
+      "WEN"
+     ],
+     "st": "3"
+    },
+    {
+     "fach": "VBR",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "PKR",
+     "nr": "631",
+     "raum": "A233",
+     "regel": [
+      "VBR",
+      "PKR"
+     ],
+     "st": "4"
+    },
+    {
+     "fach": "VBR",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "PKR",
+     "nr": "631",
+     "raum": "A233",
+     "regel": [
+      "VBR",
+      "PKR"
+     ],
+     "st": "5"
+    },
+    {
+     "fach": "ETH",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "GIE",
+     "nr": "628",
+     "raum": "A003",
+     "regel": [
+      "ETH",
+      "GIE"
+     ],
+     "st": "6"
+    },
+    {
+     "fach": "REL",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "SDR",
+     "nr": "629",
+     "raum": "A141",
+     "regel": [
+      "REL",
+      "SDR"
+     ],
+     "st": "6"
+    },
+    {
+     "fach": "RK",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "BOD",
+     "nr": "638",
+     "raum": "A250",
+     "regel": [
+      "RK",
+      "BOD"
+     ],
+     "st": "7"
+    },
+    {
+     "fach": "RK",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "BOD",
+     "nr": "638",
+     "raum": "A250",
+     "regel": [
+      "RK",
+      "BOD"
+     ],
+     "st": "8"
+    }
+   ],
+   "zeitstempel": "21.09.2026, 15:12",
+   "zusatz": [
+    "FB Pflege:",
+    "Elternabend KPH26, 16:30 Uhr, N405, MAIW, MSG",
+    "Elternabend PFF26, MSG, 16:00 Uhr, A208",
+    "",
+    "FB BGY:",
+    "BGy26: Elternabend",
+    "GG26: 17:00 Uhr, A248, WEK, NOS",
+    "TG26: 17:30 Uhr, N328, GRA, NOS",
+    "WG26; 17:15 Uhr, A252, S2; NOS",
+    "",
+    "FB BSII:",
+    "KM23: Hausaufgabentag, Prüfungsvorbereitung, SCY"
+   ]
   }
  }
 }
