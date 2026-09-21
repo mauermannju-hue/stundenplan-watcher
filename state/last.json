@@ -1,91 +1,5 @@
 {
  "plaene": {
-  "20260918": {
-   "datum": "Freitag, 18. September 2026",
-   "gefunden": true,
-   "stunden": [
-    {
-     "fach": "VBR",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "KRAU",
-     "nr": "632",
-     "raum": "N223",
-     "regel": [
-      "VBR",
-      "KRAU"
-     ],
-     "st": "2"
-    },
-    {
-     "fach": "VBR",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "KRAU",
-     "nr": "632",
-     "raum": "N223",
-     "regel": [
-      "VBR",
-      "KRAU"
-     ],
-     "st": "3"
-    },
-    {
-     "fach": "VBR",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "KRAU",
-     "nr": "632",
-     "raum": "N223",
-     "regel": [
-      "VBR",
-      "KRAU"
-     ],
-     "st": "4"
-    },
-    {
-     "fach": "KU",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "NAT",
-     "nr": "640",
-     "raum": "A336",
-     "regel": [
-      "KU",
-      "NAT"
-     ],
-     "st": "5"
-    },
-    {
-     "fach": "DE",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "SCÄ",
-     "nr": "626",
-     "raum": "A247",
-     "regel": [
-      "DE",
-      "SCÄ"
-     ],
-     "st": "6"
-    },
-    {
-     "fach": "DE",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "SCÄ",
-     "nr": "626",
-     "raum": "A247",
-     "regel": [
-      "DE",
-      "SCÄ"
-     ],
-     "st": "7"
-    }
-   ],
-   "zeitstempel": "18.09.2026, 08:35",
-   "zusatz": []
-  },
   "20260921": {
    "datum": "Montag, 21. September 2026",
    "gefunden": true,
@@ -221,7 +135,7 @@
      "st": "9"
     }
    ],
-   "zeitstempel": "18.09.2026, 10:36",
+   "zeitstempel": "21.09.2026, 09:13",
    "zusatz": [
     "FB SOZ:",
     "SPE25: 3. bis 5. Stunde Bibliothek, KOC"
