@@ -124,6 +124,118 @@
     "FB BSII:",
     "KM23: Hausaufgabentag, Prüfungsvorbereitung, SCY"
    ]
+  },
+  "20260923": {
+   "datum": "Mittwoch, 23. September 2026",
+   "gefunden": true,
+   "stunden": [
+    {
+     "fach": "---",
+     "geaendert": [
+      "Fach",
+      "Lehrer",
+      "Raum"
+     ],
+     "info": "DE Frau Schwär fällt aus",
+     "lehrer": "",
+     "nr": "626",
+     "raum": "",
+     "regel": [
+      "DE",
+      "SCÄ"
+     ],
+     "st": "2"
+    },
+    {
+     "fach": "MA",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "WEN",
+     "nr": "636",
+     "raum": "N230",
+     "regel": [
+      "MA",
+      "WEN"
+     ],
+     "st": "3"
+    },
+    {
+     "fach": "MA",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "WEN",
+     "nr": "636",
+     "raum": "N230",
+     "regel": [
+      "MA",
+      "WEN"
+     ],
+     "st": "4"
+    },
+    {
+     "fach": "EN",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "WAL",
+     "nr": "627",
+     "raum": "N330",
+     "regel": [
+      "EN",
+      "WAL"
+     ],
+     "st": "5"
+    },
+    {
+     "fach": "EN",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "WAL",
+     "nr": "627",
+     "raum": "N330",
+     "regel": [
+      "EN",
+      "WAL"
+     ],
+     "st": "6"
+    },
+    {
+     "fach": "MA",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "MIS",
+     "nr": "637",
+     "raum": "N325",
+     "regel": [
+      "MA",
+      "MIS"
+     ],
+     "st": "7"
+    },
+    {
+     "fach": "MA",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "MIS",
+     "nr": "637",
+     "raum": "N325",
+     "regel": [
+      "MA",
+      "MIS"
+     ],
+     "st": "8"
+    }
+   ],
+   "zeitstempel": "22.09.2026, 15:41",
+   "zusatz": [
+    "allgemeine Info:",
+    "die Bibliothek bleibt heute geschlossen",
+    "",
+    "FB SOZ:",
+    "SPE24: 2. bis 4. Stunde Theater, ED",
+    "",
+    "FB BSI:",
+    "VK26; 4. bis 8. Stunde Stadtgang"
+   ]
   }
  }
 }
