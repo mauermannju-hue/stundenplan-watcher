@@ -111,6 +111,111 @@
     "FB BSI:",
     "VK26; 4. bis 8. Stunde Stadtgang"
    ]
+  },
+  "20260924": {
+   "datum": "Donnerstag, 24. September 2026",
+   "gefunden": true,
+   "stunden": [
+    {
+     "fach": "BIO",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "SDR",
+     "nr": "625",
+     "raum": "A141",
+     "regel": [
+      "BIO",
+      "SDR"
+     ],
+     "st": "3"
+    },
+    {
+     "fach": "BIO",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "SDR",
+     "nr": "625",
+     "raum": "A141",
+     "regel": [
+      "BIO",
+      "SDR"
+     ],
+     "st": "4"
+    },
+    {
+     "fach": "MA",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "MIS",
+     "nr": "637",
+     "raum": "N325",
+     "regel": [
+      "MA",
+      "MIS"
+     ],
+     "st": "5"
+    },
+    {
+     "fach": "FA",
+     "geaendert": [
+      "Fach",
+      "Lehrer",
+      "Raum"
+     ],
+     "info": "statt Fr (25.09.) St.8; S Frau Schwär fällt aus",
+     "lehrer": "HER",
+     "nr": "630",
+     "raum": "N311",
+     "regel": [
+      "FA",
+      "HER"
+     ],
+     "st": "6"
+    },
+    {
+     "fach": "---",
+     "geaendert": [
+      "Fach",
+      "Lehrer",
+      "Raum"
+     ],
+     "info": "S Frau Schwär fällt aus",
+     "lehrer": "",
+     "nr": "639",
+     "raum": "",
+     "regel": [
+      "S",
+      "SCÄ"
+     ],
+     "st": "7"
+    },
+    {
+     "fach": "---",
+     "geaendert": [
+      "Fach",
+      "Lehrer",
+      "Raum"
+     ],
+     "info": "DE Frau Schwär fällt aus",
+     "lehrer": "",
+     "nr": "626",
+     "raum": "",
+     "regel": [
+      "DE",
+      "SCÄ"
+     ],
+     "st": "8"
+    }
+   ],
+   "zeitstempel": "23.09.2026, 12:29",
+   "zusatz": [
+    "FB BSIII:",
+    "MFA26:4:/5. Stunde Infoveranstaltung durch die Kammer mit RO, Frau Majchrzak",
+    "",
+    "FB BSI:",
+    "Vorabinfo",
+    "Freitag, 25.09.: KO26b: Praxistag"
+   ]
   }
  }
 }
