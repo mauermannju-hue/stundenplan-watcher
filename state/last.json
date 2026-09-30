@@ -1,120 +1,5 @@
 {
  "plaene": {
-  "20260929": {
-   "datum": "Dienstag, 29. September 2026",
-   "gefunden": true,
-   "stunden": [
-    {
-     "fach": "MA",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "WEN",
-     "nr": "636",
-     "raum": "N230",
-     "regel": [
-      "MA",
-      "WEN"
-     ],
-     "st": "2"
-    },
-    {
-     "fach": "MA",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "WEN",
-     "nr": "636",
-     "raum": "N230",
-     "regel": [
-      "MA",
-      "WEN"
-     ],
-     "st": "3"
-    },
-    {
-     "fach": "VBR",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "PKR",
-     "nr": "631",
-     "raum": "A233",
-     "regel": [
-      "VBR",
-      "PKR"
-     ],
-     "st": "4"
-    },
-    {
-     "fach": "VBR",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "PKR",
-     "nr": "631",
-     "raum": "A233",
-     "regel": [
-      "VBR",
-      "PKR"
-     ],
-     "st": "5"
-    },
-    {
-     "fach": "ETH",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "GIE",
-     "nr": "628",
-     "raum": "A003",
-     "regel": [
-      "ETH",
-      "GIE"
-     ],
-     "st": "6"
-    },
-    {
-     "fach": "REL",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "SDR",
-     "nr": "629",
-     "raum": "A141",
-     "regel": [
-      "REL",
-      "SDR"
-     ],
-     "st": "6"
-    },
-    {
-     "fach": "RK",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "BOD",
-     "nr": "638",
-     "raum": "A250",
-     "regel": [
-      "RK",
-      "BOD"
-     ],
-     "st": "7"
-    },
-    {
-     "fach": "RK",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "BOD",
-     "nr": "638",
-     "raum": "A250",
-     "regel": [
-      "RK",
-      "BOD"
-     ],
-     "st": "8"
-    }
-   ],
-   "zeitstempel": "29.09.2026, 09:01",
-   "zusatz": [
-    "FB SOZ:",
-    "Weiterbildung 5./6. Stunde, NET, EICH, DUT, CRS, BRX, ARN, EB, GRL, FEL, ULL, KOC"
-   ]
-  },
   "20260930": {
    "datum": "Mittwoch, 30. September 2026",
    "gefunden": true,
@@ -223,6 +108,104 @@
     "FB BSIII:",
     "VKE25a: heute Praxistag"
    ]
+  },
+  "20261001": {
+   "datum": "Donnerstag, 01. Oktober 2026",
+   "gefunden": true,
+   "stunden": [
+    {
+     "fach": "BIO",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "SDR",
+     "nr": "625",
+     "raum": "A141",
+     "regel": [
+      "BIO",
+      "SDR"
+     ],
+     "st": "3"
+    },
+    {
+     "fach": "BIO",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "SDR",
+     "nr": "625",
+     "raum": "A141",
+     "regel": [
+      "BIO",
+      "SDR"
+     ],
+     "st": "4"
+    },
+    {
+     "fach": "MA",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "MIS",
+     "nr": "637",
+     "raum": "N325",
+     "regel": [
+      "MA",
+      "MIS"
+     ],
+     "st": "5"
+    },
+    {
+     "fach": "FA",
+     "geaendert": [
+      "Fach",
+      "Lehrer",
+      "Raum"
+     ],
+     "info": "statt Fr (02.10.) St.8; S Frau Schwär fällt aus",
+     "lehrer": "HER",
+     "nr": "630",
+     "raum": "N311",
+     "regel": [
+      "FA",
+      "HER"
+     ],
+     "st": "6"
+    },
+    {
+     "fach": "---",
+     "geaendert": [
+      "Fach",
+      "Lehrer",
+      "Raum"
+     ],
+     "info": "S Frau Schwär fällt aus",
+     "lehrer": "",
+     "nr": "639",
+     "raum": "",
+     "regel": [
+      "S",
+      "SCÄ"
+     ],
+     "st": "7"
+    },
+    {
+     "fach": "---",
+     "geaendert": [
+      "Fach",
+      "Lehrer",
+      "Raum"
+     ],
+     "info": "DE Frau Schwär fällt aus",
+     "lehrer": "",
+     "nr": "626",
+     "raum": "",
+     "regel": [
+      "DE",
+      "SCÄ"
+     ],
+     "st": "8"
+    }
+   ],
+   "zeitstempel": "30.09.2026, 12:24",
+   "zusatz": []
   }
  }
 }
