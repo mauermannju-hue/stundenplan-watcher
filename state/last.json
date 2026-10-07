@@ -140,6 +140,144 @@
     "FB SOZ:",
     "HEP25: 4./5.Stunde Stadtgang, ARN"
    ]
+  },
+  "20261008": {
+   "datum": "Donnerstag, 08. Oktober 2026",
+   "gefunden": true,
+   "stunden": [
+    {
+     "fach": "---",
+     "geaendert": [
+      "Fach",
+      "Lehrer",
+      "Raum"
+     ],
+     "info": "FA Herr Herzog fällt aus",
+     "lehrer": "",
+     "nr": "630",
+     "raum": "",
+     "regel": [
+      "FA",
+      "HER"
+     ],
+     "st": "2"
+    },
+    {
+     "fach": "---",
+     "geaendert": [
+      "Fach",
+      "Lehrer",
+      "Raum"
+     ],
+     "info": "BIO Herr Schletter, Dr. fällt aus",
+     "lehrer": "",
+     "nr": "625",
+     "raum": "",
+     "regel": [
+      "BIO",
+      "SDR"
+     ],
+     "st": "3"
+    },
+    {
+     "fach": "---",
+     "geaendert": [
+      "Fach",
+      "Lehrer",
+      "Raum"
+     ],
+     "info": "BIO Herr Schletter, Dr. fällt aus",
+     "lehrer": "",
+     "nr": "625",
+     "raum": "",
+     "regel": [
+      "BIO",
+      "SDR"
+     ],
+     "st": "4"
+    },
+    {
+     "fach": "---",
+     "geaendert": [
+      "Fach",
+      "Lehrer",
+      "Raum"
+     ],
+     "info": "MA Frau Mischke fällt aus",
+     "lehrer": "",
+     "nr": "637",
+     "raum": "",
+     "regel": [
+      "MA",
+      "MIS"
+     ],
+     "st": "5"
+    },
+    {
+     "fach": "---",
+     "geaendert": [
+      "Fach",
+      "Lehrer",
+      "Raum"
+     ],
+     "info": "S Frau Schwär fällt aus",
+     "lehrer": "",
+     "nr": "639",
+     "raum": "",
+     "regel": [
+      "S",
+      "SCÄ"
+     ],
+     "st": "6"
+    },
+    {
+     "fach": "---",
+     "geaendert": [
+      "Fach",
+      "Lehrer",
+      "Raum"
+     ],
+     "info": "S Frau Schwär fällt aus",
+     "lehrer": "",
+     "nr": "639",
+     "raum": "",
+     "regel": [
+      "S",
+      "SCÄ"
+     ],
+     "st": "7"
+    },
+    {
+     "fach": "---",
+     "geaendert": [
+      "Fach",
+      "Lehrer",
+      "Raum"
+     ],
+     "info": "DE Frau Schwär fällt aus",
+     "lehrer": "",
+     "nr": "626",
+     "raum": "",
+     "regel": [
+      "DE",
+      "SCÄ"
+     ],
+     "st": "8"
+    }
+   ],
+   "zeitstempel": "07.10.2026, 13:51",
+   "zusatz": [
+    "FB BGy:",
+    "BGy25, DE1: Stadtgng Bibliothek, 8:30 Uhr bis 11:30 Uhr, ZÖL",
+    "Vorabinfo:",
+    "BGy25:",
+    "09.10., de2: Stadtgng Bibliothek, 8:30 Uhr bis 11:30 Uhr, ENG",
+    "30.10: BGY25/BGy24:",
+    "13:00 Uhr bis ca. 14:30 Uhr: Infoveranstaltung technisches Lehramt, Aula, Pflichtveranstaltung, NOS, LIE",
+    "",
+    "FB FOS:",
+    "FOS25S / FOS25W: vom 05.10. bis 09.10. auf Studienfahrt, KRAU, CRS, WAL, MEI"
+   ]
   }
  }
 }
