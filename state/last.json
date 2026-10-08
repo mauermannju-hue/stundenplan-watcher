@@ -137,6 +137,159 @@
     "FB FOS:",
     "FOS25S / FOS25W: vom 05.10. bis 09.10. auf Studienfahrt, KRAU, CRS, WAL, MEI"
    ]
+  },
+  "20261009": {
+   "datum": "Freitag, 09. Oktober 2026",
+   "gefunden": true,
+   "stunden": [
+    {
+     "fach": "---",
+     "geaendert": [
+      "Fach",
+      "Lehrer",
+      "Raum"
+     ],
+     "info": "VBR Frau Krause fällt aus",
+     "lehrer": "",
+     "nr": "632",
+     "raum": "",
+     "regel": [
+      "VBR",
+      "KRAU"
+     ],
+     "st": "2"
+    },
+    {
+     "fach": "---",
+     "geaendert": [
+      "Fach",
+      "Lehrer",
+      "Raum"
+     ],
+     "info": "VBR Frau Krause fällt aus",
+     "lehrer": "",
+     "nr": "632",
+     "raum": "",
+     "regel": [
+      "VBR",
+      "KRAU"
+     ],
+     "st": "3"
+    },
+    {
+     "fach": "---",
+     "geaendert": [
+      "Fach",
+      "Lehrer",
+      "Raum"
+     ],
+     "info": "VBR Frau Krause fällt aus",
+     "lehrer": "",
+     "nr": "632",
+     "raum": "",
+     "regel": [
+      "VBR",
+      "KRAU"
+     ],
+     "st": "4"
+    },
+    {
+     "fach": "---",
+     "geaendert": [
+      "Fach",
+      "Lehrer",
+      "Raum"
+     ],
+     "info": "KU Herr Natusch fällt aus",
+     "lehrer": "",
+     "nr": "640",
+     "raum": "",
+     "regel": [
+      "KU",
+      "NAT"
+     ],
+     "st": "5"
+    },
+    {
+     "fach": "---",
+     "geaendert": [
+      "Fach",
+      "Lehrer",
+      "Raum"
+     ],
+     "info": "DE Frau Schwär fällt aus",
+     "lehrer": "",
+     "nr": "626",
+     "raum": "",
+     "regel": [
+      "DE",
+      "SCÄ"
+     ],
+     "st": "6"
+    },
+    {
+     "fach": "---",
+     "geaendert": [
+      "Fach",
+      "Lehrer",
+      "Raum"
+     ],
+     "info": "DE Frau Schwär fällt aus",
+     "lehrer": "",
+     "nr": "626",
+     "raum": "",
+     "regel": [
+      "DE",
+      "SCÄ"
+     ],
+     "st": "7"
+    },
+    {
+     "fach": "---",
+     "geaendert": [
+      "Fach",
+      "Lehrer",
+      "Raum"
+     ],
+     "info": "DE Frau Schwär fällt aus",
+     "lehrer": "",
+     "nr": "626",
+     "raum": "",
+     "regel": [
+      "DE",
+      "SCÄ"
+     ],
+     "st": "8"
+    },
+    {
+     "fach": "---",
+     "geaendert": [
+      "Fach",
+      "Lehrer",
+      "Raum"
+     ],
+     "info": "FA Herr Herzog fällt aus",
+     "lehrer": "",
+     "nr": "630",
+     "raum": "",
+     "regel": [
+      "FA",
+      "HER"
+     ],
+     "st": "8"
+    }
+   ],
+   "zeitstempel": "08.10.2026, 15:14",
+   "zusatz": [
+    "FB BGy:",
+    "BGy25, de2: Stadtgng Bibliothek, 8:30 Uhr bis 11:30 Uhr, ENG",
+    "Vorabinfo:",
+    "30.10: BGY25/BGy24:",
+    "13:00 Uhr bis ca. 14:30 Uhr: Infoveranstaltung technisches Lehramt, Aula, Pflichtveranstaltung, NOS, LIE",
+    "",
+    "FB FOS:",
+    "FOS25S / FOS25W: vom 05.10. bis 09.10. auf Studienfahrt, KRAU, CRS, WAL, MEI"
+   ]
   }
  }
 }
