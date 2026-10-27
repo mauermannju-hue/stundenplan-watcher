@@ -134,6 +134,113 @@
     "",
     "HEP24/HEP25: 26./27.10. Projekttage, KOC"
    ]
+  },
+  "20261028": {
+   "datum": "Mittwoch, 28. Oktober 2026",
+   "gefunden": true,
+   "stunden": [
+    {
+     "fach": "DE",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "MEI",
+     "nr": "2613",
+     "raum": "A159",
+     "regel": [
+      "DE",
+      "MEI"
+     ],
+     "st": "2"
+    },
+    {
+     "fach": "DE",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "MEI",
+     "nr": "2613",
+     "raum": "A159",
+     "regel": [
+      "DE",
+      "MEI"
+     ],
+     "st": "3"
+    },
+    {
+     "fach": "MA",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "MIS",
+     "nr": "637",
+     "raum": "N325",
+     "regel": [
+      "MA",
+      "MIS"
+     ],
+     "st": "4"
+    },
+    {
+     "fach": "EN",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "WAL",
+     "nr": "627",
+     "raum": "N330",
+     "regel": [
+      "EN",
+      "WAL"
+     ],
+     "st": "5"
+    },
+    {
+     "fach": "KU",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "NAT",
+     "nr": "640",
+     "raum": "A336",
+     "regel": [
+      "KU",
+      "NAT"
+     ],
+     "st": "6"
+    },
+    {
+     "fach": "MA",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "WEN",
+     "nr": "636",
+     "raum": "N230",
+     "regel": [
+      "MA",
+      "WEN"
+     ],
+     "st": "7"
+    },
+    {
+     "fach": "MA",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "WEN",
+     "nr": "636",
+     "raum": "N230",
+     "regel": [
+      "MA",
+      "WEN"
+     ],
+     "st": "8"
+    }
+   ],
+   "zeitstempel": "27.10.2026, 12:35",
+   "zusatz": [
+    "FB BGy:",
+    "Vorabinfo:",
+    "30.10: BGY25/BGy24:",
+    "13:00 Uhr bis ca. 14:30 Uhr: Infoveranstaltung technisches Lehramt, Aula, Pflichtveranstaltung, NOS, LIE",
+    "",
+    "FB SOZ:",
+    "SPE24: Studientag, Aufgaben ED"
+   ]
   }
  }
 }
