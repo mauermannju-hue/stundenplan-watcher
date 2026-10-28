@@ -106,6 +106,108 @@
     "FB SOZ:",
     "SPE24: Studientag, Aufgaben ED"
    ]
+  },
+  "20261029": {
+   "datum": "Donnerstag, 29. Oktober 2026",
+   "gefunden": true,
+   "stunden": [
+    {
+     "fach": "S",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "HOL",
+     "nr": "2615",
+     "raum": "AHL",
+     "regel": [
+      "S",
+      "HOL"
+     ],
+     "st": "2"
+    },
+    {
+     "fach": "S",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "HOL",
+     "nr": "2615",
+     "raum": "AHL",
+     "regel": [
+      "S",
+      "HOL"
+     ],
+     "st": "3"
+    },
+    {
+     "fach": "MA",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "MIS",
+     "nr": "637",
+     "raum": "N325",
+     "regel": [
+      "MA",
+      "MIS"
+     ],
+     "st": "4"
+    },
+    {
+     "fach": "MA",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "MIS",
+     "nr": "637",
+     "raum": "N325",
+     "regel": [
+      "MA",
+      "MIS"
+     ],
+     "st": "5"
+    },
+    {
+     "fach": "---",
+     "geaendert": [
+      "Fach",
+      "Lehrer",
+      "Raum"
+     ],
+     "info": "RK Frau Bodinka fällt aus",
+     "lehrer": "",
+     "nr": "638",
+     "raum": "",
+     "regel": [
+      "RK",
+      "BOD"
+     ],
+     "st": "6"
+    },
+    {
+     "fach": "---",
+     "geaendert": [
+      "Fach",
+      "Lehrer",
+      "Raum"
+     ],
+     "info": "RK Frau Bodinka fällt aus",
+     "lehrer": "",
+     "nr": "638",
+     "raum": "",
+     "regel": [
+      "RK",
+      "BOD"
+     ],
+     "st": "7"
+    }
+   ],
+   "zeitstempel": "28.10.2026, 13:11",
+   "zusatz": [
+    "allgemeien Info:",
+    "05.11.: Keisfinale Volleyball, beide Neubauhallen von 8:00 Uhr bis 14:00 Uhr gesperrt",
+    "",
+    "FB BGy:",
+    "Vorabinfo:",
+    "30.10: BGY25/BGy24:",
+    "13:00 Uhr bis ca. 14:30 Uhr: Infoveranstaltung technisches Lehramt, Aula, Pflichtveranstaltung, NOS, LIE"
+   ]
   }
  }
 }
