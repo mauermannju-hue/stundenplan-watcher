@@ -104,6 +104,100 @@
     "FB Pflege:",
     "14:45 Uhr DB, A008"
    ]
+  },
+  "20261030": {
+   "datum": "Freitag, 30. Oktober 2026",
+   "gefunden": true,
+   "stunden": [
+    {
+     "fach": "BIO",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "SDR",
+     "nr": "625",
+     "raum": "A141",
+     "regel": [
+      "BIO",
+      "SDR"
+     ],
+     "st": "2"
+    },
+    {
+     "fach": "BIO",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "SDR",
+     "nr": "625",
+     "raum": "A141",
+     "regel": [
+      "BIO",
+      "SDR"
+     ],
+     "st": "3"
+    },
+    {
+     "fach": "DE",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "MEI",
+     "nr": "2613",
+     "raum": "A159",
+     "regel": [
+      "DE",
+      "MEI"
+     ],
+     "st": "4"
+    },
+    {
+     "fach": "EN",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "WAL",
+     "nr": "627",
+     "raum": "N330",
+     "regel": [
+      "EN",
+      "WAL"
+     ],
+     "st": "5"
+    },
+    {
+     "fach": "VBR",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "KRAU",
+     "nr": "632",
+     "raum": "N223",
+     "regel": [
+      "VBR",
+      "KRAU"
+     ],
+     "st": "6"
+    },
+    {
+     "fach": "FA",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "HER",
+     "nr": "630",
+     "raum": "N311",
+     "regel": [
+      "FA",
+      "HER"
+     ],
+     "st": "7"
+    }
+   ],
+   "zeitstempel": "29.10.2026, 12:41",
+   "zusatz": [
+    "allgemeien Info:",
+    "05.11.: Keisfinale Volleyball, beide Neubauhallen von 8:00 Uhr bis 14:00 Uhr gesperrt",
+    "",
+    "FB BGy:",
+    "BGY25/BGy24:",
+    "13:00 Uhr bis ca. 14:30 Uhr: Infoveranstaltung technisches Lehramt, Aula, Pflichtveranstaltung, NOS, LIE",
+    "BGy25: neue Kurslisten für ggk1, ggk2, ggk3 auf OPAL, bitte informieren"
+   ]
   }
  }
 }
