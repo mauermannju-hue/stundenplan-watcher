@@ -1,99 +1,5 @@
 {
  "plaene": {
-  "20261030": {
-   "datum": "Freitag, 30. Oktober 2026",
-   "gefunden": true,
-   "stunden": [
-    {
-     "fach": "BIO",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "SDR",
-     "nr": "625",
-     "raum": "A141",
-     "regel": [
-      "BIO",
-      "SDR"
-     ],
-     "st": "2"
-    },
-    {
-     "fach": "BIO",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "SDR",
-     "nr": "625",
-     "raum": "A141",
-     "regel": [
-      "BIO",
-      "SDR"
-     ],
-     "st": "3"
-    },
-    {
-     "fach": "DE",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "MEI",
-     "nr": "2613",
-     "raum": "A159",
-     "regel": [
-      "DE",
-      "MEI"
-     ],
-     "st": "4"
-    },
-    {
-     "fach": "EN",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "WAL",
-     "nr": "627",
-     "raum": "N330",
-     "regel": [
-      "EN",
-      "WAL"
-     ],
-     "st": "5"
-    },
-    {
-     "fach": "VBR",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "KRAU",
-     "nr": "632",
-     "raum": "N223",
-     "regel": [
-      "VBR",
-      "KRAU"
-     ],
-     "st": "6"
-    },
-    {
-     "fach": "FA",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "HER",
-     "nr": "630",
-     "raum": "N311",
-     "regel": [
-      "FA",
-      "HER"
-     ],
-     "st": "7"
-    }
-   ],
-   "zeitstempel": "29.10.2026, 12:41",
-   "zusatz": [
-    "allgemeien Info:",
-    "05.11.: Keisfinale Volleyball, beide Neubauhallen von 8:00 Uhr bis 14:00 Uhr gesperrt",
-    "",
-    "FB BGy:",
-    "BGY25/BGy24:",
-    "13:00 Uhr bis ca. 14:30 Uhr: Infoveranstaltung technisches Lehramt, Aula, Pflichtveranstaltung, NOS, LIE",
-    "BGy25: neue Kurslisten für ggk1, ggk2, ggk3 auf OPAL, bitte informieren"
-   ]
-  },
   "20261102": {
    "datum": "Montag, 02. November 2026",
    "gefunden": true,
@@ -229,10 +135,141 @@
      "st": "9"
     }
    ],
-   "zeitstempel": "30.10.2026, 11:56",
+   "zeitstempel": "02.11.2026, 07:59",
    "zusatz": [
     "allgemeien Info:",
     "05.11.: Keisfinale Volleyball, beide Neubauhallen von 8:00 Uhr bis 14:00 Uhr gesperrt"
+   ]
+  },
+  "20261103": {
+   "datum": "Dienstag, 03. November 2026",
+   "gefunden": true,
+   "stunden": [
+    {
+     "fach": "MA",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "WEN",
+     "nr": "636",
+     "raum": "N230",
+     "regel": [
+      "MA",
+      "WEN"
+     ],
+     "st": "2"
+    },
+    {
+     "fach": "MA",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "WEN",
+     "nr": "636",
+     "raum": "N230",
+     "regel": [
+      "MA",
+      "WEN"
+     ],
+     "st": "3"
+    },
+    {
+     "fach": "VBR",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "PKR",
+     "nr": "631",
+     "raum": "A233",
+     "regel": [
+      "VBR",
+      "PKR"
+     ],
+     "st": "4"
+    },
+    {
+     "fach": "VBR",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "PKR",
+     "nr": "631",
+     "raum": "A233",
+     "regel": [
+      "VBR",
+      "PKR"
+     ],
+     "st": "5"
+    },
+    {
+     "fach": "ETH",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "GIE",
+     "nr": "628",
+     "raum": "A003",
+     "regel": [
+      "ETH",
+      "GIE"
+     ],
+     "st": "6"
+    },
+    {
+     "fach": "REL",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "SDR",
+     "nr": "629",
+     "raum": "A141",
+     "regel": [
+      "REL",
+      "SDR"
+     ],
+     "st": "6"
+    },
+    {
+     "fach": "DE",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "MEI",
+     "nr": "2613",
+     "raum": "A159",
+     "regel": [
+      "DE",
+      "MEI"
+     ],
+     "st": "7"
+    },
+    {
+     "fach": "VBR",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "KRAU",
+     "nr": "632",
+     "raum": "N223",
+     "regel": [
+      "VBR",
+      "KRAU"
+     ],
+     "st": "8"
+    },
+    {
+     "fach": "VBR",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "KRAU",
+     "nr": "632",
+     "raum": "N223",
+     "regel": [
+      "VBR",
+      "KRAU"
+     ],
+     "st": "9"
+    }
+   ],
+   "zeitstempel": "02.11.2026, 12:53",
+   "zusatz": [
+    "allgemeien Info:",
+    "05.11.: Kreisfinale Volleyball, beide Neubauhallen von 8:00 Uhr bis 14:00 Uhr gesperrt",
+    "",
+    "FB SOZ;",
+    "SPE25/SPE25: Exkursion nach DD, BRX, GRL"
    ]
   }
  }
