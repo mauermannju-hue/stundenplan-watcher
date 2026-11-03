@@ -1,146 +1,5 @@
 {
  "plaene": {
-  "20261102": {
-   "datum": "Montag, 02. November 2026",
-   "gefunden": true,
-   "stunden": [
-    {
-     "fach": "VBR",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "PKR",
-     "nr": "631",
-     "raum": "A233",
-     "regel": [
-      "VBR",
-      "PKR"
-     ],
-     "st": "2"
-    },
-    {
-     "fach": "VBR",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "PKR",
-     "nr": "631",
-     "raum": "A233",
-     "regel": [
-      "VBR",
-      "PKR"
-     ],
-     "st": "3"
-    },
-    {
-     "fach": "GGK",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "SDR",
-     "nr": "633",
-     "raum": "A141",
-     "regel": [
-      "GGK",
-      "SDR"
-     ],
-     "st": "4"
-    },
-    {
-     "fach": "GGK",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "SDR",
-     "nr": "633",
-     "raum": "A141",
-     "regel": [
-      "GGK",
-      "SDR"
-     ],
-     "st": "5"
-    },
-    {
-     "fach": "EN",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "WAL",
-     "nr": "627",
-     "raum": "N330",
-     "regel": [
-      "EN",
-      "WAL"
-     ],
-     "st": "6"
-    },
-    {
-     "fach": "EN",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "WAL",
-     "nr": "627",
-     "raum": "N330",
-     "regel": [
-      "EN",
-      "WAL"
-     ],
-     "st": "7"
-    },
-    {
-     "fach": "GR.1",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "HOL",
-     "nr": "634",
-     "raum": "A242",
-     "regel": [
-      "INF",
-      "HOL"
-     ],
-     "st": "8"
-    },
-    {
-     "fach": "GR.2",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "HER",
-     "nr": "635",
-     "raum": "A109",
-     "regel": [
-      "INF",
-      "HER"
-     ],
-     "st": "8"
-    },
-    {
-     "fach": "GR.1",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "HOL",
-     "nr": "634",
-     "raum": "A242",
-     "regel": [
-      "INF",
-      "HOL"
-     ],
-     "st": "9"
-    },
-    {
-     "fach": "GR.2",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "HER",
-     "nr": "635",
-     "raum": "A109",
-     "regel": [
-      "INF",
-      "HER"
-     ],
-     "st": "9"
-    }
-   ],
-   "zeitstempel": "02.11.2026, 07:59",
-   "zusatz": [
-    "allgemeien Info:",
-    "05.11.: Keisfinale Volleyball, beide Neubauhallen von 8:00 Uhr bis 14:00 Uhr gesperrt"
-   ]
-  },
   "20261103": {
    "datum": "Dienstag, 03. November 2026",
    "gefunden": true,
@@ -263,13 +122,115 @@
      "st": "9"
     }
    ],
-   "zeitstempel": "02.11.2026, 15:42",
+   "zeitstempel": "03.11.2026, 10:13",
    "zusatz": [
     "allgemeien Info:",
     "05.11.: Kreisfinale Volleyball, beide Neubauhallen von 8:00 Uhr bis 14:00 Uhr gesperrt",
     "",
     "FB SOZ;",
     "SPE25/SPE25: Exkursion nach DD, BRX, GRL"
+   ]
+  },
+  "20261104": {
+   "datum": "Mittwoch, 04. November 2026",
+   "gefunden": true,
+   "stunden": [
+    {
+     "fach": "DE",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "MEI",
+     "nr": "2613",
+     "raum": "A159",
+     "regel": [
+      "DE",
+      "MEI"
+     ],
+     "st": "2"
+    },
+    {
+     "fach": "DE",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "MEI",
+     "nr": "2613",
+     "raum": "A159",
+     "regel": [
+      "DE",
+      "MEI"
+     ],
+     "st": "3"
+    },
+    {
+     "fach": "MA",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "MIS",
+     "nr": "637",
+     "raum": "N325",
+     "regel": [
+      "MA",
+      "MIS"
+     ],
+     "st": "4"
+    },
+    {
+     "fach": "EN",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "WAL",
+     "nr": "627",
+     "raum": "N330",
+     "regel": [
+      "EN",
+      "WAL"
+     ],
+     "st": "5"
+    },
+    {
+     "fach": "KU",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "NAT",
+     "nr": "640",
+     "raum": "N-132",
+     "regel": [
+      "KU",
+      "NAT"
+     ],
+     "st": "6"
+    },
+    {
+     "fach": "MA",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "WEN",
+     "nr": "636",
+     "raum": "N230",
+     "regel": [
+      "MA",
+      "WEN"
+     ],
+     "st": "7"
+    },
+    {
+     "fach": "MA",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "WEN",
+     "nr": "636",
+     "raum": "N230",
+     "regel": [
+      "MA",
+      "WEN"
+     ],
+     "st": "8"
+    }
+   ],
+   "zeitstempel": "03.11.2026, 12:37",
+   "zusatz": [
+    "allgemeien Info:",
+    "05.11.: Kreisfinale Volleyball, beide Neubauhallen von 8:00 Uhr bis 14:00 Uhr gesperrt"
    ]
   }
  }
