@@ -1,107 +1,5 @@
 {
  "plaene": {
-  "20261104": {
-   "datum": "Mittwoch, 04. November 2026",
-   "gefunden": true,
-   "stunden": [
-    {
-     "fach": "DE",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "MEI",
-     "nr": "2613",
-     "raum": "A159",
-     "regel": [
-      "DE",
-      "MEI"
-     ],
-     "st": "2"
-    },
-    {
-     "fach": "DE",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "MEI",
-     "nr": "2613",
-     "raum": "A159",
-     "regel": [
-      "DE",
-      "MEI"
-     ],
-     "st": "3"
-    },
-    {
-     "fach": "MA",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "MIS",
-     "nr": "637",
-     "raum": "N325",
-     "regel": [
-      "MA",
-      "MIS"
-     ],
-     "st": "4"
-    },
-    {
-     "fach": "EN",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "WAL",
-     "nr": "627",
-     "raum": "N330",
-     "regel": [
-      "EN",
-      "WAL"
-     ],
-     "st": "5"
-    },
-    {
-     "fach": "KU",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "NAT",
-     "nr": "640",
-     "raum": "N-132",
-     "regel": [
-      "KU",
-      "NAT"
-     ],
-     "st": "6"
-    },
-    {
-     "fach": "MA",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "WEN",
-     "nr": "636",
-     "raum": "N230",
-     "regel": [
-      "MA",
-      "WEN"
-     ],
-     "st": "7"
-    },
-    {
-     "fach": "MA",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "WEN",
-     "nr": "636",
-     "raum": "N230",
-     "regel": [
-      "MA",
-      "WEN"
-     ],
-     "st": "8"
-    }
-   ],
-   "zeitstempel": "04.11.2026, 08:05",
-   "zusatz": [
-    "allgemeien Info:",
-    "05.11.: Kreisfinale Volleyball, beide Neubauhallen von 8:00 Uhr bis 14:00 Uhr gesperrt"
-   ]
-  },
   "20261105": {
    "datum": "Donnerstag, 05. November 2026",
    "gefunden": true,
@@ -201,7 +99,7 @@
      "st": "7"
     }
    ],
-   "zeitstempel": "04.11.2026, 14:06",
+   "zeitstempel": "05.11.2026, 08:37",
    "zusatz": [
     "allgemeien Info:",
     "05.11.: Kreisfinale Volleyball, beide Neubauhallen von 8:00 Uhr bis 14:00 Uhr gesperrt",
@@ -210,6 +108,98 @@
     "HEP24: Studientag, Aufgaben EICH",
     "HEP25: Studientag, Aufgaben NET"
    ]
+  },
+  "20261106": {
+   "datum": "Freitag, 06. November 2026",
+   "gefunden": true,
+   "stunden": [
+    {
+     "fach": "---",
+     "geaendert": [
+      "Fach"
+     ],
+     "info": "BIO Herr Schletter, Dr. gehalten am Do (05.11.) St.2",
+     "lehrer": "",
+     "nr": "625",
+     "raum": "",
+     "regel": [
+      "BIO",
+      "SDR"
+     ],
+     "st": "2"
+    },
+    {
+     "fach": "---",
+     "geaendert": [
+      "Fach"
+     ],
+     "info": "BIO Herr Schletter, Dr. gehalten am Do (05.11.) St.3",
+     "lehrer": "",
+     "nr": "625",
+     "raum": "",
+     "regel": [
+      "BIO",
+      "SDR"
+     ],
+     "st": "3"
+    },
+    {
+     "fach": "DE",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "MEI",
+     "nr": "2613",
+     "raum": "A159",
+     "regel": [
+      "DE",
+      "MEI"
+     ],
+     "st": "4"
+    },
+    {
+     "fach": "EN",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "WAL",
+     "nr": "627",
+     "raum": "N330",
+     "regel": [
+      "EN",
+      "WAL"
+     ],
+     "st": "5"
+    },
+    {
+     "fach": "VBR",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "KRAU",
+     "nr": "632",
+     "raum": "N223",
+     "regel": [
+      "VBR",
+      "KRAU"
+     ],
+     "st": "6"
+    },
+    {
+     "fach": "---",
+     "geaendert": [
+      "Fach"
+     ],
+     "info": "FA Herr Herzog gehalten am Do (05.11.) St.6",
+     "lehrer": "",
+     "nr": "630",
+     "raum": "",
+     "regel": [
+      "FA",
+      "HER"
+     ],
+     "st": "7"
+    }
+   ],
+   "zeitstempel": "05.11.2026, 10:41",
+   "zusatz": []
   }
  }
 }
