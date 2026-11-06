@@ -1,114 +1,5 @@
 {
  "plaene": {
-  "20261105": {
-   "datum": "Donnerstag, 05. November 2026",
-   "gefunden": true,
-   "stunden": [
-    {
-     "fach": "BIO",
-     "geaendert": [
-      "Fach",
-      "Lehrer",
-      "Raum"
-     ],
-     "info": "statt Fr (06.11.) St.2",
-     "lehrer": "SDR",
-     "nr": "625",
-     "raum": "A141",
-     "regel": [
-      "BIO",
-      "SDR"
-     ],
-     "st": "2"
-    },
-    {
-     "fach": "BIO",
-     "geaendert": [
-      "Fach",
-      "Lehrer",
-      "Raum"
-     ],
-     "info": "statt Fr (06.11.) St.3",
-     "lehrer": "SDR",
-     "nr": "625",
-     "raum": "A141",
-     "regel": [
-      "BIO",
-      "SDR"
-     ],
-     "st": "3"
-    },
-    {
-     "fach": "MA",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "MIS",
-     "nr": "637",
-     "raum": "N325",
-     "regel": [
-      "MA",
-      "MIS"
-     ],
-     "st": "4"
-    },
-    {
-     "fach": "MA",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "MIS",
-     "nr": "637",
-     "raum": "N325",
-     "regel": [
-      "MA",
-      "MIS"
-     ],
-     "st": "5"
-    },
-    {
-     "fach": "FA",
-     "geaendert": [
-      "Fach",
-      "Lehrer",
-      "Raum"
-     ],
-     "info": "statt Fr (06.11.) St.7; RK Frau Bodinka fällt aus",
-     "lehrer": "HER",
-     "nr": "630",
-     "raum": "N311",
-     "regel": [
-      "FA",
-      "HER"
-     ],
-     "st": "6"
-    },
-    {
-     "fach": "---",
-     "geaendert": [
-      "Fach",
-      "Lehrer",
-      "Raum"
-     ],
-     "info": "RK Frau Bodinka fällt aus",
-     "lehrer": "",
-     "nr": "638",
-     "raum": "",
-     "regel": [
-      "RK",
-      "BOD"
-     ],
-     "st": "7"
-    }
-   ],
-   "zeitstempel": "05.11.2026, 08:37",
-   "zusatz": [
-    "allgemeien Info:",
-    "05.11.: Kreisfinale Volleyball, beide Neubauhallen von 8:00 Uhr bis 14:00 Uhr gesperrt",
-    "",
-    "FB SOZ:",
-    "HEP24: Studientag, Aufgaben EICH",
-    "HEP25: Studientag, Aufgaben NET"
-   ]
-  },
   "20261106": {
    "datum": "Freitag, 06. November 2026",
    "gefunden": true,
@@ -198,7 +89,7 @@
      "st": "7"
     }
    ],
-   "zeitstempel": "05.11.2026, 13:33",
+   "zeitstempel": "06.11.2026, 07:09",
    "zusatz": []
   }
  }
