@@ -1,0 +1,16 @@
+# systemd-Dienst fuer den Tower:  sudo cp inspo.service /etc/systemd/system/ && sudo systemctl enable --now inspo
+[Unit]
+Description=Inspo-Inbox Telegram-Bot
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+# Pfade anpassen: Ordner, in dem der inspo/-Ordner liegt
+WorkingDirectory=/opt/stundenplan-watcher
+ExecStart=/opt/stundenplan-watcher/.venv/bin/python -m inspo bot
+Restart=always
+RestartSec=10
+User=inspo
+
+[Install]
+WantedBy=multi-user.target

@@ -1,5 +1,8 @@
 # Stundenplan-Watcher — BSZ Görlitz → Telegram
 
+> Außerdem in diesem Repo: **[`inspo/`](inspo/README.md)** – die Inspo-Inbox (Telegram-Bot, der geteilte
+> Reels/Websites analysiert und daraus eine Stil-Bibliothek für den KI-Mitarbeiter baut).
+
 Zwei Telegram-Benachrichtigungen, beide aus GitHub Actions und damit unabhängig
 vom eigenen Rechner:
 

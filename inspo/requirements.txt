@@ -1,0 +1,7 @@
+anthropic>=2.6
+pydantic>=2
+requests>=2.31
+yt-dlp>=2025.1.1        # regelmaessig aktualisieren: pip install -U yt-dlp
+playwright>=1.45        # danach einmalig: python -m playwright install chromium
+# optional, fuer Transkripte (laeuft lokal, CPU reicht fuer Kurzvideos):
+# faster-whisper>=1.0
