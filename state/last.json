@@ -1,97 +1,5 @@
 {
  "plaene": {
-  "20261106": {
-   "datum": "Freitag, 06. November 2026",
-   "gefunden": true,
-   "stunden": [
-    {
-     "fach": "---",
-     "geaendert": [
-      "Fach"
-     ],
-     "info": "BIO Herr Schletter, Dr. gehalten am Do (05.11.) St.2",
-     "lehrer": "",
-     "nr": "625",
-     "raum": "",
-     "regel": [
-      "BIO",
-      "SDR"
-     ],
-     "st": "2"
-    },
-    {
-     "fach": "---",
-     "geaendert": [
-      "Fach"
-     ],
-     "info": "BIO Herr Schletter, Dr. gehalten am Do (05.11.) St.3",
-     "lehrer": "",
-     "nr": "625",
-     "raum": "",
-     "regel": [
-      "BIO",
-      "SDR"
-     ],
-     "st": "3"
-    },
-    {
-     "fach": "DE",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "MEI",
-     "nr": "2613",
-     "raum": "A159",
-     "regel": [
-      "DE",
-      "MEI"
-     ],
-     "st": "4"
-    },
-    {
-     "fach": "EN",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "WAL",
-     "nr": "627",
-     "raum": "N330",
-     "regel": [
-      "EN",
-      "WAL"
-     ],
-     "st": "5"
-    },
-    {
-     "fach": "VBR",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "KRAU",
-     "nr": "632",
-     "raum": "N223",
-     "regel": [
-      "VBR",
-      "KRAU"
-     ],
-     "st": "6"
-    },
-    {
-     "fach": "---",
-     "geaendert": [
-      "Fach"
-     ],
-     "info": "FA Herr Herzog gehalten am Do (05.11.) St.6",
-     "lehrer": "",
-     "nr": "630",
-     "raum": "",
-     "regel": [
-      "FA",
-      "HER"
-     ],
-     "st": "7"
-    }
-   ],
-   "zeitstempel": "06.11.2026, 07:09",
-   "zusatz": []
-  },
   "20261109": {
    "datum": "Montag, 09. November 2026",
    "gefunden": true,
@@ -227,8 +135,140 @@
      "st": "9"
     }
    ],
-   "zeitstempel": "06.11.2026, 13:57",
+   "zeitstempel": "09.11.2026, 09:28",
    "zusatz": []
+  },
+  "20261110": {
+   "datum": "Dienstag, 10. November 2026",
+   "gefunden": true,
+   "stunden": [
+    {
+     "fach": "MA",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "WEN",
+     "nr": "636",
+     "raum": "N230",
+     "regel": [
+      "MA",
+      "WEN"
+     ],
+     "st": "2"
+    },
+    {
+     "fach": "MA",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "WEN",
+     "nr": "636",
+     "raum": "N230",
+     "regel": [
+      "MA",
+      "WEN"
+     ],
+     "st": "3"
+    },
+    {
+     "fach": "VBR",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "PKR",
+     "nr": "631",
+     "raum": "A233",
+     "regel": [
+      "VBR",
+      "PKR"
+     ],
+     "st": "4"
+    },
+    {
+     "fach": "VBR",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "PKR",
+     "nr": "631",
+     "raum": "A233",
+     "regel": [
+      "VBR",
+      "PKR"
+     ],
+     "st": "5"
+    },
+    {
+     "fach": "ETH",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "GIE",
+     "nr": "628",
+     "raum": "A003",
+     "regel": [
+      "ETH",
+      "GIE"
+     ],
+     "st": "6"
+    },
+    {
+     "fach": "REL",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "SDR",
+     "nr": "629",
+     "raum": "A141",
+     "regel": [
+      "REL",
+      "SDR"
+     ],
+     "st": "6"
+    },
+    {
+     "fach": "DE",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "MEI",
+     "nr": "2613",
+     "raum": "A159",
+     "regel": [
+      "DE",
+      "MEI"
+     ],
+     "st": "7"
+    },
+    {
+     "fach": "VBR",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "KRAU",
+     "nr": "632",
+     "raum": "N223",
+     "regel": [
+      "VBR",
+      "KRAU"
+     ],
+     "st": "8"
+    },
+    {
+     "fach": "VBR",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "KRAU",
+     "nr": "632",
+     "raum": "N223",
+     "regel": [
+      "VBR",
+      "KRAU"
+     ],
+     "st": "9"
+    }
+   ],
+   "zeitstempel": "09.11.2026, 12:24",
+   "zusatz": [
+    "FB BGY:",
+    "Vorabinfo:",
+    "BGY26 Probkurswahl:",
+    "BGY26 GG: Freitag, 13.11. Std. 5 (GSO WEK A 248)",
+    "BGY26 TG: Mittwoch, 11.11. Std. 4 (MA ENG A 235)",
+    "BGY26 WG: Mittwoch, 11.11. Std. 6 (MA ENG A 235)"
+   ]
   }
  }
 }
