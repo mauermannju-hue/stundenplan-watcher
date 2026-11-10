@@ -1,143 +1,5 @@
 {
  "plaene": {
-  "20261109": {
-   "datum": "Montag, 09. November 2026",
-   "gefunden": true,
-   "stunden": [
-    {
-     "fach": "VBR",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "PKR",
-     "nr": "631",
-     "raum": "A233",
-     "regel": [
-      "VBR",
-      "PKR"
-     ],
-     "st": "2"
-    },
-    {
-     "fach": "VBR",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "PKR",
-     "nr": "631",
-     "raum": "A233",
-     "regel": [
-      "VBR",
-      "PKR"
-     ],
-     "st": "3"
-    },
-    {
-     "fach": "GGK",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "SDR",
-     "nr": "633",
-     "raum": "A141",
-     "regel": [
-      "GGK",
-      "SDR"
-     ],
-     "st": "4"
-    },
-    {
-     "fach": "GGK",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "SDR",
-     "nr": "633",
-     "raum": "A141",
-     "regel": [
-      "GGK",
-      "SDR"
-     ],
-     "st": "5"
-    },
-    {
-     "fach": "EN",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "WAL",
-     "nr": "627",
-     "raum": "N330",
-     "regel": [
-      "EN",
-      "WAL"
-     ],
-     "st": "6"
-    },
-    {
-     "fach": "EN",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "WAL",
-     "nr": "627",
-     "raum": "N330",
-     "regel": [
-      "EN",
-      "WAL"
-     ],
-     "st": "7"
-    },
-    {
-     "fach": "GR.1",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "HOL",
-     "nr": "634",
-     "raum": "A242",
-     "regel": [
-      "INF",
-      "HOL"
-     ],
-     "st": "8"
-    },
-    {
-     "fach": "GR.2",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "HER",
-     "nr": "635",
-     "raum": "A109",
-     "regel": [
-      "INF",
-      "HER"
-     ],
-     "st": "8"
-    },
-    {
-     "fach": "GR.1",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "HOL",
-     "nr": "634",
-     "raum": "A242",
-     "regel": [
-      "INF",
-      "HOL"
-     ],
-     "st": "9"
-    },
-    {
-     "fach": "GR.2",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "HER",
-     "nr": "635",
-     "raum": "A109",
-     "regel": [
-      "INF",
-      "HER"
-     ],
-     "st": "9"
-    }
-   ],
-   "zeitstempel": "09.11.2026, 09:28",
-   "zusatz": []
-  },
   "20261110": {
    "datum": "Dienstag, 10. November 2026",
    "gefunden": true,
@@ -260,12 +122,119 @@
      "st": "9"
     }
    ],
-   "zeitstempel": "09.11.2026, 12:24",
+   "zeitstempel": "10.11.2026, 09:27",
    "zusatz": [
     "FB BGY:",
     "Vorabinfo:",
     "BGY26 Probkurswahl:",
     "BGY26 GG: Freitag, 13.11. Std. 5 (GSO WEK A 248)",
+    "BGY26 TG: Mittwoch, 11.11. Std. 4 (MA ENG A 235)",
+    "BGY26 WG: Mittwoch, 11.11. Std. 6 (MA ENG A 235)"
+   ]
+  },
+  "20261111": {
+   "datum": "Mittwoch, 11. November 2026",
+   "gefunden": true,
+   "stunden": [
+    {
+     "fach": "DE",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "MEI",
+     "nr": "2613",
+     "raum": "A159",
+     "regel": [
+      "DE",
+      "MEI"
+     ],
+     "st": "2"
+    },
+    {
+     "fach": "DE",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "MEI",
+     "nr": "2613",
+     "raum": "A159",
+     "regel": [
+      "DE",
+      "MEI"
+     ],
+     "st": "3"
+    },
+    {
+     "fach": "MA",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "MIS",
+     "nr": "637",
+     "raum": "N325",
+     "regel": [
+      "MA",
+      "MIS"
+     ],
+     "st": "4"
+    },
+    {
+     "fach": "EN",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "WAL",
+     "nr": "627",
+     "raum": "N330",
+     "regel": [
+      "EN",
+      "WAL"
+     ],
+     "st": "5"
+    },
+    {
+     "fach": "KU",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "NAT",
+     "nr": "640",
+     "raum": "N-132",
+     "regel": [
+      "KU",
+      "NAT"
+     ],
+     "st": "6"
+    },
+    {
+     "fach": "MA",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "WEN",
+     "nr": "636",
+     "raum": "N230",
+     "regel": [
+      "MA",
+      "WEN"
+     ],
+     "st": "7"
+    },
+    {
+     "fach": "MA",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "WEN",
+     "nr": "636",
+     "raum": "N230",
+     "regel": [
+      "MA",
+      "WEN"
+     ],
+     "st": "8"
+    }
+   ],
+   "zeitstempel": "10.11.2026, 12:00",
+   "zusatz": [
+    "FB BGY:",
+    "Vorabinfo:",
+    "BGY26 Probkurswahl:",
+    "BGY26 GG: Freitag, 13.11. Std. 5 (GSO WEK A 248)",
+    "heute:",
     "BGY26 TG: Mittwoch, 11.11. Std. 4 (MA ENG A 235)",
     "BGY26 WG: Mittwoch, 11.11. Std. 6 (MA ENG A 235)"
    ]
