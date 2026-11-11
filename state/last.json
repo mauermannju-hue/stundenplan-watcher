@@ -1,137 +1,5 @@
 {
  "plaene": {
-  "20261110": {
-   "datum": "Dienstag, 10. November 2026",
-   "gefunden": true,
-   "stunden": [
-    {
-     "fach": "MA",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "WEN",
-     "nr": "636",
-     "raum": "N230",
-     "regel": [
-      "MA",
-      "WEN"
-     ],
-     "st": "2"
-    },
-    {
-     "fach": "MA",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "WEN",
-     "nr": "636",
-     "raum": "N230",
-     "regel": [
-      "MA",
-      "WEN"
-     ],
-     "st": "3"
-    },
-    {
-     "fach": "VBR",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "PKR",
-     "nr": "631",
-     "raum": "A233",
-     "regel": [
-      "VBR",
-      "PKR"
-     ],
-     "st": "4"
-    },
-    {
-     "fach": "VBR",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "PKR",
-     "nr": "631",
-     "raum": "A233",
-     "regel": [
-      "VBR",
-      "PKR"
-     ],
-     "st": "5"
-    },
-    {
-     "fach": "ETH",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "GIE",
-     "nr": "628",
-     "raum": "A003",
-     "regel": [
-      "ETH",
-      "GIE"
-     ],
-     "st": "6"
-    },
-    {
-     "fach": "REL",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "SDR",
-     "nr": "629",
-     "raum": "A141",
-     "regel": [
-      "REL",
-      "SDR"
-     ],
-     "st": "6"
-    },
-    {
-     "fach": "DE",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "MEI",
-     "nr": "2613",
-     "raum": "A159",
-     "regel": [
-      "DE",
-      "MEI"
-     ],
-     "st": "7"
-    },
-    {
-     "fach": "VBR",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "KRAU",
-     "nr": "632",
-     "raum": "N223",
-     "regel": [
-      "VBR",
-      "KRAU"
-     ],
-     "st": "8"
-    },
-    {
-     "fach": "VBR",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "KRAU",
-     "nr": "632",
-     "raum": "N223",
-     "regel": [
-      "VBR",
-      "KRAU"
-     ],
-     "st": "9"
-    }
-   ],
-   "zeitstempel": "10.11.2026, 09:27",
-   "zusatz": [
-    "FB BGY:",
-    "Vorabinfo:",
-    "BGY26 Probkurswahl:",
-    "BGY26 GG: Freitag, 13.11. Std. 5 (GSO WEK A 248)",
-    "BGY26 TG: Mittwoch, 11.11. Std. 4 (MA ENG A 235)",
-    "BGY26 WG: Mittwoch, 11.11. Std. 6 (MA ENG A 235)"
-   ]
-  },
   "20261111": {
    "datum": "Mittwoch, 11. November 2026",
    "gefunden": true,
@@ -202,12 +70,16 @@
      "st": "6"
     },
     {
-     "fach": "MA",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "WEN",
+     "fach": "---",
+     "geaendert": [
+      "Fach",
+      "Lehrer",
+      "Raum"
+     ],
+     "info": "MA Frau Wendisch fällt aus",
+     "lehrer": "",
      "nr": "636",
-     "raum": "N230",
+     "raum": "",
      "regel": [
       "MA",
       "WEN"
@@ -215,12 +87,16 @@
      "st": "7"
     },
     {
-     "fach": "MA",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "WEN",
+     "fach": "---",
+     "geaendert": [
+      "Fach",
+      "Lehrer",
+      "Raum"
+     ],
+     "info": "MA Frau Wendisch fällt aus",
+     "lehrer": "",
      "nr": "636",
-     "raum": "N230",
+     "raum": "",
      "regel": [
       "MA",
       "WEN"
@@ -228,7 +104,7 @@
      "st": "8"
     }
    ],
-   "zeitstempel": "10.11.2026, 12:00",
+   "zeitstempel": "11.11.2026, 07:35",
    "zusatz": [
     "FB BGY:",
     "Vorabinfo:",
@@ -237,6 +113,105 @@
     "heute:",
     "BGY26 TG: Mittwoch, 11.11. Std. 4 (MA ENG A 235)",
     "BGY26 WG: Mittwoch, 11.11. Std. 6 (MA ENG A 235)"
+   ]
+  },
+  "20261112": {
+   "datum": "Donnerstag, 12. November 2026",
+   "gefunden": true,
+   "stunden": [
+    {
+     "fach": "S",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "HOL",
+     "nr": "2615",
+     "raum": "AHL",
+     "regel": [
+      "S",
+      "HOL"
+     ],
+     "st": "2"
+    },
+    {
+     "fach": "S",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "HOL",
+     "nr": "2615",
+     "raum": "AHL",
+     "regel": [
+      "S",
+      "HOL"
+     ],
+     "st": "3"
+    },
+    {
+     "fach": "MA",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "MIS",
+     "nr": "637",
+     "raum": "N325",
+     "regel": [
+      "MA",
+      "MIS"
+     ],
+     "st": "4"
+    },
+    {
+     "fach": "MA",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "MIS",
+     "nr": "637",
+     "raum": "N325",
+     "regel": [
+      "MA",
+      "MIS"
+     ],
+     "st": "5"
+    },
+    {
+     "fach": "FA",
+     "geaendert": [
+      "Fach",
+      "Lehrer",
+      "Raum"
+     ],
+     "info": "statt Fr (13.11.) St.7; RK Frau Bodinka fällt aus",
+     "lehrer": "HER",
+     "nr": "630",
+     "raum": "N311",
+     "regel": [
+      "FA",
+      "HER"
+     ],
+     "st": "6"
+    },
+    {
+     "fach": "---",
+     "geaendert": [
+      "Fach",
+      "Lehrer",
+      "Raum"
+     ],
+     "info": "RK Frau Bodinka fällt aus",
+     "lehrer": "",
+     "nr": "638",
+     "raum": "",
+     "regel": [
+      "RK",
+      "BOD"
+     ],
+     "st": "7"
+    }
+   ],
+   "zeitstempel": "11.11.2026, 12:28",
+   "zusatz": [
+    "FB BGY:",
+    "Vorabinfo:",
+    "BGY26 Probkurswahl:",
+    "BGY26 GG: Freitag, 13.11. Std. 5 (GSO WEK A 248)"
    ]
   }
  }
