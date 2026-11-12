@@ -1,120 +1,5 @@
 {
  "plaene": {
-  "20261111": {
-   "datum": "Mittwoch, 11. November 2026",
-   "gefunden": true,
-   "stunden": [
-    {
-     "fach": "DE",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "MEI",
-     "nr": "2613",
-     "raum": "A159",
-     "regel": [
-      "DE",
-      "MEI"
-     ],
-     "st": "2"
-    },
-    {
-     "fach": "DE",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "MEI",
-     "nr": "2613",
-     "raum": "A159",
-     "regel": [
-      "DE",
-      "MEI"
-     ],
-     "st": "3"
-    },
-    {
-     "fach": "MA",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "MIS",
-     "nr": "637",
-     "raum": "N325",
-     "regel": [
-      "MA",
-      "MIS"
-     ],
-     "st": "4"
-    },
-    {
-     "fach": "EN",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "WAL",
-     "nr": "627",
-     "raum": "N330",
-     "regel": [
-      "EN",
-      "WAL"
-     ],
-     "st": "5"
-    },
-    {
-     "fach": "KU",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "NAT",
-     "nr": "640",
-     "raum": "N-132",
-     "regel": [
-      "KU",
-      "NAT"
-     ],
-     "st": "6"
-    },
-    {
-     "fach": "---",
-     "geaendert": [
-      "Fach",
-      "Lehrer",
-      "Raum"
-     ],
-     "info": "MA Frau Wendisch fällt aus",
-     "lehrer": "",
-     "nr": "636",
-     "raum": "",
-     "regel": [
-      "MA",
-      "WEN"
-     ],
-     "st": "7"
-    },
-    {
-     "fach": "---",
-     "geaendert": [
-      "Fach",
-      "Lehrer",
-      "Raum"
-     ],
-     "info": "MA Frau Wendisch fällt aus",
-     "lehrer": "",
-     "nr": "636",
-     "raum": "",
-     "regel": [
-      "MA",
-      "WEN"
-     ],
-     "st": "8"
-    }
-   ],
-   "zeitstempel": "11.11.2026, 07:35",
-   "zusatz": [
-    "FB BGY:",
-    "Vorabinfo:",
-    "BGY26 Probkurswahl:",
-    "BGY26 GG: Freitag, 13.11. Std. 5 (GSO WEK A 248)",
-    "heute:",
-    "BGY26 TG: Mittwoch, 11.11. Std. 4 (MA ENG A 235)",
-    "BGY26 WG: Mittwoch, 11.11. Std. 6 (MA ENG A 235)"
-   ]
-  },
   "20261112": {
    "datum": "Donnerstag, 12. November 2026",
    "gefunden": true,
@@ -206,7 +91,100 @@
      "st": "7"
     }
    ],
-   "zeitstempel": "11.11.2026, 12:28",
+   "zeitstempel": "12.11.2026, 07:28",
+   "zusatz": [
+    "FB BGY:",
+    "Vorabinfo:",
+    "BGY26 Probekurswahl:",
+    "BGY26 GG: Freitag, 13.11. Std. 5 (GSO WEK A 248)"
+   ]
+  },
+  "20261113": {
+   "datum": "Freitag, 13. November 2026",
+   "gefunden": true,
+   "stunden": [
+    {
+     "fach": "BIO",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "SDR",
+     "nr": "625",
+     "raum": "A141",
+     "regel": [
+      "BIO",
+      "SDR"
+     ],
+     "st": "2"
+    },
+    {
+     "fach": "BIO",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "SDR",
+     "nr": "625",
+     "raum": "A141",
+     "regel": [
+      "BIO",
+      "SDR"
+     ],
+     "st": "3"
+    },
+    {
+     "fach": "DE",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "MEI",
+     "nr": "2613",
+     "raum": "A159",
+     "regel": [
+      "DE",
+      "MEI"
+     ],
+     "st": "4"
+    },
+    {
+     "fach": "EN",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "WAL",
+     "nr": "627",
+     "raum": "N330",
+     "regel": [
+      "EN",
+      "WAL"
+     ],
+     "st": "5"
+    },
+    {
+     "fach": "VBR",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "KRAU",
+     "nr": "632",
+     "raum": "N223",
+     "regel": [
+      "VBR",
+      "KRAU"
+     ],
+     "st": "6"
+    },
+    {
+     "fach": "---",
+     "geaendert": [
+      "Fach"
+     ],
+     "info": "FA Herr Herzog gehalten am Do (12.11.) St.6",
+     "lehrer": "",
+     "nr": "630",
+     "raum": "",
+     "regel": [
+      "FA",
+      "HER"
+     ],
+     "st": "7"
+    }
+   ],
+   "zeitstempel": "12.11.2026, 12:13",
    "zusatz": [
     "FB BGY:",
     "Vorabinfo:",
