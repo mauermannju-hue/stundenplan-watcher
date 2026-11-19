@@ -103,6 +103,95 @@
     "Vorabinfo:",
     "BGy25: 20.11., 5./6. Stunde Lesung, A006, NAT, ZÖL, Pflichtveranstaltung"
    ]
+  },
+  "20261120": {
+   "datum": "Freitag, 20. November 2026",
+   "gefunden": true,
+   "stunden": [
+    {
+     "fach": "BIO",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "SDR",
+     "nr": "625",
+     "raum": "A141",
+     "regel": [
+      "BIO",
+      "SDR"
+     ],
+     "st": "2"
+    },
+    {
+     "fach": "BIO",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "SDR",
+     "nr": "625",
+     "raum": "A141",
+     "regel": [
+      "BIO",
+      "SDR"
+     ],
+     "st": "3"
+    },
+    {
+     "fach": "DE",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "MEI",
+     "nr": "2613",
+     "raum": "A159",
+     "regel": [
+      "DE",
+      "MEI"
+     ],
+     "st": "4"
+    },
+    {
+     "fach": "EN",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "WAL",
+     "nr": "627",
+     "raum": "N330",
+     "regel": [
+      "EN",
+      "WAL"
+     ],
+     "st": "5"
+    },
+    {
+     "fach": "VBR",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "KRAU",
+     "nr": "632",
+     "raum": "N223",
+     "regel": [
+      "VBR",
+      "KRAU"
+     ],
+     "st": "6"
+    },
+    {
+     "fach": "FA",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "HER",
+     "nr": "630",
+     "raum": "N311",
+     "regel": [
+      "FA",
+      "HER"
+     ],
+     "st": "7"
+    }
+   ],
+   "zeitstempel": "19.11.2026, 14:34",
+   "zusatz": [
+    "FB BGY:",
+    "BGy25: 5./6. Stunde Lesung, A006, NAT, ZÖL, Pflichtveranstaltung"
+   ]
   }
  }
 }
