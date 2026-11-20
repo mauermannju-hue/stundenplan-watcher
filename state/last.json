@@ -1,109 +1,5 @@
 {
  "plaene": {
-  "20261119": {
-   "datum": "Donnerstag, 19. November 2026",
-   "gefunden": true,
-   "stunden": [
-    {
-     "fach": "VBR",
-     "geaendert": [
-      "Fach",
-      "Lehrer",
-      "Raum"
-     ],
-     "info": "statt Di (17.11.) St.8",
-     "lehrer": "KRAU",
-     "nr": "632",
-     "raum": "N223",
-     "regel": [
-      "VBR",
-      "KRAU"
-     ],
-     "st": "2"
-    },
-    {
-     "fach": "VBR",
-     "geaendert": [
-      "Fach",
-      "Lehrer",
-      "Raum"
-     ],
-     "info": "statt Di (17.11.) St.9",
-     "lehrer": "KRAU",
-     "nr": "632",
-     "raum": "N223",
-     "regel": [
-      "VBR",
-      "KRAU"
-     ],
-     "st": "3"
-    },
-    {
-     "fach": "MA",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "MIS",
-     "nr": "637",
-     "raum": "N325",
-     "regel": [
-      "MA",
-      "MIS"
-     ],
-     "st": "4"
-    },
-    {
-     "fach": "MA",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "MIS",
-     "nr": "637",
-     "raum": "N325",
-     "regel": [
-      "MA",
-      "MIS"
-     ],
-     "st": "5"
-    },
-    {
-     "fach": "RK",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "BOD",
-     "nr": "638",
-     "raum": "A250",
-     "regel": [
-      "RK",
-      "BOD"
-     ],
-     "st": "6"
-    },
-    {
-     "fach": "RK",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "BOD",
-     "nr": "638",
-     "raum": "A250",
-     "regel": [
-      "RK",
-      "BOD"
-     ],
-     "st": "7"
-    }
-   ],
-   "zeitstempel": "19.11.2026, 08:25",
-   "zusatz": [
-    "FB BSI:",
-    "KO26a: heute Praxistag",
-    "",
-    "FB SOZ:",
-    "HEP24: Studienaufgabe (EICH)",
-    "",
-    "FB BGY:",
-    "Vorabinfo:",
-    "BGy25: 20.11., 5./6. Stunde Lesung, A006, NAT, ZÖL, Pflichtveranstaltung"
-   ]
-  },
   "20261120": {
    "datum": "Freitag, 20. November 2026",
    "gefunden": true,
@@ -187,7 +83,7 @@
      "st": "7"
     }
    ],
-   "zeitstempel": "19.11.2026, 14:34",
+   "zeitstempel": "20.11.2026, 07:32",
    "zusatz": [
     "FB BGY:",
     "BGy25: 5./6. Stunde Lesung, A006, NAT, ZÖL, Pflichtveranstaltung"
