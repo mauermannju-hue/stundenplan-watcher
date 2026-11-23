@@ -1,94 +1,5 @@
 {
  "plaene": {
-  "20261120": {
-   "datum": "Freitag, 20. November 2026",
-   "gefunden": true,
-   "stunden": [
-    {
-     "fach": "BIO",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "SDR",
-     "nr": "625",
-     "raum": "A141",
-     "regel": [
-      "BIO",
-      "SDR"
-     ],
-     "st": "2"
-    },
-    {
-     "fach": "BIO",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "SDR",
-     "nr": "625",
-     "raum": "A141",
-     "regel": [
-      "BIO",
-      "SDR"
-     ],
-     "st": "3"
-    },
-    {
-     "fach": "DE",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "MEI",
-     "nr": "2613",
-     "raum": "A159",
-     "regel": [
-      "DE",
-      "MEI"
-     ],
-     "st": "4"
-    },
-    {
-     "fach": "EN",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "WAL",
-     "nr": "627",
-     "raum": "N330",
-     "regel": [
-      "EN",
-      "WAL"
-     ],
-     "st": "5"
-    },
-    {
-     "fach": "VBR",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "KRAU",
-     "nr": "632",
-     "raum": "N223",
-     "regel": [
-      "VBR",
-      "KRAU"
-     ],
-     "st": "6"
-    },
-    {
-     "fach": "FA",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "HER",
-     "nr": "630",
-     "raum": "N311",
-     "regel": [
-      "FA",
-      "HER"
-     ],
-     "st": "7"
-    }
-   ],
-   "zeitstempel": "20.11.2026, 07:32",
-   "zusatz": [
-    "FB BGY:",
-    "BGy25: 5./6. Stunde Lesung, A006, NAT, ZÖL, Pflichtveranstaltung"
-   ]
-  },
   "20261123": {
    "datum": "Montag, 23. November 2026",
    "gefunden": true,
@@ -146,38 +57,63 @@
      "st": "5"
     },
     {
-     "fach": "EN",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "WAL",
-     "nr": "627",
-     "raum": "N330",
+     "fach": "VBR",
+     "geaendert": [
+      "Fach",
+      "Lehrer",
+      "Raum"
+     ],
+     "info": "statt Di (24.11.) St.8; EN Frau Walther fällt aus",
+     "lehrer": "KRAU",
+     "nr": "632",
+     "raum": "N223",
      "regel": [
-      "EN",
-      "WAL"
+      "VBR",
+      "KRAU"
      ],
      "st": "6"
     },
     {
-     "fach": "EN",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "WAL",
-     "nr": "627",
-     "raum": "N330",
+     "fach": "VBR",
+     "geaendert": [
+      "Fach",
+      "Lehrer",
+      "Raum"
+     ],
+     "info": "statt Di (24.11.) St.9; EN Frau Walther fällt aus",
+     "lehrer": "KRAU",
+     "nr": "632",
+     "raum": "N223",
      "regel": [
-      "EN",
-      "WAL"
+      "VBR",
+      "KRAU"
      ],
      "st": "7"
     },
     {
-     "fach": "GR.1",
+     "fach": "GR.2",
      "geaendert": [],
      "info": "",
-     "lehrer": "HOL",
+     "lehrer": "HER",
+     "nr": "635",
+     "raum": "A109",
+     "regel": [
+      "INF",
+      "HER"
+     ],
+     "st": "8"
+    },
+    {
+     "fach": "---",
+     "geaendert": [
+      "Fach",
+      "Lehrer",
+      "Raum"
+     ],
+     "info": "GR.1 Herr Holubek fällt aus",
+     "lehrer": "",
      "nr": "634",
-     "raum": "A242",
+     "raum": "",
      "regel": [
       "INF",
       "HOL"
@@ -194,37 +130,157 @@
      "regel": [
       "INF",
       "HER"
-     ],
-     "st": "8"
-    },
-    {
-     "fach": "GR.1",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "HOL",
-     "nr": "634",
-     "raum": "A242",
-     "regel": [
-      "INF",
-      "HOL"
      ],
      "st": "9"
     },
     {
-     "fach": "GR.2",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "HER",
-     "nr": "635",
-     "raum": "A109",
+     "fach": "---",
+     "geaendert": [
+      "Fach",
+      "Lehrer",
+      "Raum"
+     ],
+     "info": "GR.1 Herr Holubek fällt aus",
+     "lehrer": "",
+     "nr": "634",
+     "raum": "",
      "regel": [
       "INF",
-      "HER"
+      "HOL"
      ],
      "st": "9"
     }
    ],
-   "zeitstempel": "20.11.2026, 13:49",
+   "zeitstempel": "23.11.2026, 11:56",
+   "zusatz": []
+  },
+  "20261124": {
+   "datum": "Dienstag, 24. November 2026",
+   "gefunden": true,
+   "stunden": [
+    {
+     "fach": "MA",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "WEN",
+     "nr": "636",
+     "raum": "N230",
+     "regel": [
+      "MA",
+      "WEN"
+     ],
+     "st": "2"
+    },
+    {
+     "fach": "MA",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "WEN",
+     "nr": "636",
+     "raum": "N230",
+     "regel": [
+      "MA",
+      "WEN"
+     ],
+     "st": "3"
+    },
+    {
+     "fach": "VBR",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "PKR",
+     "nr": "631",
+     "raum": "A233",
+     "regel": [
+      "VBR",
+      "PKR"
+     ],
+     "st": "4"
+    },
+    {
+     "fach": "VBR",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "PKR",
+     "nr": "631",
+     "raum": "A233",
+     "regel": [
+      "VBR",
+      "PKR"
+     ],
+     "st": "5"
+    },
+    {
+     "fach": "ETH",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "GIE",
+     "nr": "628",
+     "raum": "A003",
+     "regel": [
+      "ETH",
+      "GIE"
+     ],
+     "st": "6"
+    },
+    {
+     "fach": "REL",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "SDR",
+     "nr": "629",
+     "raum": "A141",
+     "regel": [
+      "REL",
+      "SDR"
+     ],
+     "st": "6"
+    },
+    {
+     "fach": "DE",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "MEI",
+     "nr": "2613",
+     "raum": "A159",
+     "regel": [
+      "DE",
+      "MEI"
+     ],
+     "st": "7"
+    },
+    {
+     "fach": "---",
+     "geaendert": [
+      "Fach"
+     ],
+     "info": "VBR Frau Krause gehalten am Mo (23.11.) St.6",
+     "lehrer": "",
+     "nr": "632",
+     "raum": "",
+     "regel": [
+      "VBR",
+      "KRAU"
+     ],
+     "st": "8"
+    },
+    {
+     "fach": "---",
+     "geaendert": [
+      "Fach"
+     ],
+     "info": "VBR Frau Krause gehalten am Mo (23.11.) St.7",
+     "lehrer": "",
+     "nr": "632",
+     "raum": "",
+     "regel": [
+      "VBR",
+      "KRAU"
+     ],
+     "st": "9"
+    }
+   ],
+   "zeitstempel": "23.11.2026, 15:26",
    "zusatz": []
   }
  }
