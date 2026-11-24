@@ -126,8 +126,120 @@
      "st": "9"
     }
    ],
-   "zeitstempel": "23.11.2026, 15:29",
+   "zeitstempel": "24.11.2026, 10:58",
    "zusatz": []
+  },
+  "20261125": {
+   "datum": "Mittwoch, 25. November 2026",
+   "gefunden": true,
+   "stunden": [
+    {
+     "fach": "DE",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "MEI",
+     "nr": "2613",
+     "raum": "A159",
+     "regel": [
+      "DE",
+      "MEI"
+     ],
+     "st": "2"
+    },
+    {
+     "fach": "DE",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "MEI",
+     "nr": "2613",
+     "raum": "A159",
+     "regel": [
+      "DE",
+      "MEI"
+     ],
+     "st": "3"
+    },
+    {
+     "fach": "MA",
+     "geaendert": [
+      "Fach",
+      "Lehrer",
+      "Raum"
+     ],
+     "info": "verlegt von St.8; MA Frau Mischke verlegt nach St.8, Aufgaben WEN",
+     "lehrer": "WEN",
+     "nr": "636",
+     "raum": "N230",
+     "regel": [
+      "MA",
+      "WEN"
+     ],
+     "st": "4"
+    },
+    {
+     "fach": "EN",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "WAL",
+     "nr": "627",
+     "raum": "N330",
+     "regel": [
+      "EN",
+      "WAL"
+     ],
+     "st": "5"
+    },
+    {
+     "fach": "KU",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "NAT",
+     "nr": "640",
+     "raum": "N-132",
+     "regel": [
+      "KU",
+      "NAT"
+     ],
+     "st": "6"
+    },
+    {
+     "fach": "MA",
+     "geaendert": [
+      "Raum"
+     ],
+     "info": "",
+     "lehrer": "WEN",
+     "nr": "636",
+     "raum": "N213",
+     "regel": [
+      "MA",
+      "WEN"
+     ],
+     "st": "7"
+    },
+    {
+     "fach": "MA",
+     "geaendert": [
+      "Fach",
+      "Lehrer",
+      "Raum"
+     ],
+     "info": "verlegt von St.4, Aufgaben WEN; MA Frau Wendisch verlegt nach St.4",
+     "lehrer": "MIS",
+     "nr": "637",
+     "raum": "",
+     "regel": [
+      "MA",
+      "MIS"
+     ],
+     "st": "8"
+    }
+   ],
+   "zeitstempel": "24.11.2026, 12:55",
+   "zusatz": [
+    "FB BSI:",
+    "KO24: Projekt Fleischerei Richter, HAH, MAN"
+   ]
   }
  }
 }
