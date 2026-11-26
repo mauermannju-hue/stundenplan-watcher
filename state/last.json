@@ -1,123 +1,5 @@
 {
  "plaene": {
-  "20261125": {
-   "datum": "Mittwoch, 25. November 2026",
-   "gefunden": true,
-   "stunden": [
-    {
-     "fach": "DE",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "MEI",
-     "nr": "2613",
-     "raum": "A159",
-     "regel": [
-      "DE",
-      "MEI"
-     ],
-     "st": "2"
-    },
-    {
-     "fach": "DE",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "MEI",
-     "nr": "2613",
-     "raum": "A159",
-     "regel": [
-      "DE",
-      "MEI"
-     ],
-     "st": "3"
-    },
-    {
-     "fach": "MA",
-     "geaendert": [
-      "Fach",
-      "Lehrer",
-      "Raum"
-     ],
-     "info": "verlegt von St.8; MA Frau Mischke verlegt nach St.8, Aufgaben WEN",
-     "lehrer": "WEN",
-     "nr": "636",
-     "raum": "N230",
-     "regel": [
-      "MA",
-      "WEN"
-     ],
-     "st": "4"
-    },
-    {
-     "fach": "EN",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "WAL",
-     "nr": "627",
-     "raum": "N330",
-     "regel": [
-      "EN",
-      "WAL"
-     ],
-     "st": "5"
-    },
-    {
-     "fach": "KU",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "NAT",
-     "nr": "640",
-     "raum": "N-132",
-     "regel": [
-      "KU",
-      "NAT"
-     ],
-     "st": "6"
-    },
-    {
-     "fach": "MA",
-     "geaendert": [
-      "Raum"
-     ],
-     "info": "",
-     "lehrer": "WEN",
-     "nr": "636",
-     "raum": "N213",
-     "regel": [
-      "MA",
-      "WEN"
-     ],
-     "st": "7"
-    },
-    {
-     "fach": "MA",
-     "geaendert": [
-      "Fach",
-      "Lehrer",
-      "Raum"
-     ],
-     "info": "verlegt von St.4, Aufgaben WEN; MA Frau Wendisch verlegt nach St.4",
-     "lehrer": "MIS",
-     "nr": "637",
-     "raum": "",
-     "regel": [
-      "MA",
-      "MIS"
-     ],
-     "st": "8"
-    }
-   ],
-   "zeitstempel": "25.11.2026, 09:21",
-   "zusatz": [
-    "allgemeine Information:",
-    "Der Nachschreibetermin heute entfällt!",
-    "",
-    "FB BSI:",
-    "KO24: Projekt Fleischerei Richter, HAH, MAN",
-    "",
-    "FB BGy:",
-    "BGy26: Elternabend heute fällt aus"
-   ]
-  },
   "20261126": {
    "datum": "Donnerstag, 26. November 2026",
    "gefunden": true,
@@ -201,8 +83,104 @@
      "st": "7"
     }
    ],
-   "zeitstempel": "25.11.2026, 11:57",
+   "zeitstempel": "26.11.2026, 07:53",
    "zusatz": []
+  },
+  "20261127": {
+   "datum": "Freitag, 27. November 2026",
+   "gefunden": true,
+   "stunden": [
+    {
+     "fach": "BIO",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "SDR",
+     "nr": "625",
+     "raum": "A141",
+     "regel": [
+      "BIO",
+      "SDR"
+     ],
+     "st": "2"
+    },
+    {
+     "fach": "BIO",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "SDR",
+     "nr": "625",
+     "raum": "A141",
+     "regel": [
+      "BIO",
+      "SDR"
+     ],
+     "st": "3"
+    },
+    {
+     "fach": "DE",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "MEI",
+     "nr": "2613",
+     "raum": "A159",
+     "regel": [
+      "DE",
+      "MEI"
+     ],
+     "st": "4"
+    },
+    {
+     "fach": "EN",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "WAL",
+     "nr": "627",
+     "raum": "N330",
+     "regel": [
+      "EN",
+      "WAL"
+     ],
+     "st": "5"
+    },
+    {
+     "fach": "VBR",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "KRAU",
+     "nr": "632",
+     "raum": "N223",
+     "regel": [
+      "VBR",
+      "KRAU"
+     ],
+     "st": "6"
+    },
+    {
+     "fach": "FA",
+     "geaendert": [
+      "Raum"
+     ],
+     "info": "",
+     "lehrer": "HER",
+     "nr": "630",
+     "raum": "A109",
+     "regel": [
+      "FA",
+      "HER"
+     ],
+     "st": "7"
+    }
+   ],
+   "zeitstempel": "26.11.2026, 13:19",
+   "zusatz": [
+    "FB SOZ:",
+    "SPE24: Exkursion Deutsches Hygienemuseum Dresden, BOD",
+    "SPE25: Stadtgang 6. bis 8. Stunde, USE, ED",
+    "",
+    "FB BGY:",
+    "Vorabinfo:",
+    "GG26: am 02.12. im Hygienemuseum Dresden, WEK, NAT"
+   ]
   }
  }
 }
