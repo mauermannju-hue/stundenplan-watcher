@@ -1,91 +1,5 @@
 {
  "plaene": {
-  "20261126": {
-   "datum": "Donnerstag, 26. November 2026",
-   "gefunden": true,
-   "stunden": [
-    {
-     "fach": "S",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "HOL",
-     "nr": "2615",
-     "raum": "AHL",
-     "regel": [
-      "S",
-      "HOL"
-     ],
-     "st": "2"
-    },
-    {
-     "fach": "S",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "HOL",
-     "nr": "2615",
-     "raum": "AHL",
-     "regel": [
-      "S",
-      "HOL"
-     ],
-     "st": "3"
-    },
-    {
-     "fach": "MA",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "MIS",
-     "nr": "637",
-     "raum": "N325",
-     "regel": [
-      "MA",
-      "MIS"
-     ],
-     "st": "4"
-    },
-    {
-     "fach": "MA",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "MIS",
-     "nr": "637",
-     "raum": "N325",
-     "regel": [
-      "MA",
-      "MIS"
-     ],
-     "st": "5"
-    },
-    {
-     "fach": "RK",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "BOD",
-     "nr": "638",
-     "raum": "A250",
-     "regel": [
-      "RK",
-      "BOD"
-     ],
-     "st": "6"
-    },
-    {
-     "fach": "RK",
-     "geaendert": [],
-     "info": "",
-     "lehrer": "BOD",
-     "nr": "638",
-     "raum": "A250",
-     "regel": [
-      "RK",
-      "BOD"
-     ],
-     "st": "7"
-    }
-   ],
-   "zeitstempel": "26.11.2026, 07:53",
-   "zusatz": []
-  },
   "20261127": {
    "datum": "Freitag, 27. November 2026",
    "gefunden": true,
@@ -121,8 +35,8 @@
      "geaendert": [],
      "info": "",
      "lehrer": "MEI",
-     "nr": "2613",
-     "raum": "A159",
+     "nr": "2645",
+     "raum": "A247",
      "regel": [
       "DE",
       "MEI"
@@ -171,7 +85,7 @@
      "st": "7"
     }
    ],
-   "zeitstempel": "26.11.2026, 13:19",
+   "zeitstempel": "27.11.2026, 07:50",
    "zusatz": [
     "FB SOZ:",
     "SPE24: Exkursion Deutsches Hygienemuseum Dresden, BOD",
@@ -180,6 +94,138 @@
     "FB BGY:",
     "Vorabinfo:",
     "GG26: am 02.12. im Hygienemuseum Dresden, WEK, NAT"
+   ]
+  },
+  "20261201": {
+   "datum": "Dienstag, 01. Dezember 2026",
+   "gefunden": true,
+   "stunden": [
+    {
+     "fach": "MA",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "WEN",
+     "nr": "636",
+     "raum": "N230",
+     "regel": [
+      "MA",
+      "WEN"
+     ],
+     "st": "2"
+    },
+    {
+     "fach": "MA",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "WEN",
+     "nr": "636",
+     "raum": "N230",
+     "regel": [
+      "MA",
+      "WEN"
+     ],
+     "st": "3"
+    },
+    {
+     "fach": "VBR",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "PKR",
+     "nr": "631",
+     "raum": "A233",
+     "regel": [
+      "VBR",
+      "PKR"
+     ],
+     "st": "4"
+    },
+    {
+     "fach": "VBR",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "PKR",
+     "nr": "631",
+     "raum": "A233",
+     "regel": [
+      "VBR",
+      "PKR"
+     ],
+     "st": "5"
+    },
+    {
+     "fach": "ETH",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "GIE",
+     "nr": "628",
+     "raum": "A003",
+     "regel": [
+      "ETH",
+      "GIE"
+     ],
+     "st": "6"
+    },
+    {
+     "fach": "REL",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "SDR",
+     "nr": "629",
+     "raum": "A141",
+     "regel": [
+      "REL",
+      "SDR"
+     ],
+     "st": "6"
+    },
+    {
+     "fach": "DE",
+     "geaendert": [],
+     "info": "",
+     "lehrer": "MEI WIC",
+     "nr": "2613",
+     "raum": "A159",
+     "regel": [
+      "DE",
+      "MEI"
+     ],
+     "st": "7"
+    },
+    {
+     "fach": "---",
+     "geaendert": [
+      "Fach"
+     ],
+     "info": "VBR Frau Krause verlegt nach Fr (04.12.) St.2",
+     "lehrer": "",
+     "nr": "632",
+     "raum": "",
+     "regel": [
+      "VBR",
+      "KRAU"
+     ],
+     "st": "8"
+    },
+    {
+     "fach": "---",
+     "geaendert": [
+      "Fach"
+     ],
+     "info": "VBR Frau Krause verlegt nach Fr (04.12.) St.3",
+     "lehrer": "",
+     "nr": "632",
+     "raum": "",
+     "regel": [
+      "VBR",
+      "KRAU"
+     ],
+     "st": "9"
+    }
+   ],
+   "zeitstempel": "27.11.2026, 14:28",
+   "zusatz": [
+    "FB BSIII",
+    "MFA24: Infoveranstaltung LÄK, Frau Majcrzak, DIT, GRH"
    ]
   }
  }
